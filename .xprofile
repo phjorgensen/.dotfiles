@@ -1,4 +1,7 @@
 # Add permission to execute chmod +x ~/.xprofile
 
 # Multiple monitor support
-xrandr --output DP-2 --auto --output HDMI-2 --left-of DP-2 --auto
+# perHome
+#xrandr --output DP-2 --auto --output HDMI-2 --left-of DP-2 --auto
+# perWork
+#xrandr --output eDP-1 --auto --output HDMI-1 --auto --right-of eDP-1 --primary
