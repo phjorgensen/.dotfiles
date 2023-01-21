@@ -1,5 +1,5 @@
-// sudo dnf install fd-find
-// sudo dnf install ripgrep
+" sudo dnf install fd-find
+" sudo dnf install ripgrep
 
 set relativenumber
 
