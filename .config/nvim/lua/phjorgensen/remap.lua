@@ -25,8 +25,8 @@ vim.keymap.set("n", "Q", "<nop>") -- I don't know what Q does, but It's bad appa
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>") -- maybe add again if i add tmux at some point
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format) -- formatting the document?
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz") -- find errors?
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz") -- find errors?
+-- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz") -- find errors? -- collides with harpoon quick links
+-- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz") -- find errors? -- collides with harpoon quick links
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz") -- find errors?
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz") -- find errors?
 
