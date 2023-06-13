@@ -1,10 +1,19 @@
-## Init
+## Installs
 
-### Install package manager
+#### Install package manager
 https://github.com/wbthomason/packer.nvim
-> Just copy the git clone and paste it in the shell, unless the method for installing has changed.
 
-1. Install package manager.
-2. Start neovim.
-3. Run `:PackerSync` to install all packages.
-4. $$$
+#### Install NVM (For tsserver and eslint LSPs)
+https://github.com/nvm-sh/nvm
+
+#### Install Rust (For rust LSP)
+https://doc.rust-lang.org/cargo/getting-started/installation.html
+
+#### Install ripgrep
+https://github.com/BurntSushi/ripgrep#installation
+
+### Init
+
+1. Start neovim.
+2. Run `:PackerSync` to install all packages.
+3. $$$
