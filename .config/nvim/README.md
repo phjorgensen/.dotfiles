@@ -12,6 +12,9 @@ https://doc.rust-lang.org/cargo/getting-started/installation.html
 #### Install ripgrep
 https://github.com/BurntSushi/ripgrep#installation
 
+## Get files
+Clone files to computer.
+
 ### Init
 
 1. Start neovim.
