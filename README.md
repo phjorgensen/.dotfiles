@@ -16,7 +16,7 @@
 ## Add new configs
 
 1. Navigate to the `stow_home` folder
-2. Run `mkdir -p {APPLICATION_NAME}/{PATH_TO_CONFIG_FROM_HOME}
+2. Run `mkdir -p {APPLICATION_NAME}/{PATH_TO_CONFIG_FROM_HOME}`
 3. Run `mv {PATH_TO_CONFIG} {PATH_TO_STOW_HOME}`
 
 ### Example
