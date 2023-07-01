@@ -3,9 +3,9 @@
 ## Prerequisites
 
 1. Install [GNU Stow](https://www.gnu.org/software/stow/)
-  - Arch: `sudo pacman -S stow`
-  - Debian: `sudo apt install stow`
-  - Fedora: `sudo dnf install stow`
+   - Arch: `sudo pacman -S stow`
+   - Debian: `sudo apt install stow`
+   - Fedora: `sudo dnf install stow`
 2. Any prerequisites of each of the configs, e.g. neovim has it's own prerequisites
 
 ## Install
