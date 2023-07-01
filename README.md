@@ -6,6 +6,7 @@
   - Arch: `sudo pacman -S stow`
   - Debian: `sudo apt install stow`
   - Fedora: `sudo dnf install stow`
+2. Any prerequisites of each of the configs, e.g. neovim has it's own prerequisites
 
 ## Install
 
@@ -26,7 +27,7 @@
 mkdir -p nvim/.config/nvim
 mv ~/.config/nvim nvim/.config
 
-# For files not in .config, ex. in $HOME
+# For files not in .config, e.g. in $HOME
 mkdir -p bash
 mv ~/.bashrc bash
 ```
