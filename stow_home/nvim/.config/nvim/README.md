@@ -7,10 +7,6 @@
 3. [Rust](https://doc.rust-lang.org/cargo/getting-started/installation.html) (for Rust LSP)
 4. [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
 
-## Get config files
-1. From the `.config` folder
-2. Run `git clone https://github.com/phjorgensen/nvim.git`
-
 ## Init
 
 1. Start neovim.
