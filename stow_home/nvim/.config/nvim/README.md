@@ -2,6 +2,7 @@
 
 ## Install
 
+- [Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim)
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
 - [NVM](https://github.com/nvm-sh/nvm) (for tsserver and eslint LSP)
 - [Rust](https://doc.rust-lang.org/cargo/getting-started/installation.html) (for Rust LSP)
