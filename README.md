@@ -38,6 +38,9 @@ mv ~/.config/nvim nvim/.config
 # For files not in .config, e.g. in $HOME
 mkdir -p bash
 mv ~/.bashrc bash
+
+# Rerun stow
+stow -vt ~ *
 ```
 
 ## References
