@@ -10,6 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="fox"
+# ZSH_THEME="essembeh"
 ZSH_THEME="random"
 
 bindkey -v
