@@ -23,6 +23,7 @@ exec --no-startup-id nm-applet
 font pango:Fira Code Retina 12px
 
 gaps inner 10
+default_border pixel 3
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
