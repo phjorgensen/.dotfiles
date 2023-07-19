@@ -9,27 +9,27 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
-        interval = 5
+    colors = true
+    interval = 5
 }
 
+order += "tztime local"
 order += "disk /"
 order += "battery all"
-order += "load"
-order += "tztime local"
+#order += "load"
 
 battery all {
-        format = "%status %percentage %remaining"
+    format = "%status %percentage ETA: %remaining"
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+    format = "Alicia <3 %Y-%m-%d %H:%M:%S"
 }
 
 load {
-        format = "%1min"
+    format = "%1min"
 }
 
 disk "/" {
-        format = "%avail"
+    format = "Storage: %avail"
 }

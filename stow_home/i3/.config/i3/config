@@ -14,13 +14,12 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 15px
+font pango:Fira Code Retina 12px
 
-# GET DEM BORDERS OUT OF HERE
-# Thanks Childz
-for_window [class="^.*"] border pixel 2
-                          # class                 border  backgr. text    indicator child_border
-for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
+gaps inner 15
+
+#exec_always nitrogen --restore
+exec nitrogen --restore
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -37,15 +36,7 @@ for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4
 floating_modifier $mod
 
 # start a terminal
-# Default i3 terminal
- bindsym $mod+Return exec i3-sensible-terminal
-# Install kitty: https://sw.kovidgoyal.net/kitty/binary/
-#bindsym $mod+Return exec kitty
-# Install alacritty: https://github.com/alacritty/alacritty/blob/master/INSTALL.md
-#bindsym $mod+Return exec alacritty
-
-# kill focused window
-# bindsym $mod+space exec "/home/theprimeagen/dotfiles/awesome-streamerrc/ThePrimeagen/tmux2"
+bindsym $mod+Return exec kitty
 
 bindsym $mod+Shift+q kill
 
@@ -204,11 +195,32 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
-        status_command i3status
-        tray_output primary
+    status_command i3status
+
+    position top
+    padding 4 px
+
+    font pango:Fira Code Retina 12
+
+    tray_output primary
+    tray_padding 10 px
+
+    separator_symbol 🍕
+
+    workspace_buttons yes
+    workspace_min_width 34 px
+
+    colors {
+        # Color palette: #DC8665 #138086 #534666 #CD7672 #EEB462
+        background #534666
+        statusline #CD7672
+        separator #EEB462
+        focused_workspace #CD7672 #CD7672 #534666
+        active_workspace #CD7672 #CD7672 #534666
+        inactive_workspace #534666 #534666 #CD7672
+        urgent_workspace #EEB462 #EEB462 #534666
+    }
 }
 
 # ------------------------------------------
@@ -237,3 +249,13 @@ bindsym $mod+m move workspace to output left
 
 # Suspend
 bindsym $mod+Shift+period exec systemctl suspend
+
+mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
+  bindsym l exec i3-msg exit
+  bindsym r exec systemctl reboot
+  bindsym s exec systemctl shutdown
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+
+bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
