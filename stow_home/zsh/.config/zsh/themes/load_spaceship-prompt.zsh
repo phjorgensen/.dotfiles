@@ -1,3 +1,4 @@
+# From: https://github.com/pascaldevink/spaceship-zsh-theme
 source $ZSH/themes/spaceship-prompt/spaceship.zsh-theme
 
 # Spaceship theme config
