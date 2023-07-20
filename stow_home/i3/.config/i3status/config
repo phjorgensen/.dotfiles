@@ -9,27 +9,29 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
+    interval = 1
     colors = true
-    interval = 5
+    color_good = '#88b090'
+    color_degraded = '#ccdc90'
+    color_bad = '#e89393'
 }
 
 order += "tztime local"
-order += "disk /"
-order += "battery all"
-#order += "load"
-
-battery all {
-    format = "%status %percentage ETA: %remaining"
-}
+order += "battery 0"
 
 tztime local {
-    format = "Alicia <3 %Y-%m-%d %H:%M:%S"
+    format = "🔸 %Y-%m-%d %H:%M:%S"
 }
 
-load {
-    format = "%1min"
+battery 0 {
+   format = "%status%percentage [%remaining/%emptytime]"
+   format_down = "No battery"
+   status_chr = "⚡"
+   status_bat = "🔋"
+   status_unk = "❓"
+   status_full = "😎"
+   #status_full = "💯"
+   path = "/sys/class/power_supply/BAT%d/uevent"
+   low_threshold = 10
 }
 
-disk "/" {
-    format = "Storage: %avail"
-}
