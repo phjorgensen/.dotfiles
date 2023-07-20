@@ -97,8 +97,8 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $ws1 "1: Personal browser"
-set $ws2 "2: Work browser"
+set $ws1 "1: Personal"
+set $ws2 "2: Work"
 set $ws3 "3: Terminal"
 set $ws4 "4: Mystery"
 set $ws5 "5: Communication"
