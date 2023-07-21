@@ -13,9 +13,10 @@
 set $mod Mod4
 set $alt Mod1
 
+include screen.conf
+include wallpaper.conf
 include bar.conf
 include remap.conf
-include wallpaper.conf
 
 exec --no-startup-id nm-applet
 
