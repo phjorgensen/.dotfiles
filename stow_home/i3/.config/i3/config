@@ -132,10 +132,12 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 
 bindsym $mod+m move workspace to output left
 
+for_window [class="firefox"] move to workspace $ws2
+#for_window [class="kitty"] move to workspace $ws3
+for_window [class="TelegramDesktop"] move to workspace $ws5
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Sign out?' -b 'Yes, exit i3' 'i3-msg exit'"
 
