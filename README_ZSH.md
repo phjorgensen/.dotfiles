@@ -6,3 +6,7 @@
 3. Change to zsh as default shell with `chsh -s $(which zsh)`
 4. Relog for the changes to take effect
 5. Install oh-my-zsh
+
+## References
+
+Followed [this](https://dev.to/hbenvenutti/using-zsh-without-omz-4gch) guide
