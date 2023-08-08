@@ -18,8 +18,10 @@
 ## Install
 
 1. Run `git clone https://phjorgensen@github.com/phjorgensen/.dotfiles.git`
-2. Run `cd .dotfiles/stow_home`
-3. Run `stow -vt ~ *`
+2. Run `git submodule init`
+3. Run `git submodule update`
+4. Run `cd .dotfiles/stow_home`
+5. Run `stow -vt ~ *`
 
 ## Add new configs
 
@@ -42,6 +44,12 @@ mv ~/.bashrc bash
 # Rerun stow
 stow -vt ~ *
 ```
+
+## Add new submodule
+
+Check [Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more info
+
+1. Run `git submodule add [-b <branch>] <url> [subfolder]`
 
 ## References
 
