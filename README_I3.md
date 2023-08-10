@@ -1,0 +1,5 @@
+# Prerequisites
+
+- Run `sudo apt install picom` for the transparancy effect.
+- Run `sudo apt install feh` for wallpapers.
+- Run `sudo apt install fonts-font-awesome` for icon font.
