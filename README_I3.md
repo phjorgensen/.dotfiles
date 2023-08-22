@@ -1,7 +1,7 @@
 # Prerequisites
 
 - Run `sudo apt-get update`
-- Run `sudo apt install i3 polybar rofi picom feh fonts-font-awesome`.
+- Run `sudo apt install i3 polybar rofi picom feh fonts-font-awesome brightnessctl pactl playerctl`.
 
 ## Uses
 - i3 is the window manager.
@@ -10,3 +10,6 @@
 - picom is a comositor for transparency effects and such things.
 - feh is for setting the wallpaper.
 - fonts-font-awesome is for icon font.
+- brightnessctl is for adjusting the screen brightness.
+- pactl is for pulse audio volume controls.
+- playerctl is for media controls.
