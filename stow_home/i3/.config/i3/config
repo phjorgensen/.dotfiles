@@ -47,7 +47,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec kitty
 
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
