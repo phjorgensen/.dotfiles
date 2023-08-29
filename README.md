@@ -7,7 +7,8 @@
    - Debian: `sudo apt-get install stow`
    - Fedora: `sudo dnf install stow`
 2. Install a Nerd Font, Fira Code for instance
-3. Any prerequisites of each of the configs, e.g. neovim has it's own prerequisites
+3. Run `sudo apt install stow git kitty thunar curl ripgrep fonts-firacode`
+4. Any prerequisites of each of the configs, e.g. neovim has it's own prerequisites
 
 ## Install Git
 
