@@ -14,7 +14,7 @@ set $mod Mod4
 set $alt Mod1
 
 include screen.conf
-include theme,conf
+include theme.conf
 include bar.conf
 include remap.conf
 
