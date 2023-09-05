@@ -46,6 +46,12 @@ Check [Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodul
 
 1. Run `git submodule add [-b <branch>] <url> [subfolder]`
 
+### Example
+
+```bash
+git submodule add https://github.com/chaconinc/DbConnector stow_home/i3/
+```
+
 ## References
 
 - [GNU Stow tutorial](https://linustechtips.com/topic/1369746-howto-backup-your-configuration-files-dotfiles-in-linux-using-stow-and-git/)
