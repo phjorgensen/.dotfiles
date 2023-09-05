@@ -1,5 +1,17 @@
 # .dotfiles
 
+## Set up OS
+
+### Xfce and i3 on Debian
+
+1. Install Debian with Xfce as desktop environment.
+2. Run `sudo apt install i3`.
+3. In the Xfce session manager
+   1. Add i3 in the autostart tab.
+   2. Set the Xfce desktop and window manager to never in the session tab (Save session).
+   3. Sign out and in again.
+   4. Remove all the hotkeys from the Xfce keyboard settings.
+
 ## Prerequisites
 
 1. Install [GNU Stow](https://www.gnu.org/software/stow/)
