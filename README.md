@@ -10,13 +10,6 @@
 3. Run `sudo apt install stow git kitty thunar curl ripgrep fonts-firacode`
 4. Any prerequisites of each of the configs, e.g. neovim has it's own prerequisites
 
-## Install Git
-
-1. Run `sudo apt-get install git`
-2. Install [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md#linux).
-3. Install [pass](https://www.passwordstore.org/).
-4. Follow the [install instructions](https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/credstores.md#gpgpass-compatible-files) for gpg.
-
 ## Install
 
 1. Run `git clone https://phjorgensen@github.com/phjorgensen/.dotfiles.git`
