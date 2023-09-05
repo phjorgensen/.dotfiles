@@ -13,8 +13,8 @@
       - Trigger must be "on login".
       - Description can be anything you want.
    3. Set the "xfdesktop" and "xfwm4" to "never" in the "Current session" tab (Remember to click "Save session").
-   4. Sign out and in again.
-   5. Remove all the hotkeys from the Xfce keyboard settings.
+4. Sign out and in again.
+5. Remove all the shortcuts from the "Application Shortcuts" tab in the Xfce "Keyboard" settings.
 
 ## Prerequisites
 
