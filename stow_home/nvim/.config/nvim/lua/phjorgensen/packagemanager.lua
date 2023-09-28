@@ -50,5 +50,6 @@ require("lazy").setup({
       {'L3MON4D3/LuaSnip'},     -- Required
     },
   },
+  'sbdchd/neoformat',
 })
 
