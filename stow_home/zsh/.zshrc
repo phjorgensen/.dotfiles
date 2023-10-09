@@ -14,6 +14,9 @@ bindkey -v
 # Theme
 source $ZSH/themes/current_theme.zsh
 
+# Config
+source $ZSH/remap.zsh
+
 # Plugins
 source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
