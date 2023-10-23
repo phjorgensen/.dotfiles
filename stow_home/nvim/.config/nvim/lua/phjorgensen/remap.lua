@@ -1,5 +1,11 @@
 vim.g.mapleader = " ";
+
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex); -- go back to Ex
+
+vim.keymap.set("n", "<C-h>", "<cmd>wincmd h<CR>", { silent = true });
+vim.keymap.set("n", "<C-j>", "<cmd>wincmd j<CR>", { silent = true });
+vim.keymap.set("n", "<C-k>", "<cmd>wincmd k<CR>", { silent = true });
+vim.keymap.set("n", "<C-l>", "<cmd>wincmd l<CR>", { silent = true });
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")   -- move selection down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")   -- move selection up
@@ -10,7 +16,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")        -- when moving halp page up, keep
 vim.keymap.set("n", "n", "nzzzv")              -- when going to next search, keep cursor in the middle of the screen
 vim.keymap.set("n", "N", "Nzzzv")              -- when going to previous search, keep cursor in the middle of the screen
 
-vim.keymap.set("n", "<leader>/", ":noh<CR>")   -- clear search highlight
+vim.keymap.set("n", "<leader>/", "<cmd>noh<CR>", { silent = true })   -- clear search highlight
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -27,8 +33,6 @@ vim.keymap.set("n", "Q", "<nop>")                    -- I don't know what Q does
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>") -- maybe add again if i add tmux at some point
 vim.keymap.set("n", "<leader>f", "<cmd>Neoformat<CR>")
 
--- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz") -- find errors? -- collides with harpoon quick links
--- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz") -- find errors? -- collides with harpoon quick links
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz") -- find errors?
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz") -- find errors?
 
