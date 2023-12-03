@@ -2,37 +2,24 @@
 
 ## Set up OS
 
-### Xfce and i3 on Debian
-
-1. Install Debian with Xfce as desktop environment.
-2. Run `sudo apt install i3`.
-3. In the Xfce "Session and startup" settings.
-   1. Add i3 in the "Application Autostart" tab.
-      - Name must be "i3", without the quotes.
-      - Command must be "i3", without the quotes.
-      - Trigger must be "on login".
-      - Description can be anything you want.
-   3. Set the "xfdesktop" and "xfwm4" to "never" in the "Current session" tab (Remember to click "Save session").
-4. Sign out and in again.
-5. Remove all the shortcuts from the "Application Shortcuts" tab in the Xfce "Keyboard" settings.
-
 ## Prerequisites
 
-1. Install [GNU Stow](https://www.gnu.org/software/stow/)
-   - Arch: `sudo pacman -S stow`
-   - Debian: `sudo apt-get install stow`
-   - Fedora: `sudo dnf install stow`
-2. Install a Nerd Font, Fira Code for instance
-3. Run `sudo apt install stow git kitty thunar curl ripgrep fonts-firacode`
-4. Any prerequisites of each of the configs, e.g. neovim has it's own prerequisites
+1. Install
+   - Arch: `sudo pacman -S stow git kitty thunar curl ripgrep gcc fonts-firacode`
+   - Debian: `sudo apt-get install stow git kitty thunar curl ripgrep gcc fonts-firacode`
+   - Fedora: `sudo dnf install stow git kitty thunar curl ripgrep gcc fonts-firacode`
+   - OpenSuse: `sudo zypper install stow git kitty thunar curl ripgrep gcc`
+2. [SSH into GitHub](./docs/SSH into GitHub.md)
+2. Any prerequisites of each of the configs, e.g. neovim has it's own prerequisites
 
 ## Install
 
 1. Run `git clone https://phjorgensen@github.com/phjorgensen/.dotfiles.git`
-2. Run `git submodule init`
-3. Run `git submodule update`
-4. Run `cd .dotfiles/stow_home`
-5. Run `stow -vt ~ *`
+2. Run `cd .dotfiles`
+3. Run `git submodule init`
+4. Run `git submodule update`
+5. Run `cd stow_home`
+6. Run `stow -vt ~ *`
 
 ## Add new configs
 
