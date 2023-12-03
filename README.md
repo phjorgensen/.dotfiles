@@ -9,7 +9,7 @@
    - Debian: `sudo apt-get install stow git kitty thunar curl ripgrep gcc fonts-firacode`
    - Fedora: `sudo dnf install stow git kitty thunar curl ripgrep gcc fonts-firacode`
    - OpenSuse: `sudo zypper install stow git kitty thunar curl ripgrep gcc`
-2. [SSH into GitHub](./docs/SSH into GitHub.md)
+2. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
 2. Any prerequisites of each of the configs, e.g. neovim has it's own prerequisites
 
 ## Install
