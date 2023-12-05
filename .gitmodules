@@ -10,6 +10,3 @@
 [submodule "stow_home/zsh/.config/zsh/plugins/zsh-completions"]
 	path = stow_home/zsh/.config/zsh/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
-[submodule "stow_home/nvim/.local/share/nvim/site/pack/packer/start/packer.nvim"]
-	path = stow_home/nvim/.local/share/nvim/site/pack/packer/start/packer.nvim
-	url = https://github.com/wbthomason/packer.nvim
