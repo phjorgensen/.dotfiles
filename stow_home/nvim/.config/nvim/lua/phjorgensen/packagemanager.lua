@@ -16,12 +16,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  "nvim-lua/plenary.nvim",
   {
-    'nvim-telescope/telescope.nvim', tag = '0.1.3',
-    dependencies = { 'nvim-lua/plenary.nvim' }
+    "nvim-telescope/telescope.nvim", tag = "0.1.3",
+    dependencies = { "nvim-lua/plenary.nvim" }
   },
   {
-    'rose-pine/neovim',
+    "rose-pine/neovim",
     lazy = false,
     priority = 1000,
     config = function()
@@ -29,28 +30,32 @@ require("lazy").setup({
     end,
   },
   {
-    'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
   },
-	'ThePrimeagen/harpoon',
-	'ThePrimeagen/vim-be-good',
-	'mbbill/undotree',
-	'tpope/vim-fugitive',
   {
-    'VonHeikemen/lsp-zero.nvim',
-    branch = 'v2.x',
+    "ThePrimeagen/harpoon",
+    branch = "master",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+	"ThePrimeagen/vim-be-good",
+	"mbbill/undotree",
+	"tpope/vim-fugitive",
+  {
+    "VonHeikemen/lsp-zero.nvim",
+    branch = "v2.x",
     dependencies = {
       -- LSP Support
-      {'neovim/nvim-lspconfig'},             -- Required
-      {'williamboman/mason.nvim'},           -- Optional
-      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+      {"neovim/nvim-lspconfig"},             -- Required
+      {"williamboman/mason.nvim"},           -- Optional
+      {"williamboman/mason-lspconfig.nvim"}, -- Optional
 
       -- Autocompletion
-      {'hrsh7th/nvim-cmp'},     -- Required
-      {'hrsh7th/cmp-nvim-lsp'}, -- Required
-      {'L3MON4D3/LuaSnip'},     -- Required
+      {"hrsh7th/nvim-cmp"},     -- Required
+      {"hrsh7th/cmp-nvim-lsp"}, -- Required
+      {"L3MON4D3/LuaSnip"},     -- Required
     },
   },
-  'sbdchd/neoformat',
+  "sbdchd/neoformat",
 })
 
