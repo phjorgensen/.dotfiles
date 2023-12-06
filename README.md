@@ -20,28 +20,6 @@
 5. Run `cd stow_home`
 6. Run `stow -vt ~ *`
 
-## Add new configs
-
-1. Navigate to the `stow_home` folder
-2. Run `mkdir -p {APPLICATION_NAME}/{PATH_TO_CONFIG_FROM_HOME}`
-3. Run `mv {PATH_TO_CONFIG} {PATH_TO_STOW_HOME_CONFIG}`
-4. Run `stow -vt ~ *`
-
-### Example
-
-```bash
-# For files in .config
-mkdir -p nvim/.config/nvim
-mv ~/.config/nvim nvim/.config
-
-# For files not in .config, e.g. in $HOME
-mkdir -p bash
-mv ~/.bashrc bash
-
-# Rerun stow
-stow -vt ~ *
-```
-
 ## Add new submodule
 
 Check [Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more info
