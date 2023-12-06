@@ -1,7 +1,8 @@
 # Prerequisites
 
 - Run `sudo apt-get update`
-- Run `sudo apt install i3 polybar rofi picom nitrogen fonts-font-awesome brightnessctl pactl playerctl`.
+- Debain: Run `sudo apt install i3 polybar rofi picom nitrogen fonts-firacode fonts-font-awesome brightnessctl pactl playerctl`.
+- OpenSuse: Run `sudo zypper in i3 i3status dmenu polybar rofi picom nitrogen fira-code-fonts fontawesome-fonts brightnessctl playerctl`.
 
 ## Uses
 - i3 is the window manager.
