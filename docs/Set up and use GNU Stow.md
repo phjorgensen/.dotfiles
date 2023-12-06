@@ -27,3 +27,7 @@ mv ~/.config/nvim nvim/.config
 mkdir -p bash
 mv ~/.bashrc bash
 ```
+
+## References
+
+- [GNU Stow tutorial](https://linustechtips.com/topic/1369746-howto-backup-your-configuration-files-dotfiles-in-linux-using-stow-and-git/)
