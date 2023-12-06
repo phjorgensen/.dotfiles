@@ -20,7 +20,7 @@ order += "tztime local"
 order += "battery 0"
 
 tztime local {
-    format = "🔸 %Y-%m-%d %H:%M:%S"
+    format = " %Y-%m-%d %H:%M:%S"
 }
 
 battery 0 {
