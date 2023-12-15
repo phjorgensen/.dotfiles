@@ -1,7 +1,15 @@
 local harpoon = require("harpoon");
 
-vim.keymap.set("n", "<leader>a", function() harpoon:list():append() end);
-vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end);
+harpoon.setup();
+
+local list = harpoon:list("default");
+
+vim.keymap.set("n", "<leader>a", function() list:append() end);
+vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(list, {
+  title_pos = "center",
+  border = "double",
+  ui_width_ratio = 0.5,
+}) end);
 
 vim.keymap.set("n", "<C-1>", function() harpoon:list():select(1) end);
 vim.keymap.set("n", "<C-2>", function() harpoon:list():select(2) end);
