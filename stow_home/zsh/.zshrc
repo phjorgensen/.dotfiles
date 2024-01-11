@@ -12,10 +12,10 @@ setopt HIST_FIND_NO_DUPS
 bindkey -v
 
 # Theme
-source $ZSH/themes/current_theme.zsh
+source $ZSH/themes/current_theme.sh
 
 # Config
-source $ZSH/remap.zsh
+source $ZSH/remap.sh
 
 # Plugins
 source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
