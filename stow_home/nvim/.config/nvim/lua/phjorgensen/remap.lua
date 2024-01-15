@@ -18,14 +18,11 @@ vim.keymap.set("n", "N", "Nzzzv")              -- when going to previous search,
 
 vim.keymap.set("n", "<leader>/", "<cmd>noh<CR>", { silent = true })   -- clear search highlight
 
--- greatest remap ever
-vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("x", "<leader>p", [["_dP]])           -- paste without replacing paste buffer
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])   -- delete to void, not to clipboard
 
--- next greatest remap ever : asbjornHaland
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])   -- copy to system clipboard
 vim.keymap.set("n", "<leader>Y", [["+Y]])            -- copy to system clipboard
-
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])   -- delete to void, not to clipboard
 
 vim.keymap.set("i", "<C-c>", "<Esc>")                -- exiting insert mode with Ctrl-c will use Esc
 
