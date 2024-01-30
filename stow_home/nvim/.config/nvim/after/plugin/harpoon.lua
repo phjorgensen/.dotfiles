@@ -2,7 +2,7 @@ local harpoon = require("harpoon");
 
 harpoon.setup();
 
-local list = harpoon:list("default");
+local list = harpoon:list();
 
 vim.keymap.set("n", "<leader>a", function() list:append() end);
 vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(list, {
