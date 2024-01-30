@@ -10,7 +10,7 @@ alias fuck="sudo !!"
 # Util
 
 alias gt="cd "
-source ~/.config/fav_paths.sh 2> /dev/null
+source ~/.config/.fav_paths.sh 2> /dev/null
 
 # Node
 alias ni="npm install --save "
