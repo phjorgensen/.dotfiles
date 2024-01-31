@@ -16,18 +16,21 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  "nvim-lua/plenary.nvim",
-  {
-    "nvim-telescope/telescope.nvim", tag = "0.1.3",
-    dependencies = { "nvim-lua/plenary.nvim" }
-  },
   {
     "rose-pine/neovim",
+    name = "rose-pine",
     lazy = false,
     priority = 1000,
     config = function()
       vim.cmd([[colorscheme rose-pine]])
+ 	    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+ 	    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
     end,
+  },
+  "nvim-lua/plenary.nvim",
+  {
+    "nvim-telescope/telescope.nvim", tag = "0.1.3",
+    dependencies = { "nvim-lua/plenary.nvim" }
   },
   {
     "nvim-treesitter/nvim-treesitter",
