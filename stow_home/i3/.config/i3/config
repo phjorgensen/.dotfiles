@@ -15,7 +15,7 @@ set $alt Mod1
 
 include screen.conf
 include theme.conf
-include bar.conf
+# include bar.conf
 include remap.conf
 include ~/.startup_apps.conf
 
@@ -154,3 +154,4 @@ exec --no-startup-id /usr/libexec/xfce-polkit
 
 #exec_always --no-startup-id nm-applet
 exec_always --no-startup-id picom -f
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
