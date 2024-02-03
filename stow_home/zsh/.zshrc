@@ -27,3 +27,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="$HOME/.adr-tools/src:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
+alias air="$(go env GOPATH)/bin/air"
