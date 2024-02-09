@@ -20,6 +20,8 @@ return {
 			options = {
 				-- section_separators = { left = "", right = "󰁎" },
 				-- component_separators = { left = ">", right = "<" },
+        -- Available themes: https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
+        -- theme = "codedark",
 				theme = {
 					normal = {
 						a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
