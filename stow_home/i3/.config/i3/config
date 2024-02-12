@@ -151,6 +151,7 @@ for_window [class="Xfce4-panel" instance="xfce4-panel"] floating enable
 exec --no-startup-id dunst
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id /usr/libexec/xfce-polkit
+exec --no-startup-id $HOME/.config/.startup_apps.conf
 
 #exec_always --no-startup-id nm-applet
 exec_always --no-startup-id picom -f
