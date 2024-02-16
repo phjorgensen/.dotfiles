@@ -9,7 +9,7 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 
 # Keybindings
-bindkey -v
+# bindkey -v
 
 # Theme
 source $ZSH/themes/current_theme.sh
