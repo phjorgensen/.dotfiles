@@ -11,17 +11,6 @@ return {
     { "L3MON4D3/LuaSnip" },
   },
   config = function()
-    vim.diagnostic.config({
-      float = {
-        focusable = false,
-        style = "minimal",
-        border = "rounded",
-        source = "always",
-        header = "",
-        prefix = "",
-      },
-    })
-
     vim.api.nvim_create_autocmd('LspAttach', {
       desc = 'LSP actions',
       callback = function(event)
@@ -86,29 +75,33 @@ return {
     })
 
     local cmp = require('cmp')
+    local cmp_select = { behavior = cmp.SelectBehavior.Select };
 
-    --local cmp_select = { behavior = cmp.SelectBehavior.Select };
     cmp.setup({
       sources = {
         { name = 'nvim_lsp' },
       },
       mapping = cmp.mapping.preset.insert({
-        --['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-        --['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-        --['<C-y>'] = cmp.mapping.confirm({ select = true }),
-        --['<Tab>'] = nil,
-        --['<S-Tab>'] = nil,
-
-        -- Enter key confirms completion item
-        ['<CR>'] = cmp.mapping.confirm({ select = false }),
-
-        -- Ctrl + space triggers completion menu
+        ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+        ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+        ['<C-y>'] = cmp.mapping.confirm({ select = true }),
         ['<C-Space>'] = cmp.mapping.complete(),
       }),
       snippet = {
         expand = function(args)
           require('luasnip').lsp_expand(args.body)
         end,
+      },
+    })
+
+    vim.diagnostic.config({
+      float = {
+        focusable = false,
+        style = "minimal",
+        border = "rounded",
+        source = "always",
+        header = "",
+        prefix = "",
       },
     })
   end,
