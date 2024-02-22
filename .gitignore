@@ -1,3 +1,5 @@
 stow_home/nvim/.config/nvim/plugin
 stow_home/qtile/.config/qtile/__pycache__
 stow_home/zsh/.config/zsh/.zsh_history
+stow_home/tmux/.config/tmux/plugins/*
+!stow_home/tmux/.config/tmux/plugins/tpm
