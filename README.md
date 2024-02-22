@@ -19,15 +19,3 @@
 4. Run `git submodule update`
 5. Run `cd stow_home`
 6. Run `stow -vt ~ *`
-
-## Add new submodule
-
-Check [Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more info
-
-1. Run `git submodule add [-b <branch>] <url> [subfolder]`
-
-### Example
-
-```bash
-git submodule add https://github.com/chaconinc/DbConnector stow_home/i3/
-```
