@@ -4,5 +4,4 @@ return {
     "sbdchd/neoformat",
     "mbbill/undotree",
     "ThePrimeagen/vim-be-good",
-    "tpope/vim-fugitive",
 }
