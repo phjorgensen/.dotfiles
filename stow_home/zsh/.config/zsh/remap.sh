@@ -23,6 +23,9 @@ alias yr="yarn remove "
 alias myip="curl http://ipecho.net/plain; echo"
 alias srcconf="source ~/.zshrc"
 
+# Open lazygit
+alias lg="lazygit"
+
 mkcd() {
     mkdir -p $1 && cd $1
 }
