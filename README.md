@@ -5,11 +5,12 @@
 ## Prerequisites
 
 1. Install
-   - Arch: `sudo pacman -S stow git kitty thunar curl ripgrep gcc`
-   - Debian: `sudo apt-get install stow git kitty thunar curl ripgrep gcc`
-   - Fedora: `sudo dnf install stow git kitty thunar curl ripgrep gcc`
-   - OpenSuse: `sudo zypper install stow git kitty thunar curl ripgrep gcc`
-2. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
+   - Arch: `sudo pacman -S stow git kitty thunar curl ripgrep gcc tmux`
+   - Debian: `sudo apt-get install stow git kitty thunar curl ripgrep gcc tmux`
+   - Fedora: `sudo dnf install stow git kitty thunar curl ripgrep gcc tmux`
+   - OpenSuse: `sudo zypper install stow git kitty thunar curl ripgrep gcc tmux`
+2. Install [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
+3. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
 
 ## Install
 
