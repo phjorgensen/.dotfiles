@@ -10,7 +10,8 @@
    - Fedora: `sudo dnf install stow git kitty thunar curl ripgrep gcc tmux`
    - OpenSuse: `sudo zypper install stow git kitty thunar curl ripgrep gcc tmux`
 2. Install [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
-3. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
+3. [Set up tmux](docs/Set%20up%20tmux.md)
+4. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
 
 ## Install
 
