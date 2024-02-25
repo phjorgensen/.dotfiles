@@ -5,10 +5,10 @@
 ## Prerequisites
 
 1. Install
-   - Arch: `sudo pacman -S stow git kitty thunar curl ripgrep gcc tmux`
-   - Debian: `sudo apt-get install stow git kitty thunar curl ripgrep gcc tmux`
-   - Fedora: `sudo dnf install stow git kitty thunar curl ripgrep gcc tmux`
-   - OpenSuse: `sudo zypper install stow git kitty thunar curl ripgrep gcc tmux`
+   - Arch: `sudo pacman -S stow git kitty thunar curl ripgrep gcc tmux nomacs`
+   - Debian: `sudo apt-get install stow git kitty thunar curl ripgrep gcc tmux nomacs`
+   - Fedora: `sudo dnf install stow git kitty thunar curl ripgrep gcc tmux nomacs`
+   - OpenSuse: `sudo zypper install stow git kitty thunar curl ripgrep gcc tmux nomacs`
 2. Install [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
 3. [Set up tmux](docs/Set%20up%20tmux.md)
 4. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
