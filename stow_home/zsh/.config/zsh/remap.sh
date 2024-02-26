@@ -8,7 +8,8 @@ alias snvim="sudo nvim"
 alias fuck="sudo !!"
 
 # Util
-source ~/.config/.fav_paths.sh 2> /dev/null
+source ~/.config/fav_paths_shared.sh 2> /dev/null
+source ~/.config/fav_paths_local.sh 2> /dev/null
 
 # Node
 alias ni="npm install --save "
