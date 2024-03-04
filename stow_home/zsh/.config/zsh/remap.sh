@@ -25,7 +25,8 @@ alias myip="curl http://ipecho.net/plain; echo"
 alias srcconf="source ~/.zshrc"
 
 # Open lazygit
-alias lg="lazygit"
+alias lgit="lazygit"
+alias ldocker="lazydocker"
 
 mkcd() {
     mkdir -p $1 && cd $1
