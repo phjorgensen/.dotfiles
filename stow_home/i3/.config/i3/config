@@ -43,7 +43,7 @@ hide_edge_borders smart
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id wezterm
 
 # start a browser
 bindsym $mod+Shift+Return exec --no-startup-id firefox
