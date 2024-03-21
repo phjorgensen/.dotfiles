@@ -9,9 +9,11 @@
    - Debian: `sudo apt-get install stow git kitty thunar curl ripgrep gcc tmux nomacs`
    - Fedora: `sudo dnf install stow git kitty thunar curl ripgrep gcc tmux nomacs`
    - OpenSuse: `sudo zypper install stow git kitty wezterm thunar curl ripgrep gcc tmux nomacs`
-2. Install [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
-3. [Set up tmux](docs/Set%20up%20tmux.md)
-4. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
+2. Install [wezterm](https://wezfurlong.org/wezterm/install/linux.html)
+   - OpenSUSE has a package in zypper, it's added in the list of installs above.
+3. Install [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
+4. [Set up tmux](docs/Set%20up%20tmux.md)
+5. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
 
 ## Install
 
