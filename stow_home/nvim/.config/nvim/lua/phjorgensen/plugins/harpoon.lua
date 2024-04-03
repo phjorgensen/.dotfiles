@@ -29,7 +29,7 @@ return {
 
     harpoon.setup();
 
-    vim.keymap.set("n", "<leader>a", function() harpoon:list():append() end);
+    vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end);
 
     -- vim.keymap.set("n", "<C-e>", function()
     --   toggle_telescope(harpoon:list());
@@ -53,5 +53,9 @@ return {
     vim.keymap.set("n", "<C-8>", function() harpoon:list():select(8) end);
     vim.keymap.set("n", "<C-9>", function() harpoon:list():select(9) end);
     vim.keymap.set("n", "<C-0>", function() harpoon:list():select(10) end);
+
+    -- Toggle previous & next buffers stored within Harpoon list
+    vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
+    vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
   end,
 }
