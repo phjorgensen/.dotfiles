@@ -20,7 +20,7 @@ return {
         vim.keymap.set("n", "<leader>dn", function() vim.diagnostic.goto_next() end, opts)
 
         vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
-        vim.keymap.set({ 'n', 'i' }, '<C-h>', function() vim.lsp.buf.signature_help() end, opts);
+        vim.keymap.set({ 'n', 'i' }, '<leader><C-h>', function() vim.lsp.buf.signature_help() end, opts);
         vim.keymap.set('n', '<leader>gd', function() vim.lsp.buf.definition() end, opts)
         vim.keymap.set('n', '<leader>gD', function() vim.lsp.buf.declaration() end, opts)
         vim.keymap.set('n', '<leader>gi', function() vim.lsp.buf.implementation() end, opts)
