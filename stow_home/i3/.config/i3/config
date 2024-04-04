@@ -154,5 +154,5 @@ exec --no-startup-id /usr/libexec/xfce-polkit
 exec --no-startup-id $HOME/.config/.startup_apps.conf
 
 #exec_always --no-startup-id nm-applet
-#exec_always --no-startup-id picom -f
+exec_always --no-startup-id picom -f
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
