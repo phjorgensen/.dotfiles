@@ -2,7 +2,7 @@
   "LuaSnip": { "branch": "master", "commit": "825a61bad1d60d917a7962d73cf3c683f4e0407e" },
   "catppuccin-mocha": { "branch": "main", "commit": "aebe43db9cb26e1c70fc5b2fd4158169c405e720" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
-  "harpoon": { "branch": "harpoon2", "commit": "4ad05be8fe98092f0dec3bc3b47abebb59c3814a" },
+  "harpoon": { "branch": "harpoon2", "commit": "2e25a13fa4c0ada39ce3ecfd5f75d61b896d3306" },
   "lazy.nvim": { "branch": "main", "commit": "31ddbea7c10b6920c9077b66c97951ca8682d5c8" },
   "lualine.nvim": { "branch": "master", "commit": "b5e8bb642138f787a2c1c5aedc2a78cb2cebbd67" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "9dfcf2036c223920826140f0151d929a43f9eceb" },
