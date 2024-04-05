@@ -12,8 +12,9 @@
 2. Install [wezterm](https://wezfurlong.org/wezterm/install/linux.html)
    - OpenSUSE has a package in zypper, it's added in the list of installs above.
 3. Install [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
-4. [Set up tmux](docs/Set%20up%20tmux.md)
-5. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
+4. Install [btop](https://github.com/aristocratos/btop?tab=readme-ov-file#installation)
+5. [Set up tmux](docs/Set%20up%20tmux.md)
+6. [SSH into GitHub](docs/SSH%20into%20GitHub.md)
 
 ## Install
 
