@@ -5,7 +5,8 @@ alias svi="sudo nvim"
 alias svim="sudo nvim"
 alias snvim="sudo nvim"
 
-alias fuck="sudo !!"
+# Has to be single quotes.
+alias fuck='sudo $(fc -ln -1)'
 
 # Util
 source ~/.config/fav_paths_shared.sh 2> /dev/null
