@@ -1,15 +1,15 @@
 # Set up fonts
 
-## Install Nerd Fonts
+## Install the fonts
 
 - Download [Mononoki](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Mononoki.zip)
+  - Add the `.ttf` files to `~/.local/share/fonts`
 - Download [FiraCode](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip)
-- Add the `.ttf` files to `~/.local/share/fonts`
-
-## Install Monaspace
-
+  - Add the `.ttf` files to `~/.local/share/fonts`
 - Download [Monaspace](https://github.com/githubnext/monaspace)
-- Add the `.otf` files to `~/.local/share/fonts`
+  - Add the `.otf` files to `~/.local/share/fonts`
+- Download [Pixel Code](https://github.com/qwerasd205/PixelCode)
+  - Add the `.otf` files to `~/.local/share/fonts`
 
 ### Fixes for Kitty
 
