@@ -7,17 +7,22 @@ return {
     config = function()
         local harpoon = require("harpoon");
 
-        harpoon.setup();
+        harpoon.setup({
+            settings = {
+                save_on_toggle = true,
+                sync_on_ui_close = true,
+            },
+        });
 
         vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end);
-        vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end);
-        --  vim.keymap.set("n", "<C-e>", function()
-        --    harpoon.ui:toggle_quick_menu(harpoon:list(), {
-        --      title_pos = "center",
-        --      border = "double",
-        --      ui_width_ratio = 0.5,
-        --    })
-        --  end);
+
+        vim.keymap.set("n", "<C-e>", function()
+            harpoon.ui:toggle_quick_menu(harpoon:list(), {
+                border = "rounded",
+                title_pos = "center",
+                ui_width_ratio = 0.40,
+            })
+        end);
 
         vim.keymap.set("n", "<C-1>", function() harpoon:list().select(1) end);
         vim.keymap.set("n", "<C-2>", function() harpoon:list().select(2) end);
