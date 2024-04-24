@@ -7,12 +7,7 @@ return {
     config = function()
         local harpoon = require("harpoon");
 
-        harpoon.setup({
-            settings = {
-                save_on_toggle = true,
-                sync_on_ui_close = true,
-            },
-        });
+        harpoon.setup();
 
         vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end);
 
