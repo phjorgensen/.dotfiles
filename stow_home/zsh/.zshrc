@@ -11,8 +11,7 @@ setopt HIST_FIND_NO_DUPS
 # Keybindings
 # bindkey -v
 
-# Theme
-source $ZSH/themes/current_theme.sh
+eval "$(starship init zsh)"
 
 # Config
 source $ZSH/remap.sh
