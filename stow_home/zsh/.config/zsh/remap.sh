@@ -16,10 +16,12 @@ source ~/.config/fav_paths_local.sh 2> /dev/null
 alias ni="npm install --save "
 alias nid="npm install --save -D "
 alias nr="npm remove "
-
-alias yi="yarn add "
-alias yid="yarn add -D "
-alias yr="yarn remove "
+alias dev="npm run dev"
+alias build="npm run build"
+alias lint="npm run lint"
+alias typecheck="npm run check-types"
+alias sveltecheck="npm run svelte-check"
+alias test="npm run test"
 
 # Util
 alias myip="curl http://ipecho.net/plain; echo"
