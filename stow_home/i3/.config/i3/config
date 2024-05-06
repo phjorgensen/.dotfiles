@@ -44,7 +44,7 @@ hide_edge_borders smart
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id WEZTERM_LOG=debug wezterm start -- tmux
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # start a browser
 bindsym $mod+Shift+Return exec --no-startup-id firefox
