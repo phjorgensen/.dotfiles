@@ -44,7 +44,7 @@ return {
     require('mason').setup({})
     require('mason-lspconfig').setup({
       ensure_installed = {
-        "tsserver",
+        "vtsls",
         "eslint",
         "lua_ls",
         "rust_analyzer",
@@ -68,6 +68,31 @@ return {
                   }
                 }
               }
+            }
+          })
+        end,
+        vtsls = function()
+          require('lspconfig').vtsls.setup({
+            capabilities = lsp_capabilities,
+            settings = {
+                javascript = {
+                    preferences = {
+                        useAliasesForRenames = false,
+                        importModuleSpecifier = 'non-relative',
+                    },
+                    suggestionActions = {
+                        enabled = false,
+                    },
+                },
+                typescript = {
+                    preferences = {
+                        useAliasesForRenames = false,
+                        importModuleSpecifier = 'non-relative',
+                    },
+                    suggestionActions = {
+                        enabled = false,
+                    },
+                }
             }
           })
         end,
