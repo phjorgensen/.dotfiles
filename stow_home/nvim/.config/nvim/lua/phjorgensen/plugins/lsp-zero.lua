@@ -31,12 +31,11 @@ return {
         vim.keymap.set('n', '<leader>va', function() vim.lsp.buf.code_action() end, opts);
 
         vim.keymap.set({ 'n', 'x' }, '<leader>f', function()
-          vim.lsp.buf.format({ async = true })
-          vim.cmd("w");
-        end, opts)
+          vim.lsp.buf.format()
+        end)
 
         vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-          pattern = { "*.*" },
+          pattern = { "*" },
           callback = function()
             vim.lsp.buf.format()
           end,
