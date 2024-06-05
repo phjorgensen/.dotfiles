@@ -25,9 +25,8 @@ return {
                 vim.keymap.set('n', '<leader>gD', function() vim.lsp.buf.declaration() end, opts)
                 vim.keymap.set('n', '<leader>gi', function() vim.lsp.buf.implementation() end, opts)
                 vim.keymap.set('n', '<leader>go', function() vim.lsp.buf.type_definition() end, opts)
-                vim.keymap.set('n', '<leader>vr', function() vim.lsp.buf.references() end, opts);
+                vim.keymap.set('n', '<leader>lr', function() vim.lsp.buf.references() end, opts);
                 vim.keymap.set('n', '<leader>vrn', function() vim.lsp.buf.rename() end, opts);
-                vim.keymap.set({ 'n', 'x' }, '<leader>f', function() vim.lsp.buf.format({ async = true }) end, opts)
                 vim.keymap.set('n', '<leader>vws', function() vim.lsp.buf.workspace_symbol() end, opts);
                 vim.keymap.set('n', '<leader>va', function() vim.lsp.buf.code_action() end, opts);
 
