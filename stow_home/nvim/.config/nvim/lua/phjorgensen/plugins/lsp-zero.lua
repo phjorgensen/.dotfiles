@@ -29,17 +29,6 @@ return {
         vim.keymap.set('n', '<leader>vrn', function() vim.lsp.buf.rename() end, opts);
         vim.keymap.set('n', '<leader>vws', function() vim.lsp.buf.workspace_symbol() end, opts);
         vim.keymap.set('n', '<leader>va', function() vim.lsp.buf.code_action() end, opts);
-
-        vim.keymap.set({ 'n', 'x' }, '<leader>f', function()
-          vim.lsp.buf.format()
-        end)
-
-        vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-          pattern = { "*" },
-          callback = function()
-            vim.lsp.buf.format()
-          end,
-        })
       end
     })
 
