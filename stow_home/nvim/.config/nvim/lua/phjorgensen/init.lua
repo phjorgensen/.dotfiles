@@ -1,3 +1,3 @@
-require("phjorgensen.remap");
-require("phjorgensen.set");
-require("phjorgensen.packagemanager");
+require("phjorgensen.remap")
+require("phjorgensen.set")
+require("phjorgensen.packagemanager")

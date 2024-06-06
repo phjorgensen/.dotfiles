@@ -11,37 +11,61 @@ return {
     { "L3MON4D3/LuaSnip" },
   },
   config = function()
-    vim.api.nvim_create_autocmd('LspAttach', {
-      desc = 'LSP actions',
+    vim.api.nvim_create_autocmd("LspAttach", {
+      desc = "LSP actions",
       callback = function(event)
         local opts = { buffer = event.buf }
-        vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
-        vim.keymap.set("n", "<leader>dp", function() vim.diagnostic.goto_prev() end, opts)
-        vim.keymap.set("n", "<leader>dn", function() vim.diagnostic.goto_next() end, opts)
+        vim.keymap.set("n", "<leader>vd", function()
+          vim.diagnostic.open_float()
+        end, opts)
+        vim.keymap.set("n", "<leader>dp", function()
+          vim.diagnostic.goto_prev()
+        end, opts)
+        vim.keymap.set("n", "<leader>dn", function()
+          vim.diagnostic.goto_next()
+        end, opts)
 
-        vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
+        vim.keymap.set("n", "K", function()
+          vim.lsp.buf.hover()
+        end, opts)
         -- vim.keymap.set({ 'n', 'i' }, '<C-h>', function() vim.lsp.buf.signature_help() end, opts); -- Collides with vim-tmux-navigator
-        vim.keymap.set('n', '<leader>gd', function() vim.lsp.buf.definition() end, opts)
-        vim.keymap.set('n', '<leader>gD', function() vim.lsp.buf.declaration() end, opts)
-        vim.keymap.set('n', '<leader>gi', function() vim.lsp.buf.implementation() end, opts)
-        vim.keymap.set('n', '<leader>go', function() vim.lsp.buf.type_definition() end, opts)
-        vim.keymap.set('n', '<leader>lr', function() vim.lsp.buf.references() end, opts);
-        vim.keymap.set('n', '<leader>vrn', function() vim.lsp.buf.rename() end, opts);
-        vim.keymap.set('n', '<leader>vws', function() vim.lsp.buf.workspace_symbol() end, opts);
-        vim.keymap.set('n', '<leader>va', function() vim.lsp.buf.code_action() end, opts);
-      end
+        vim.keymap.set("n", "<leader>gd", function()
+          vim.lsp.buf.definition()
+        end, opts)
+        vim.keymap.set("n", "<leader>gD", function()
+          vim.lsp.buf.declaration()
+        end, opts)
+        vim.keymap.set("n", "<leader>gi", function()
+          vim.lsp.buf.implementation()
+        end, opts)
+        vim.keymap.set("n", "<leader>go", function()
+          vim.lsp.buf.type_definition()
+        end, opts)
+        vim.keymap.set("n", "<leader>lr", function()
+          vim.lsp.buf.references()
+        end, opts)
+        vim.keymap.set("n", "<leader>vrn", function()
+          vim.lsp.buf.rename()
+        end, opts)
+        vim.keymap.set("n", "<leader>vws", function()
+          vim.lsp.buf.workspace_symbol()
+        end, opts)
+        vim.keymap.set("n", "<leader>va", function()
+          vim.lsp.buf.code_action()
+        end, opts)
+      end,
     })
 
-    local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
+    local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
     local default_setup = function(server_name)
-      require('lspconfig')[server_name].setup({
+      require("lspconfig")[server_name].setup({
         capabilities = lsp_capabilities,
       })
     end
 
-    require('mason').setup({})
-    require('mason-lspconfig').setup({
+    require("mason").setup({})
+    require("mason-lspconfig").setup({
       ensure_installed = {
         "vtsls",
         "eslint",
@@ -51,33 +75,33 @@ return {
       handlers = {
         default_setup,
         lua_ls = function()
-          require('lspconfig').lua_ls.setup({
+          require("lspconfig").lua_ls.setup({
             capabilities = lsp_capabilities,
             settings = {
               Lua = {
                 runtime = {
-                  version = 'LuaJIT'
+                  version = "LuaJIT",
                 },
                 diagnostics = {
-                  globals = { 'vim' },
+                  globals = { "vim" },
                 },
                 workspace = {
                   library = {
                     vim.env.VIMRUNTIME,
-                  }
-                }
-              }
-            }
+                  },
+                },
+              },
+            },
           })
         end,
         vtsls = function()
-          require('lspconfig').vtsls.setup({
+          require("lspconfig").vtsls.setup({
             capabilities = lsp_capabilities,
             settings = {
               javascript = {
                 preferences = {
                   useAliasesForRenames = false,
-                  importModuleSpecifier = 'non-relative',
+                  importModuleSpecifier = "non-relative",
                 },
                 suggestionActions = {
                   enabled = false,
@@ -86,34 +110,34 @@ return {
               typescript = {
                 preferences = {
                   useAliasesForRenames = false,
-                  importModuleSpecifier = 'non-relative',
+                  importModuleSpecifier = "non-relative",
                 },
                 suggestionActions = {
                   enabled = false,
                 },
-              }
-            }
+              },
+            },
           })
         end,
       },
     })
 
-    local cmp = require('cmp')
-    local cmp_select = { behavior = cmp.SelectBehavior.Select };
+    local cmp = require("cmp")
+    local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
     cmp.setup({
       sources = {
-        { name = 'nvim_lsp' },
+        { name = "nvim_lsp" },
       },
       mapping = cmp.mapping.preset.insert({
-        ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-        ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-        ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-        ['<C-Space>'] = cmp.mapping.complete(),
+        ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
+        ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+        ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+        ["<C-Space>"] = cmp.mapping.complete(),
       }),
       snippet = {
         expand = function(args)
-          require('luasnip').lsp_expand(args.body)
+          require("luasnip").lsp_expand(args.body)
         end,
       },
     })

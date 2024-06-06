@@ -1,6 +1,6 @@
 return {
   "ThePrimeagen/vim-be-good",
   dependencies = {
-    "nvim-lua/plenary.nvim"
+    "nvim-lua/plenary.nvim",
   },
 }

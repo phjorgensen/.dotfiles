@@ -5,7 +5,20 @@ return {
     local configs = require("nvim-treesitter.configs")
 
     configs.setup({
-      ensure_installed = { "http", "json", "rust", "go", "html", "css", "scss", "typescript", "javascript", "svelte", "c", "lua" },
+      ensure_installed = {
+        "http",
+        "json",
+        "rust",
+        "go",
+        "html",
+        "css",
+        "scss",
+        "typescript",
+        "javascript",
+        "svelte",
+        "c",
+        "lua",
+      },
       sync_install = false,
       auto_install = true,
       highlight = {
@@ -13,5 +26,5 @@ return {
         additional_vim_regex_highlighting = false,
       },
     })
-  end
+  end,
 }
