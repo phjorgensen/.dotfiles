@@ -9,6 +9,7 @@
 - [Rust](https://doc.rust-lang.org/cargo/getting-started/installation.html) (for Rust LSP)
 - [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
 - [fd](https://github.com/sharkdp/fd#installation)
+- [StyLua](https://github.com/JohnnyMorganz/StyLua?tab=readme-ov-file#installation)
 
 ## Init
 
