@@ -8,9 +8,16 @@ alias snvim="sudo nvim"
 # Has to be single quotes.
 alias fuck='sudo $(fc -ln -1)'
 
+alias ll="ls -l"
+alias la="ls -a"
+alias switch="sudo nixos-rebuild switch"
+alias configure="sudo nvim /etc/nixos/configuration.nix"
+
 # Util
 source ~/.config/fav_paths_shared.sh 2> /dev/null
 source ~/.config/fav_paths_local.sh 2> /dev/null
+alias myip="curl http://ipecho.net/plain; echo"
+alias srcconf="source ~/.zshrc"
 
 # Node
 alias ni="npm install --save "
@@ -23,15 +30,11 @@ alias typecheck="npm run check-types"
 alias sveltecheck="npm run svelte-check"
 alias test="npm run test"
 
-# Util
-alias myip="curl http://ipecho.net/plain; echo"
-alias srcconf="source ~/.zshrc"
-
-# Open lazygit
+# Open lazy
 alias lgit="lazygit"
 alias ldocker="lazydocker"
 
 mkcd() {
-    mkdir -p $1 && cd $1
+  mkdir -p $1 && cd $1
 }
 
