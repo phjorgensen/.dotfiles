@@ -10,8 +10,8 @@ alias fuck='sudo $(fc -ln -1)'
 
 alias ll="ls -l"
 alias la="ls -a"
-alias switch="sudo nixos-rebuild switch"
-alias configure="sudo nvim /etc/nixos/configuration.nix"
+alias switch="sudo nixos-rebuild switch --flake ~/Projects/.dotfiles/nix/#default"
+alias configure="nvim ~/Projects/.dotfiles/nix"
 
 # Util
 source ~/.config/fav_paths_shared.sh 2> /dev/null
