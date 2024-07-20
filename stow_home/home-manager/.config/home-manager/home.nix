@@ -17,8 +17,8 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
-    pkgs.nerdfonts
+  home.packages = with pkgs; [
+    nerdfonts
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -44,6 +44,8 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+    ".zshrc".source = ~/Projects/.dotfiles/stow_home/zsh/.zshrc;
+    ".config/nvim/init.lua".source = ~/Projects/.dotfiles/stow_home/nvim/.config/nvim/init.lua;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
@@ -73,5 +75,69 @@
   };
 
   # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  programs = {
+    home-manager.enable = true;
+    git = {
+      enable = true;
+      userName = "Per";
+      userEmail = "phjorgensenn@gmail.com";
+	    includes = [
+        { path = "~/.gitlocalconfig"; }
+      ];
+      extraConfig = {
+        pull.ff = "only";
+      };
+    };
+    # zsh = {
+    #   enable = true;
+    #   enableCompletion = true;
+    #   autosuggestion.enable = true;
+    #   syntaxHighlighting.enable = true;
+
+    #   shellAliases = {
+    #     ll = "ls -l";
+    #     switch = "sudo nixos-rebuild switch";
+    #   };
+
+    #   history = {
+    #     size = 10000;
+    #     save = 10000;
+    #     path = "$HOME/.config/zsh/.zsh_history";
+    #     ignoreAllDups = true;
+    #     expireDuplicatesFirst = true;
+    #   };
+
+    #   initExtra = ''
+    #     export ZSH=$HOME/.config/zsh
+
+    #     source $ZSH/remap.sh
+
+    #     eval "$(starship init zsh)"
+
+    #     export NVM_DIR="$HOME/.nvm"
+    #     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    #     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+    #     export PATH="$HOME/.adr-tools/src:$PATH"
+    #     export PATH="/usr/local/go/bin:$PATH"
+
+    #     { alias air="$(go env GOPATH)/bin/air"; } 2>/dev/null
+
+    #     export JAVA_HOME=/usr/local/android-studio/jbr 2> /dev/null
+    #     export ANDROID_HOME="$HOME/Android/Sdk" 2> /dev/null
+    #     export NDK_HOME="$ANDROID_HOME/ndk/26.2.11394342" 2> /dev/null
+
+    #     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+    #   '';
+
+    #   zplug = {
+    #     enable = true;
+    #     plugins = [
+    #       { name = "zsh-users/zsh-syntax-highlighting"; }
+    #       { name = "zsh-users/zsh-autosuggestions"; }
+    #       { name = "zsh-users/zsh-completions"; }
+    #     ];
+    #   };
+    # };
+  };
 }
