@@ -7,7 +7,8 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
+      ./main-user.nix
     ];
 
   # Bootloader.
@@ -16,6 +17,26 @@
   boot.loader.grub.useOSProber = true;
 
   networking.hostName = "perCode"; # Define your hostname.
+
+  nix = {
+    settings = {
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
+    };
+    optimise = {
+      automatic = true;
+    };
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 30d";
+    };
+  };
+
+  system.autoUpgrade.enable = true;
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -24,6 +45,20 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Enable audio
+  sound.enable = true;
+  hardware.pulseaudio.enable = true;
+  # hardware.pulseaudio.enable = false;
+  # security.rtkit.enable = true;
+  # services.pipewire = {
+  #   enable = true;
+  #   alsa = {
+  #     enable = true;
+  #     support32Bit = true;
+  #   };
+  #   pulse.enable = true;
+  # };
 
   # Set your time zone.
   time.timeZone = "Europe/Oslo";
@@ -71,17 +106,7 @@
   # Configure console keymap
   console.keyMap = "no";
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users = {
-    defaultUserShell = pkgs.zsh;
-    users.phj = {
-      isNormalUser = true;
-      description = "Per";
-      useDefaultShell = true;
-      extraGroups = [ "networkmanager" "wheel" ];
-      packages = with pkgs; [];
-    };
-  };
+  users.defaultUserShell = pkgs.zsh;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -94,6 +119,8 @@
     ripgrep
     fd
     unzip
+    bluez
+    bluez-alsa
 
     git
     stow
@@ -115,6 +142,7 @@
     starship
     spice-vdagent
     nitrogen
+    pavucontrol
   ];
 
   programs = {
@@ -125,23 +153,6 @@
       enable = true;
       vimAlias = true;
       viAlias = true;
-    };
-  };
-
-  nix = {
-    settings = {
-      experimental-features = [
-        "nix-command"
-	"flakes"
-      ];
-    };
-    optimise = {
-      automatic = true;
-    };
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
     };
   };
 
@@ -163,8 +174,6 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
-
-  system.autoUpgrade.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
