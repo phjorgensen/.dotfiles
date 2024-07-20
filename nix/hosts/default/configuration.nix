@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      /etc/nixos/hardware-configuration.nix
+      ./hardware-configuration.nix
       ./main-user.nix
     ];
 
@@ -15,6 +15,7 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
+  boot.loader.grub.configurationLimit = 15;
 
   networking.hostName = "perCode"; # Define your hostname.
 
