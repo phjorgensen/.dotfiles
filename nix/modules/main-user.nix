@@ -1,5 +1,4 @@
 { pkgs, ... }:
-
 {
   users.users.phj = {
     isNormalUser = true;

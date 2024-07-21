@@ -27,13 +27,29 @@
     nixosConfigurations = {
       # Add more configs, tut at youtube vid (13:40)
       # https://www.youtube.com/watch?v=a67Sv4Mbxmc
-      default = nixpkgs.lib.nixosSystem {
+      # default = nixpkgs.lib.nixosSystem {
+      #   specialArgs = { inherit inputs; };
+      #   modules = [
+      #     ./hosts/default/configuration.nix
+      #     # inputs.home-manager.nixosModules.default
+      #   ];
+      # };
+
+      vm1 = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
-          ./hosts/default/configuration.nix
+          ./hosts/vm1/configuration.nix
           # inputs.home-manager.nixosModules.default
         ];
       };
+
+      # vm2 = nixpkgs.lib.nixosSystem {
+      #   specialArgs = { inherit inputs; };
+      #   modules = [
+      #     ./hosts/vm2/configuration.nix
+      #     # inputs.home-manager.nixosModules.default
+      #   ];
+      # };
     };
   };
 }
