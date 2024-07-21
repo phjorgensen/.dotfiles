@@ -36,8 +36,6 @@
     };
   };
 
-  system.autoUpgrade.enable = true;
-
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -120,8 +118,6 @@
     ripgrep
     fd
     unzip
-    bluez
-    bluez-alsa
 
     git
     stow
@@ -129,6 +125,8 @@
     gcc
     nodejs
     rustup
+    stylua
+    nodePackages.prettier
     tmux
     wezterm
     st
