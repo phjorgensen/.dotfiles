@@ -43,13 +43,13 @@
         ];
       };
 
-      # vm2 = nixpkgs.lib.nixosSystem {
-      #   specialArgs = { inherit inputs; };
-      #   modules = [
-      #     ./hosts/vm2/configuration.nix
-      #     # inputs.home-manager.nixosModules.default
-      #   ];
-      # };
+      vm2 = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hosts/vm2/configuration.nix
+          # inputs.home-manager.nixosModules.default
+        ];
+      };
     };
   };
 }
