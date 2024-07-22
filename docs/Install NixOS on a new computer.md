@@ -17,6 +17,8 @@
 13. Add a new entry in `nixosConfigurations` in `flake.nix` that imports the new configuration.
 14. From `~/Projects/.dotfiles`, run `git add .`.
 15. Run `sudo nixos-rebuild switch --flake ~/Project/.dotfiles/nix/#{new_host}`.
+16. Start tmux, install TPM packages by pressing `<prefix> + I`.
+17. Start neovim, Lazy packages are installed automatically.
 
 ## Future improvements
 
@@ -26,3 +28,7 @@
 - Try to rebuild the system from a remote flake?
   - Try to create a new repo with just the flake and do `--flake github:phjorgensen/nix-config`.
   - Or find a way to reference a subfolder of the .dotfiles repo.
+- Find a good way to authenticate to GitHub.
+  - This should be one of the steps of the installation. I can clone the repo, but not push to it.
+  - Path of least resistance, I can just add an SSH key. But it's a hassle.
+  - Maybe I can get `git-credential-oauth` to work? If not, maybe check out Git Credential Manager again?
