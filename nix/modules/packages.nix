@@ -13,6 +13,7 @@
     unzip
 
     git
+    git-credential-oauth
     stow
 
     gcc
