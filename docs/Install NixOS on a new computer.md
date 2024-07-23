@@ -1,24 +1,37 @@
 # Install NixOS on a new computer
 
+Generate new hardware-config if missing: ´sudo nixos-generate-config --root /mnt´.
+
 ## Steps
 
-1. Install NixOS from a USB stick.
+### 1. Get the repo and stow configs
+
+1. Install NixOS from a live installation medium.
 2. Run `sudoedit /etc/nixos/configuration.nix`.
-3. Add `git`, `neovim`, and `stow` in packages.
+3. Add `git` in packages.
 4. Run `sudo nixos-rebuild switch` to install git.
 5. Run `mkdir ~/Projects && cd ~/Projects`.
 6. Run `git clone https://github.com/phjorgensen/.dotfiles.git`.
 7. Run `cd .dotfiles && git submodules init && git submodules update`.
 8. Run `cd ~/Projects/.dotfiles/stow_home && stow -vt ~ *`.
-9. Run `cd ~/Projects/.dotfiles/nix/hosts`.
-10. Run `cp -a {base_host} {new_host}` where `base_host` is the host to create the new host from, and `new_host` is the name of the new host.
-11. Run `cd {new_host} && rm hardware-configuration.nix`.
-12. Run `sudo cp /etc/nixos/hardware-configuration.nix ~/Projects/.dotfiles/nix/hosts/{new_host}`.
-13. Add a new entry in `nixosConfigurations` in `flake.nix` that imports the new configuration.
-14. From `~/Projects/.dotfiles`, run `git add .`.
-15. Run `sudo nixos-rebuild switch --flake ~/Project/.dotfiles/nix/#{new_host}`.
-16. Start tmux, install TPM packages by pressing `<prefix> + I`.
-17. Start neovim, Lazy packages are installed automatically.
+
+### 2. Add new host (only required for new computers)
+
+1. Run `cd ~/Projects/.dotfiles/nix/hosts`.
+2. Run `cp -a template_host {new_host}` where `{new_host}` is the name of the new host.
+3. Run `sudo cp /etc/nixos/hardware-configuration.nix ~/Projects/.dotfiles/nix/hosts/{new_host}`.
+4. Add a new entry in `nixosConfigurations` in `flake.nix` that imports the new configuration.
+
+### 3. Apply new config
+
+1. Run `cd ~/Projects/.dotfiles && git add .`.
+2. Run `sudo nixos-rebuild switch --flake ~/Project/.dotfiles/nix/#{new_host}`.
+3. Reboot is probably a good idea.
+
+### 4. Last tweaks
+
+3. Start tmux, install TPM packages by pressing `<prefix> + I`.
+4. Start neovim, Lazy packages are installed automatically.
 
 ## Future improvements
 
