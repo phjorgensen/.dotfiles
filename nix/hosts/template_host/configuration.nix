@@ -7,11 +7,13 @@
     ../../modules/network.nix
     ../../modules/time_and_lang.nix
     ../../modules/enable-flakes.nix
-    ../../modules/i3.nix
+    ../../modules/window-managers/i3.nix
     ../../modules/pulseaudio.nix
     ../../modules/zsh.nix
     ../../modules/main-user.nix
-    ../../modules/packages.nix
+    ../../modules/packages/general.nix
+    ../../modules/packages/development.nix
+    ../../modules/packages/terminal.nix
   ];
 
   networking.hostName = "perVm1"; # Define your hostname.

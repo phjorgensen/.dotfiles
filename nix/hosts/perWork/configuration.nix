@@ -14,9 +14,10 @@
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
     ../../modules/packages/terminal.nix
+    ../../modules/packages/work.nix
   ];
 
-  networking.hostName = "perVm2"; # Define your hostname.
+  networking.hostName = "perWork";
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

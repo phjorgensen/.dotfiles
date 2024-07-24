@@ -16,7 +16,7 @@
     ../../modules/packages/terminal.nix
   ];
 
-  networking.hostName = "perVm2"; # Define your hostname.
+  networking.hostName = "perCode";
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
