@@ -22,8 +22,10 @@
     nixosConfigurations = {
       # Add more configs, tut at youtube vid (13:40)
       # https://www.youtube.com/watch?v=a67Sv4Mbxmc
+      perCode = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
+          ./hosts/perCode/configuration.nix
         ];
       };
     };
