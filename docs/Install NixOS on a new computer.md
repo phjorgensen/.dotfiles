@@ -48,3 +48,4 @@ Generate new hardware-config if missing: ´sudo nixos-generate-config --root /mn
   - This should be one of the steps of the installation. I can clone the repo, but not push to it.
   - Path of least resistance, I can just add an SSH key. But it's a hassle.
   - Maybe I can get `git-credential-oauth` to work? If not, maybe check out Git Credential Manager again?
+- Run `git credential-oauth configure` automatically, or backup the git config.
