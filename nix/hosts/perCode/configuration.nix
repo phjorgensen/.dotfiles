@@ -3,12 +3,12 @@
   imports = [
     ./hardware-configuration.nix
     ../../modules/system.nix
-    ../../modules/bootloader.nix
+    ../../modules/bootloader/systemd-boot.nix
     ../../modules/network.nix
     ../../modules/time_and_lang.nix
     ../../modules/enable-flakes.nix
     ../../modules/window-managers/i3.nix
-    ../../modules/pulseaudio.nix
+    ../../modules/audio/pulseaudio.nix
     ../../modules/zsh.nix
     ../../modules/main-user.nix
     ../../modules/packages/general.nix

@@ -1,8 +1,11 @@
 { ... }:
 {
-  # Enable audio
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+
+  hardware.pulseaudio = {
+    enable = true;
+    support32Bit = true;
+  };
   # hardware.pulseaudio.enable = false;
   # security.rtkit.enable = true;
   # services.pipewire = {
