@@ -1,6 +1,5 @@
-{ pkgs, ... }:
-{
-  environment.pathsToLink = [ "/libexec" ];
+{pkgs, ...}: {
+  environment.pathsToLink = ["/libexec"];
 
   services.xserver = {
     enable = true;
@@ -11,9 +10,9 @@
         i3status
         i3lock
         i3blocks
-	      polybarFull
-	      picom
-	      rofi
+        polybarFull
+        picom
+        rofi
       ];
     };
   };

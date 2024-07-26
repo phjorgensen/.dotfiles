@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
@@ -9,4 +8,3 @@
     enable = true;
   };
 }
-
