@@ -13,6 +13,7 @@
         polybarFull
         picom
         rofi
+        lightdm
       ];
     };
   };
