@@ -1,0 +1,8 @@
+[credential]
+	helper = cache --timeout 21600
+	helper = oauth
+[init]
+	defaultBranch = main
+[user]
+	name = Per
+	email = phjorgensenn@gmail.com
