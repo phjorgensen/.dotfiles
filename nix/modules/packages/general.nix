@@ -11,6 +11,7 @@
     stow
 
     firefox
+    brave
     xfce.thunar
     nomacs
     nitrogen
