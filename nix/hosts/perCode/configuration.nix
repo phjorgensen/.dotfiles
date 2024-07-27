@@ -12,13 +12,14 @@
     ../../modules/time_and_lang.nix
     ../../modules/enable-flakes.nix
     ../../modules/window-managers/i3.nix
-    ../../modules/window-managers/dwm.nix
+    #../../modules/window-managers/dwm/dwm.nix
     ../../modules/audio/pulseaudio.nix
     ../../modules/zsh.nix
     ../../modules/main-user.nix
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
     ../../modules/packages/terminal.nix
+    #../../modules/packages/st/st.nix
   ];
 
   networking.hostName = "perCode";
