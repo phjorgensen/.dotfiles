@@ -9,6 +9,7 @@
       extraPackages = with pkgs; [
         i3status
         i3lock
+        xautolock
         i3blocks
         polybarFull
         picom
