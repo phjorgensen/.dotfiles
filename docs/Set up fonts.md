@@ -2,14 +2,20 @@
 
 ## Install the fonts
 
+1. Download the fonts.
+2. Unzip the fonts if neccessary.
+3. Move the font files to `~/.local/share/fonts`.
+4. Run `fc-cache -f -v` to clear the font cache.
+5. Run `fc-list | grep {new-font-name}` to confirm the font was added.
+
+## Some good fonts
+
 - Download [Mononoki](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Mononoki.zip)
-  - Add the `.ttf` files to `~/.local/share/fonts`
 - Download [FiraCode](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip)
-  - Add the `.ttf` files to `~/.local/share/fonts`
 - Download [Monaspace](https://github.com/githubnext/monaspace)
-  - Add the `.otf` files to `~/.local/share/fonts`
 - Download [Pixel Code](https://github.com/qwerasd205/PixelCode)
-  - Add the `.otf` files to `~/.local/share/fonts`
+
+## Troubleshooting
 
 ### Fixes for Kitty
 
