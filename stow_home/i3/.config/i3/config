@@ -160,4 +160,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 exec_always --no-startup-id systemctl --user enable opentabletdriver.service --now
 
-exec --no-startup-id "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
+exec --no-startup-id "xautolock -secure -detectsleep -time 3 -locker \"i3lock -c 000000\""
