@@ -15,6 +15,7 @@
         picom
         rofi
         lightdm
+        dunst
       ];
     };
   };
