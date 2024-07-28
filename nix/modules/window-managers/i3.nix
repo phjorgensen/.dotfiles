@@ -12,6 +12,7 @@
         xautolock
         i3blocks
         polybarFull
+        polybar-pulseaudio-control
         picom
         rofi
         lightdm
