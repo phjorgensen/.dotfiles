@@ -16,6 +16,7 @@
     nomacs
     nitrogen
     pavucontrol
+    pasystray
     yazi
   ];
 
