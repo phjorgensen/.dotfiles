@@ -14,7 +14,6 @@
   environment.systemPackages = with pkgs; [
     dmenu
     dwmblocks
-    lightdm
     picom
   ];
 }

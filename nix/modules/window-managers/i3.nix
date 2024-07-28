@@ -1,6 +1,8 @@
 {pkgs, ...}: {
   environment.pathsToLink = ["/libexec"];
 
+  services.displayManager.defaultSession = "none+i3";
+
   services.xserver = {
     enable = true;
 
@@ -8,16 +10,22 @@
       enable = true;
       extraPackages = with pkgs; [
         i3status
+        i3blocks
         i3lock
         xautolock
-        i3blocks
         polybarFull
         polybar-pulseaudio-control
         picom
         rofi
-        lightdm
         dunst
       ];
+    };
+
+    displayManager.gdm = {
+      enable = true;
+      banner = ''
+        Filip er cringe
+      '';
     };
   };
 }
