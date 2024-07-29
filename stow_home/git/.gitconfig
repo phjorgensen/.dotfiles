@@ -3,6 +3,8 @@
 	helper = oauth
 [init]
 	defaultBranch = main
+[pull]
+	rebase = true
 [user]
 	name = Per
 	email = phjorgensenn@gmail.com
