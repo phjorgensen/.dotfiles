@@ -2,14 +2,6 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    curl
-    wget
-    ripgrep
-    fd
-    unzip
-
-    stow
-
     firefox
     brave
     xfce.thunar
@@ -17,7 +9,6 @@
     nitrogen
     pavucontrol
     pasystray
-    yazi
   ];
 
   programs = {
