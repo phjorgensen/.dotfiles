@@ -12,7 +12,7 @@
         i3status
         i3blocks
         i3lock
-        xautolock
+        xidlehook
         polybarFull
         polybar-pulseaudio-control
         picom
@@ -20,6 +20,7 @@
         dunst
       ];
     };
+    # https://gitlab.com/jD91mZM2/xidlehook
 
     displayManager.gdm = {
       enable = true;

@@ -9,9 +9,9 @@
     fd # better find
     zoxide # better cd
     unzip # archive unzip
-    unar # archive preview
+    unar # archive unpacker
     jq # json processor
-    xclip # system clipboard
+    xclip # system clipboard from console application
     curl
     wget
     stow
