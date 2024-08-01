@@ -160,6 +160,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 exec_always --no-startup-id systemctl --user enable opentabletdriver.service --now
 
-exec --no-startup-id "xautolock -secure -detectsleep -time 3 -corners ---- -locker \"i3lock -c 2B2B2B\""
+exec_always --no-startup-id xidlehook-config.sh
+
 exec --no-startup-id "dunst"
 exec --no-startup-id "pasystray"

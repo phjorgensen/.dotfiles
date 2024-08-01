@@ -13,6 +13,7 @@
         i3blocks
         i3lock
         xidlehook
+        brightnessctl
         polybarFull
         polybar-pulseaudio-control
         picom
