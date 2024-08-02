@@ -2,6 +2,8 @@
   environment.systemPackages = with pkgs; [
     # Terminals
     wezterm
+    alacritty
+    kitty
 
     # Terminal utils
     fzf # fuzzy search

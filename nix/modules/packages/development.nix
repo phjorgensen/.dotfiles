@@ -9,5 +9,7 @@
 
     stylua
     nodePackages.prettier
+
+    postman
   ];
 }
