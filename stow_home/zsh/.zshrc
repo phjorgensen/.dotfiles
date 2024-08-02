@@ -15,11 +15,7 @@ eval "$(starship init zsh)"
 
 # Config
 source $ZSH/remap.sh
-
-# Plugins
-source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-fpath=($ZSH/plugins/zsh-completions/src $fpath)
+source $ZSH/zplug.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -35,3 +31,4 @@ export ANDROID_HOME="$HOME/Android/Sdk" 2> /dev/null
 export NDK_HOME="$ANDROID_HOME/ndk/26.2.11394342" 2> /dev/null
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
