@@ -8,7 +8,7 @@ Generate new hardware-config if missing: ´sudo nixos-generate-config --root /mn
 
 1. Install NixOS from a live installation medium.
 2. Add a WiFi network.
-   - Run `nmcli device wifi connect {SSID} password {password}`.
+   - Run `nmcli device wifi connect "{SSID}" password {password}`.
 3. Run `sudoedit /etc/nixos/configuration.nix`.
 4. Add `git`, `neovim` and `stow` in packages.
 5. Run `sudo nixos-rebuild switch` to install git.
