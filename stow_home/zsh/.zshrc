@@ -15,7 +15,9 @@ eval "$(starship init zsh)"
 
 # Config
 source $ZSH/remap.sh
-source $ZSH/zplug.sh
+# Disabled since it does not work properly in nix (it can't find the init.zsh since it's in a store)
+# Also, it really slows down the start time of the shell.
+#source $ZSH/zplug.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
