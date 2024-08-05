@@ -33,7 +33,11 @@
     opentabletdriver
     arandr
     psensor
-    nerdfonts
+  ];
+
+  fonts.packages = with pkgs; [
+    (nerdfonts.override {fonts = ["FiraCode"];})
+    fira-code
   ];
 
   programs = {
