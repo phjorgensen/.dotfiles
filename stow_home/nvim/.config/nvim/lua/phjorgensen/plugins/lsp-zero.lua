@@ -24,6 +24,7 @@ return {
       ensure_installed = {
         "vtsls",
         "eslint",
+        "svelte",
         "lua_ls",
         "rust_analyzer",
       },
