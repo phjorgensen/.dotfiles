@@ -41,6 +41,18 @@
           }
         ];
       };
+
+      perWork = nixpkgs.lib.nixosSystem rec {
+        specialArgs = {inherit inputs;};
+        system = "x86_64-linux";
+
+        modules = [
+          ./hosts/perWork/configuration.nix
+          {
+            environment.systemPackages = [alejandra.defaultPackage.${system}];
+          }
+        ];
+      };
     };
   };
 }

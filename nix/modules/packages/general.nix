@@ -24,7 +24,6 @@
 
     # Messages
     telegram-desktop
-    thunderbird
 
     # System
     nitrogen
@@ -33,10 +32,6 @@
     opentabletdriver
     arandr
     psensor
-
-    # Security
-    bitwarden-desktop
-    bitwarden-menu
   ];
 
   programs = {
