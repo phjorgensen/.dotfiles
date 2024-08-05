@@ -25,6 +25,7 @@
 
     # Other
     tmux
+    zellij
     fastfetch
     starship
   ];
