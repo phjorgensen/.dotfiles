@@ -17,6 +17,7 @@
     vlc
     krita
     gimp
+    gparted
 
     # Music
     spotify
