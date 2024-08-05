@@ -33,6 +33,7 @@
     opentabletdriver
     arandr
     psensor
+    nerdfonts
   ];
 
   programs = {
