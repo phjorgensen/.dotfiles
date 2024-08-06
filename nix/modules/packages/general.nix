@@ -9,6 +9,7 @@
 
     # File handlers
     xfce.thunar
+    gnome.nautilus
     nomacs
     obsidian
     gnome.cheese
