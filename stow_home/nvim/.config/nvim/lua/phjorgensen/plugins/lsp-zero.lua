@@ -22,11 +22,12 @@ return {
     require("mason").setup({})
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "vtsls",
-        "eslint",
-        "svelte",
         "lua_ls",
         "rust_analyzer",
+        "eslint",
+        "tsserver",
+        "svelte",
+        "tailwindcss",
       },
       handlers = {
         default_setup,
