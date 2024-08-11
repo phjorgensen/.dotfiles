@@ -9,10 +9,10 @@
 
     # File handlers
     xfce.thunar
-    gnome.nautilus
+    nautilus
     nomacs
     obsidian
-    gnome.cheese
+    cheese
     flameshot
     libreoffice-qt6-fresh
     vlc
