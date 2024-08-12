@@ -15,9 +15,9 @@
     rust-analyzer
     lua-language-server # lua_ls?
     typescript
+    tailwindcss-language-server # tailwindcss?
     nodePackages.typescript-language-server # tsserver?
     nodePackages.svelte-language-server # svelte?
-    nodePackages.tailwindcss # tailwindcss?
 
     postman
   ];
