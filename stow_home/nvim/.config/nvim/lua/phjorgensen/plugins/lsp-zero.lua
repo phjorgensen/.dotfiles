@@ -8,14 +8,10 @@ return {
     vim.opt.signcolumn = "yes"
 
     local lspconfig = require("lspconfig")
-
-    lspconfig.util.default_config.capabilities = vim.tbl_deep_extend(
-      "force",
-      lspconfig.util.default_config.capabilities,
-      require("cmp_nvim_lsp").default_capabilities()
-    )
-
     local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
+
+    lspconfig.util.default_config.capabilities =
+      vim.tbl_deep_extend("force", lspconfig.util.default_config.capabilities, lsp_capabilities)
 
     require("lspconfig").lua_ls.setup({
       capabilities = lsp_capabilities,
@@ -43,6 +39,7 @@ return {
     require("lspconfig").tailwindcss.setup({})
 
     local cmp = require("cmp")
+    local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
     cmp.setup({
       sources = {
@@ -53,7 +50,12 @@ return {
           vim.snippet.expand(args.body)
         end,
       },
-      mapping = cmp.mapping.preset.insert({}),
+      mapping = cmp.mapping.preset.insert({
+        ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
+        ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+        ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+        ["<C-Space>"] = cmp.mapping.complete(),
+      }),
     })
 
     -- local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -144,15 +146,15 @@ return {
     --   },
     -- })
 
-    -- vim.diagnostic.config({
-    --   float = {
-    --     focusable = false,
-    --     style = "minimal",
-    --     border = "rounded",
-    --     source = true,
-    --     header = "",
-    --     prefix = "",
-    --   },
-    -- })
+    vim.diagnostic.config({
+      float = {
+        focusable = false,
+        style = "minimal",
+        border = "rounded",
+        source = true,
+        header = "",
+        prefix = "",
+      },
+    })
   end,
 }
