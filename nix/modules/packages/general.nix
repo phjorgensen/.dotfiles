@@ -19,6 +19,8 @@
     krita
     gimp
     gparted
+    syncthing
+    syncthingtray
 
     # Music
     spotify
