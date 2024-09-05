@@ -29,6 +29,9 @@
     # Messages
     telegram-desktop
 
+    # Utility
+    qalculate-qt
+
     # System
     nitrogen
     pavucontrol
