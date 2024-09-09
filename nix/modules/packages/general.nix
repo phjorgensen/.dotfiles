@@ -39,6 +39,7 @@
     opentabletdriver
     arandr
     psensor
+    autofs5
   ];
 
   fonts.packages = with pkgs; [
