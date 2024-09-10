@@ -34,7 +34,7 @@ return {
 
     require("lspconfig").rust_analyzer.setup({})
     --require("lspconfig").eslint.setup({})
-    require("lspconfig").tsserver.setup({})
+    require("lspconfig").ts_ls.setup({})
     require("lspconfig").svelte.setup({})
     require("lspconfig").tailwindcss.setup({})
 
