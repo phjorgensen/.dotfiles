@@ -40,6 +40,7 @@
     arandr
     psensor
     autofs5
+    xorg.xmodmap
   ];
 
   fonts.packages = with pkgs; [
