@@ -38,7 +38,7 @@
     pasystray
     opentabletdriver
     arandr
-    psensor
+    mission-center
     autofs5
     xorg.xmodmap
   ];
