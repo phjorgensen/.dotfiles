@@ -32,6 +32,19 @@ return {
       },
     })
 
+    require("lspconfig").nil_ls.setup({
+      autostart = true,
+      capabilities = lsp_capabilities,
+      settings = {
+        ["nil"] = {
+          testSetting = 42,
+          formatting = {
+            command = { "nixpkgs-fmt" },
+          },
+        },
+      },
+    })
+
     require("lspconfig").rust_analyzer.setup({})
     --require("lspconfig").eslint.setup({})
     require("lspconfig").ts_ls.setup({})
