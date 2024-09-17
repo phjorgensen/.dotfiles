@@ -15,6 +15,7 @@
     curl
     wget
     stow
+    unixtools.xxd
 
     # TUIs
     lazygit
