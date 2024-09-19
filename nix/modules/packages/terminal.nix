@@ -16,6 +16,7 @@
     wget
     stow
     unixtools.xxd
+    xorg.xev
 
     # TUIs
     lazygit
