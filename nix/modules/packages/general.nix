@@ -22,10 +22,6 @@
     syncthing
     syncthingtray
 
-    # Music
-    spotify
-    tidal-hifi
-
     # Messages
     telegram-desktop
 
