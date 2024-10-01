@@ -12,6 +12,7 @@
     nautilus
     nomacs
     obsidian
+    logseq
     cheese
     flameshot
     libreoffice-qt6-fresh
@@ -27,6 +28,7 @@
 
     # Utility
     qalculate-qt
+    lxappearance
 
     # System
     nitrogen
