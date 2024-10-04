@@ -2,6 +2,7 @@
   environment.systemPackages = with pkgs; [
     # Terminals
     kitty
+    rxvt-unicode
 
     # Terminal utils
     fzf # fuzzy search
