@@ -11,7 +11,8 @@
     ../../modules/audio/pipewire.nix
     ../../modules/zsh.nix
     ../../modules/main-user.nix
-    ../../modules/stylix.nix
+    ../../modules/stylix/general.nix
+    ../../modules/stylix/cursor-nordzy.nix
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
     ../../modules/packages/terminal.nix

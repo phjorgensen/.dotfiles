@@ -36,8 +36,6 @@
     };
 
     nixosConfigurations = {
-      # Add more configs, tut at youtube vid (13:40)
-      # https://www.youtube.com/watch?v=a67Sv4Mbxmc
       perCode = nixpkgs.lib.nixosSystem rec {
         specialArgs = {inherit inputs;};
         system = "x86_64-linux";
@@ -45,12 +43,13 @@
         modules = [
           ./hosts/perCode/configuration.nix
           stylix.nixosModules.stylix
-          # home-manager.nixosModules.home-manager
-          # {
-          #   home-manager.useGlobalPkgs = true;
-          #   home-manager.useUserPackages = true;
-          #   home-manager.users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
-          # }
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
+            home-manager.backupFileExtension = "backup";
+          }
           {
             environment.systemPackages = [alejandra.defaultPackage.${system}];
           }
@@ -64,12 +63,13 @@
         modules = [
           ./hosts/perWork/configuration.nix
           stylix.nixosModules.stylix
-          # home-manager.nixosModules.home-manager
-          # {
-          #   home-manager.useGlobalPkgs = true;
-          #   home-manager.useUserPackages = true;
-          #   home-manager.users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
-          # }
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
+            home-manager.backupFileExtension = "backup";
+          }
           {
             environment.systemPackages = [alejandra.defaultPackage.${system}];
           }
