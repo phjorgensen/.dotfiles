@@ -1,25 +1,63 @@
 #!/usr/bin/env bash
 
+log_file=$HOME/test.log
+#log_file=/dev/null
+
 if [[ $# -eq 1 ]]; then
-    selected=$1
+  selected=$1
 else
-    selected=$(find ~/Projects ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
+  selected=$(find ~/Projects ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
+echo "Variables" >> $log_file
+
+echo "  selected=$selected" >> $log_file
+
 if [[ -z $selected ]]; then
-    exit 0
+  echo "Nothing was selected" >> $log_file
+  echo "FINISHED, exit with 0" >> $log_file
+  echo --- >> $log_file
+  exit 0
 fi
 
 selected_name=$(basename "$selected" | tr . _)
+echo "  selected_name=$selected_name" >> $log_file
+
 tmux_running=$(pgrep tmux)
+echo "  tmux_running=$tmux_running" >> $log_file
+echo "  tmux_environment=$TMUX" >> $log_file
+echo "" >> $log_file
 
 if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
-    tmux new-session -s $selected_name -c $selected
-    exit 0
+  echo "TMUX is not running" >> $log_file
+  echo "Creating the selected session" >> $log_file
+  echo "Attaching to the selected session" >> $log_file
+  tmux new-session -s $selected_name -c $selected
+  echo "" >> $log_file
+  echo "FINISHED, exit with 0" >> $log_file
+  echo --- >> $log_file
+  exit 0
 fi
+
+echo "TMUX is running" >> $log_file
 
 if ! tmux has-session -t=$selected_name 2> /dev/null; then
-    tmux new-session -ds $selected_name -c $selected
+  echo "Creating the selected session" >> $log_file
+  tmux new-session -ds $selected_name -c $selected
+else
+  echo "TMUX has a running session with the same name" >> $log_file
 fi
 
-tmux switch-client -t $selected_name
+if ! [[ -z $TMUX ]]; then
+  echo "The user is in another TMUX session, switching to the selected session" >> $log_file
+  echo "" >> $log_file
+  echo "FINISHED, exit with 0" >> $log_file
+  echo --- >> $log_file
+  tmux switch-client -t $selected_name
+else
+  echo "The user is not in a TMUX session, attaching to the selected session" >> $log_file
+  echo "" >> $log_file
+  echo "FINISHED, exit with 0" >> $log_file
+  echo --- >> $log_file
+  tmux a -t $selected_name
+fi
