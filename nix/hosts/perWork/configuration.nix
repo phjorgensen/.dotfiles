@@ -12,7 +12,7 @@
     ../../modules/zsh.nix
     ../../modules/main-user.nix
     ../../modules/stylix/general.nix
-    ../../modules/stylix/cursor-nordzy.nix
+    ../../modules/stylix/cursor-banana.nix
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
     ../../modules/packages/terminal.nix
