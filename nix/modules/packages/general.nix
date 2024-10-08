@@ -31,7 +31,7 @@
     lxappearance
 
     # System
-    nitrogen
+    # nitrogen
     pavucontrol
     pasystray
     kdePackages.plasma-pa
