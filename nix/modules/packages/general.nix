@@ -34,7 +34,7 @@
     nitrogen
     pavucontrol
     pasystray
-    kdePackages.plasma-pa
+    networkmanagerapplet
     opentabletdriver
     arandr
     mission-center
