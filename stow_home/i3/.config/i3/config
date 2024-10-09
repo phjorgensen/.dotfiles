@@ -148,16 +148,15 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-exec --no-startup-id xfce4-panel --disable-wm-check &
-for_window [class="Xfce4-panel" instance="xfce4-panel"] floating enable
+exec --no-startup-id $HOME/.config/.startup_apps.conf
+exec --no-startup-id $HOME/.config/polybar/launch.sh
 
 exec --no-startup-id dunst
 exec --no-startup-id pasystray
+exec --no-startup-id nm-applet
+exec --no-startup-id picom -f
+exec --no-startup-id xidlehook-config.sh
+
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id /usr/libexec/xfce-polkit
-exec --no-startup-id $HOME/.config/.startup_apps.conf
-# exec_always --no-startup-id nm-applet
-exec_always --no-startup-id picom -f
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # exec_always --no-startup-id systemctl --user enable opentabletdriver.service --now
-exec_always --no-startup-id xidlehook-config.sh
