@@ -7,11 +7,7 @@ return {
 
     lualine.setup({
       options = {
-        -- section_separators = { left = "", right = "󰁎" },
-        -- component_separators = { left = ">", right = "<" },
-        -- Available themes: https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
-        -- theme = "codedark",
-        theme = "catppuccin-mocha",
+        theme = "gruvbox-material",
         normal = {
           a = { bg = nil },
           b = { bg = nil },
