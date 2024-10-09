@@ -2,7 +2,7 @@
 	helper = cache --timeout 21600
 	helper = oauth
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [pull]
 	rebase = true
 [user]
