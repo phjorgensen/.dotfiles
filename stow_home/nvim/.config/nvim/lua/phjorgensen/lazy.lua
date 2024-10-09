@@ -20,6 +20,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     { import = "phjorgensen/plugins" },
+    { import = "phjorgensen/themes" },
   },
   install = {
     colorscheme = { "catppuccin" },
