@@ -6,6 +6,7 @@
     gcc
     nodejs
     rustup
+    go
 
     # Formatters
     stylua
@@ -20,7 +21,7 @@
     nodePackages.svelte-language-server # svelte?
     nodePackages.intelephense
     nil
-    go
+    gopls
 
     postman
   ];
