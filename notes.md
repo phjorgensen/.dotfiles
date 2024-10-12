@@ -5,9 +5,16 @@
   - Python
   - Go
 
+## todo
+
+- [ ] Try out fish
+- [ ] Theme polybar or change to yabar, with grubbox
+- [ ] Learn Go
+- [ ] Rewrite tmux-sessionizer in Go
+
 # Boot.dev
 
-## Git
+## git
 
 ### git log
 
@@ -72,4 +79,18 @@ git log --oneline
 3e81e7c (main) C: add quotes
 980690b B: add titles.md
 fbf7372 A: add contents.md
+```
+
+## coreutils
+
+### find
+
+```bash
+find . -name {fileName}
+```
+
+`.` is assumed if none is specified, so this will produce the same result.
+
+```bash
+find -name {fileName}
 ```
