@@ -81,6 +81,10 @@ git log --oneline
 fbf7372 A: add contents.md
 ```
 
+#### Show graph
+
+`git log --oneline --graph --all`
+
 ## coreutils
 
 ### find
