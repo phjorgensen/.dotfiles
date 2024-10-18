@@ -98,3 +98,58 @@ find . -name {fileName}
 ```bash
 find -name {fileName}
 ```
+
+# General work learnings
+
+## Browser history API
+
+### pushState()
+
+[Source](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState)
+
+Will push a new node to the history stack without navigating to it.
+
+Sending state to the next page can be done like so:
+
+```ts
+const newState = {
+  previousPage: "Current page",
+};
+
+const url = "/next-page";
+
+history.pushState(newState, "", url);
+
+// Navigating forward to move to the new history node
+history.forward();
+```
+
+Receiving the state on the other side can be done like so:
+
+```ts
+console.log(history.state); // { previousPage: "Current page" }
+```
+
+### replaceState()
+
+[Source](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState)
+
+Will replace the state in the current node of the history stack.
+
+Setting the state on the current page can be done like so:
+
+```ts
+const newState = {
+  thisPage: "Current page",
+};
+
+const url = "/this-page";
+
+history.replaceState(newState, "", url);
+```
+
+Viewing the state can be done like so:
+
+```ts
+console.log(history.state); // { thisPage: "Current page" }
+```
