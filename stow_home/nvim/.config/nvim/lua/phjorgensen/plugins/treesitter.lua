@@ -6,6 +6,8 @@ return {
 
     configs.setup({
       ensure_installed = {
+        "markdown",
+        "markdown_inline",
         "http",
         "json",
         "rust",

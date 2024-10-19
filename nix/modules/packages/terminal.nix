@@ -18,6 +18,7 @@
     stow
     unixtools.xxd
     xorg.xev
+    glow
 
     # TUIs
     lazygit
