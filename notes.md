@@ -11,6 +11,20 @@
 - [ ] Theme polybar or change to yabar, with grubbox
 - [ ] Learn Go
 - [ ] Rewrite tmux-sessionizer in Go
+- [ ] Use telescope more (list of open buffers for instance!?)
+- [ ] Set up a system for my notes
+  - Push notes to git, hopefully automatically.
+  - Possible plugins (from video: https://www.youtube.com/watch?v=qDAYePbuMMs)
+    - epwalsh/obsidian.nvim
+    - MeanderingProgrammer/render-markdown.nvim
+    - iamcco/markdown-preview.nvim
+  - To help focus (from https://www.youtube.com/watch?v=5ht8NYkU9wQ)
+    - https://github.com/folke/zen-mode.nvim
+    - https://github.com/folke/twilight.nvim
+    - Remove lualine
+    - Narrow the columns?
+  - From this video https://www.youtube.com/watch?v=DgKI4hZ4EEI
+    - markdown.nvim
 
 # Boot.dev
 
@@ -153,3 +167,90 @@ Viewing the state can be done like so:
 ```ts
 console.log(history.state); // { thisPage: "Current page" }
 ```
+
+## Markdown
+
+### Callouts
+
+There are a few types of callouts available in markdown
+
+> [!NOTE]
+> This is a note
+
+> [!INFO]
+> This is a danger
+
+> [!TODO]
+> This is a danger
+
+> [!ABSTRACT]
+> This is a danger
+
+> [!SUMMARY]
+> This is a danger
+
+> [!TLDR]
+> This is a danger
+
+> [!example]
+> This is a danger
+
+> [!IMPORTANT]
+> This is a danger
+
+> [!TIP]
+> This is a tip
+
+> [!HINT]
+> This is a danger
+
+> [!SUCCESS]
+> This is a success
+
+> [!CHECK]
+> This is a success
+
+> [!DONE]
+> This is a danger
+
+> [!WARNING]
+> This is a warning
+
+> [!ATTENTION]
+> This is a danger
+
+> [!CAUTION]
+> This is a danger
+
+> [!danger]
+> This is a danger
+
+> [!error]
+> This is a danger
+
+> [!bug]
+> This is a danger
+
+> [!failure]
+> This is a danger
+
+> [!fail]
+> This is a danger
+
+> [!missing]
+> This is a danger
+
+> [!QUESTION]
+> This is a danger
+
+> [!HELP]
+> This is a danger
+
+> [!FAQ]
+> This is a danger
+
+> [!quote]
+> This is a danger
+
+> [!cite]
+> This is a danger
