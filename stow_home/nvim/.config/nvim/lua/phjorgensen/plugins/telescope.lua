@@ -1,6 +1,5 @@
 return {
   "nvim-telescope/telescope.nvim",
-  tag = "0.1.3",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons",
@@ -9,6 +8,11 @@ return {
     local telescope = require("telescope")
     telescope.setup({
       defaults = {
+        path_display = {
+          filename_first = {
+            reverse_directories = true,
+          },
+        },
         vimgrep_arguments = {
           "rg",
           "--color=never",
@@ -24,13 +28,14 @@ return {
 
     local builtin = require("telescope.builtin")
 
-    vim.keymap.set("n", "<leader>sa", builtin.find_files, {})
-    vim.keymap.set("n", "<leader>sf", builtin.git_files, {})
+    vim.keymap.set("n", "<leader>sa", builtin.find_files)
+    vim.keymap.set("n", "<leader>sf", builtin.git_files)
+    vim.keymap.set("n", "<leader>ff", "<cmd>Telescope frecency workspace=CWD theme=ivy<cr>")
     -- Not sure why ThePrimeagen added this instead of using live_grep, but keeping it in case I find out why.
     -- vim.keymap.set("n", "<leader>ps", function()
     --   builtin.grep_string({ search = vim.fn.input("Grep > ") })
     -- end)
-    vim.keymap.set("n", "<leader>sg", builtin.live_grep, {})
-    vim.keymap.set("n", "<leader>sr", builtin.resume, {})
+    vim.keymap.set("n", "<leader>sg", builtin.live_grep)
+    vim.keymap.set("n", "<leader>sr", builtin.resume)
   end,
 }
