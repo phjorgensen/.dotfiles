@@ -6,7 +6,7 @@ log_file=$HOME/test.log
 if [[ $# -eq 1 ]]; then
   selected=$1
 else
-  selected=$(find ~/Projects ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
+  selected=$(find ~/ ~/Projects ~/Documents ~/Documents/notes -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 echo "Variables" >> $log_file
