@@ -16,16 +16,16 @@ return {
   opts = {
     workspaces = {
       {
-        name = "Personal",
-        path = "~/Documents/Vaults/Personal",
+        name = "personal",
+        path = "~/Documents/notes/personal",
       },
       {
-        name = "Work",
-        path = "~/Documents/Vaults/Work",
+        name = "work",
+        path = "~/Documents/notes/work",
       },
     },
-    -- ui = {
-    --   enable = false,
-    -- },
+    ui = {
+      enable = false,
+    },
   },
 }
