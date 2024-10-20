@@ -52,6 +52,7 @@ return {
     require("lspconfig").tailwindcss.setup({})
     require("lspconfig").intelephense.setup({})
     require("lspconfig").gopls.setup({})
+    require("lspconfig").marksman.setup({})
 
     local cmp = require("cmp")
     local cmp_select = { behavior = cmp.SelectBehavior.Select }

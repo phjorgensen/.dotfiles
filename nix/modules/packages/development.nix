@@ -13,15 +13,16 @@
     nodePackages.prettier
 
     # LSPs
-    rust-analyzer
-    lua-language-server # lua_ls?
-    typescript
-    tailwindcss-language-server # tailwindcss?
-    nodePackages.typescript-language-server # tsserver?
-    nodePackages.svelte-language-server # svelte?
-    nodePackages.intelephense
-    nil
+    lua-language-server
+    marksman # Markdown LSP
+    nil # Nix LSP
     gopls
+    rust-analyzer
+    typescript
+    tailwindcss-language-server
+    nodePackages.typescript-language-server
+    nodePackages.svelte-language-server
+    nodePackages.intelephense # PHP LSP
 
     postman
   ];
