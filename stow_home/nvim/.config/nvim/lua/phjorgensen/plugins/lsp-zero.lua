@@ -1,20 +1,20 @@
 return {
   "neovim/nvim-lspconfig",
   dependencies = {
-    "hrsh7th/nvim-cmp",
-    "hrsh7th/cmp-nvim-lsp",
+    -- "hrsh7th/nvim-cmp",
+    -- "hrsh7th/cmp-nvim-lsp",
   },
   config = function()
     vim.opt.signcolumn = "yes"
 
-    local lspconfig = require("lspconfig")
-    local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
+    -- local lspconfig = require("lspconfig")
+    -- local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-    lspconfig.util.default_config.capabilities =
-      vim.tbl_deep_extend("force", lspconfig.util.default_config.capabilities, lsp_capabilities)
+    -- lspconfig.util.default_config.capabilities =
+    --   vim.tbl_deep_extend("force", lspconfig.util.default_config.capabilities, lsp_capabilities)
 
     require("lspconfig").lua_ls.setup({
-      capabilities = lsp_capabilities,
+      -- capabilities = lsp_capabilities,
       settings = {
         Lua = {
           runtime = {
@@ -34,10 +34,9 @@ return {
 
     require("lspconfig").nil_ls.setup({
       autostart = true,
-      capabilities = lsp_capabilities,
+      -- capabilities = lsp_capabilities,
       settings = {
         ["nil"] = {
-          testSetting = 42,
           formatting = {
             command = { "nixpkgs-fmt" },
           },
@@ -46,7 +45,6 @@ return {
     })
 
     require("lspconfig").rust_analyzer.setup({})
-    --require("lspconfig").eslint.setup({})
     require("lspconfig").ts_ls.setup({})
     require("lspconfig").svelte.setup({})
     require("lspconfig").tailwindcss.setup({})
@@ -54,25 +52,25 @@ return {
     require("lspconfig").gopls.setup({})
     require("lspconfig").marksman.setup({})
 
-    local cmp = require("cmp")
-    local cmp_select = { behavior = cmp.SelectBehavior.Select }
+    -- local cmp = require("cmp")
+    -- local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
-    cmp.setup({
-      sources = {
-        { name = "nvim_lsp" },
-      },
-      snippet = {
-        expand = function(args)
-          vim.snippet.expand(args.body)
-        end,
-      },
-      mapping = cmp.mapping.preset.insert({
-        ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
-        ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-        ["<C-y>"] = cmp.mapping.confirm({ select = true }),
-        ["<C-Space>"] = cmp.mapping.complete(),
-      }),
-    })
+    -- cmp.setup({
+    --   sources = {
+    --     { name = "nvim_lsp" },
+    --   },
+    --   snippet = {
+    --     expand = function(args)
+    --       vim.snippet.expand(args.body)
+    --     end,
+    --   },
+    --   mapping = cmp.mapping.preset.insert({
+    --     ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
+    --     ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+    --     ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+    --     ["<C-Space>"] = cmp.mapping.complete(),
+    --   }),
+    -- })
 
     -- local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
