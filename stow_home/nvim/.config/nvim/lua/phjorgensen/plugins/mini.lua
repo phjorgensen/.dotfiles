@@ -3,6 +3,13 @@ return {
   version = false,
   config = function()
     require("mini.ai").setup({})
+
+    local theme = require("phjorgensen.base16-themes.base16-tomorrow-night")
+    require("mini.base16").setup({
+      palette = theme,
+      use_cterm = true,
+    })
+
     require("mini.clue").setup({})
     require("mini.comment").setup({})
     require("mini.completion").setup({})

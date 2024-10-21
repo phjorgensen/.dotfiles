@@ -7,7 +7,6 @@ return {
 
     lualine.setup({
       options = {
-        theme = "gruvbox-material",
         normal = {
           a = { bg = nil },
           b = { bg = nil },

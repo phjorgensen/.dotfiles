@@ -2345,6 +2345,6 @@ background_opacity 0.9
 
 
 # BEGIN_KITTY_THEME
-# Tomorrow Night
+# Gruvbox Dark Soft
 include current-theme.conf
 # END_KITTY_THEME
