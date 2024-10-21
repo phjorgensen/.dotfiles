@@ -12,11 +12,26 @@ return {
 
     require("mini.clue").setup({})
     require("mini.comment").setup({})
-    require("mini.completion").setup({})
+
+    require("mini.completion").setup({
+      delay = {
+        completion = 10, -- 100,
+        info = 10, -- 100,
+        signature = 10, -- 50,
+      },
+      window = {
+        info = {
+          border = "single",
+        },
+        signature = {
+          border = "single",
+        },
+      },
+    })
+
     require("mini.git").setup({})
     require("mini.hipatterns").setup({})
     require("mini.icons").setup({})
-    require("mini.indentscope").setup({})
     require("mini.notify").setup({})
     require("mini.pairs").setup({})
     require("mini.starter").setup({})
