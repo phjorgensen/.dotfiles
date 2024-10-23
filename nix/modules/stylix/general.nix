@@ -2,7 +2,7 @@
   stylix = {
     enable = true;
 
-    image = ../../../stow_home/wallpapers/Pictures/Wallpapers/gruvbox-pacman.png;
+    image = ../../../stow_home/wallpapers/Pictures/Wallpapers/landscape/mountain-lake.jpg;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
     polarity = "dark";
 
