@@ -1,9 +1,14 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
     # Terminals
     kitty
     rxvt-unicode
-    wezterm
+    # wezterm
+    # inputs.wezterm-flake.packages.${system}.default
 
     # Terminal utils
     fzf # fuzzy search
