@@ -1,14 +1,8 @@
-{
-  inputs,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # Terminals
     kitty
     rxvt-unicode
-    # wezterm
-    # inputs.wezterm-flake.packages.${system}.default
 
     # Terminal utils
     fzf # fuzzy search
@@ -23,7 +17,7 @@
     wget
     stow
     unixtools.xxd
-    xorg.xev
+    xorg.xev # keyboard and mouse events
     glow
 
     # TUIs

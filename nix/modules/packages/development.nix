@@ -10,7 +10,7 @@
 
     # Formatters
     stylua
-    nodePackages.prettier
+    prettierd
 
     # LSPs
     lua-language-server

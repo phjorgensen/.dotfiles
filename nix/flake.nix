@@ -20,19 +20,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    wezterm-flake = {
-      url = "github:wez/wezterm?dir=nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # wezterm = {
+    #   url = "github:wez/wezterm?dir=nix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = {
-    self,
     nixpkgs,
     home-manager,
-    stylix,
     alejandra,
-    wezterm-flake,
+    stylix,
+    # wezterm,
     ...
   } @ inputs: {
     system.autoUpgrade = {
@@ -65,6 +64,17 @@
           {
             environment.systemPackages = [alejandra.defaultPackage.${system}];
           }
+          # {
+          #   nix.settings = {
+          #     substituters = ["https://wezterm.cachix.org"];
+          #     trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
+          #   };
+          # }
+          # {
+          #   environment.systemPackages = [
+          #     inputs.wezterm.packages.${system}.default
+          #   ];
+          # }
         ];
       };
 
@@ -85,6 +95,17 @@
           {
             environment.systemPackages = [alejandra.defaultPackage.${system}];
           }
+          # {
+          #   nix.settings = {
+          #     substituters = ["https://wezterm.cachix.org"];
+          #     trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
+          #   };
+          # }
+          # {
+          #   environment.systemPackages = [
+          #     inputs.wezterm.packages.${system}.default
+          #   ];
+          # }
         ];
       };
     };

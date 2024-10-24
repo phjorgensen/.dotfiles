@@ -4,15 +4,12 @@
   environment.systemPackages = with pkgs; [
     # Browsers
     firefox
-    brave
     vivaldi
 
     # File handlers
     xfce.thunar
-    nautilus
     nomacs
     obsidian
-    logseq
     cheese
     flameshot
     libreoffice-qt6-fresh
@@ -20,8 +17,6 @@
     krita
     gimp
     gparted
-    syncthing
-    syncthingtray
 
     # Messages
     telegram-desktop
@@ -37,14 +32,7 @@
     networkmanagerapplet
     opentabletdriver
     arandr
-    mission-center
-    autofs5
-    xorg.xmodmap
-  ];
-
-  fonts.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["FiraCode"];})
-    fira-code
+    mission-center # hardware monitoring
   ];
 
   programs = {
