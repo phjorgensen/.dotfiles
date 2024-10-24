@@ -19,9 +19,11 @@
     unixtools.xxd
     xorg.xev # keyboard and mouse events
     glow
+    nb # notes cli application
 
     # TUIs
     lazygit
+    lazydocker
     yazi
     btop
 
