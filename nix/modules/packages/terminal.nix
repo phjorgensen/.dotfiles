@@ -26,6 +26,7 @@
     lazydocker
     yazi
     btop
+    w3m # terminal browser
 
     # Other
     tmux
