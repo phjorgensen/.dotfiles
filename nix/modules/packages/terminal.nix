@@ -9,6 +9,7 @@
     ripgrep # better grep
     fd # better find
     zoxide # better cd
+    bat # better cat
     unzip # archive unzip
     unar # archive unpacker
     jq # json processor
@@ -20,6 +21,7 @@
     xorg.xev # keyboard and mouse events
     glow
     nb # notes cli application
+    pandoc # document converter
 
     # TUIs
     lazygit

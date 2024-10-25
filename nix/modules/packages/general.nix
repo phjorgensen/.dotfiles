@@ -33,6 +33,8 @@
     opentabletdriver
     arandr
     mission-center # hardware monitoring
+    openssl_3_3
+    gnupg
   ];
 
   programs = {
