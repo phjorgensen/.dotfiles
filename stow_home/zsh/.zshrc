@@ -35,7 +35,7 @@ export PATH="/usr/local/go/bin:$PATH"
 
 { alias air="$(go env GOPATH)/bin/air"; } 2>/dev/null
 
-bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s ^f "go-tmux-sessionizer\n"
 
 export JAVA_HOME=/usr/local/android-studio/jbr 2> /dev/null
 export ANDROID_HOME="$HOME/Android/Sdk" 2> /dev/null

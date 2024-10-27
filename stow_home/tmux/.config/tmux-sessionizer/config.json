@@ -1,0 +1,19 @@
+{
+  "paths": ["~/", "~/Projects", "~/Documents", "~/Documents/notes"],
+  "startupSessions": [
+    {
+      "name": "_dotfiles",
+      "path": "~/.dotfiles"
+    },
+    {
+      "name": "today",
+      "path": "~/.nb",
+      "afterCreate": ["nb shell"]
+    },
+    {
+      "name": "todo",
+      "path": "~/.nb",
+      "afterCreate": ["nb shell"]
+    }
+  ]
+}
