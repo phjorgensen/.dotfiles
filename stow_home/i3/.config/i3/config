@@ -159,4 +159,4 @@ exec --no-startup-id xidlehook-config.sh
 
 exec --no-startup-id nitrogen --restore
 
-# exec_always --no-startup-id systemctl --user enable opentabletdriver.service --now
+exec_always --no-startup-id systemctl --user enable opentabletdriver.service --now

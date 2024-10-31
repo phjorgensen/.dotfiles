@@ -30,7 +30,6 @@
     pavucontrol
     pasystray
     networkmanagerapplet
-    opentabletdriver
     arandr
     mission-center # hardware monitoring
     openssl_3_3
@@ -44,4 +43,6 @@
       viAlias = true;
     };
   };
+
+  hardware.opentabletdriver.enable = true;
 }
