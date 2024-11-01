@@ -17,6 +17,7 @@
     krita
     gimp
     gparted
+    zathura
 
     # Messages
     telegram-desktop

@@ -15,4 +15,8 @@
     sansSerif = ["Liberation Sans"];
     monospace = ["BerkeleyMono"];
   };
+
+  xdg.mime.defaultApplications = {
+    "application/pdf" = "org.pwmt.zathura.desktop";
+  };
 }

@@ -4,6 +4,5 @@
     description = "Per";
     shell = pkgs.zsh;
     extraGroups = ["networkmanager" "wheel" "audio"];
-    packages = with pkgs; [];
   };
 }
