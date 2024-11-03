@@ -17,6 +17,7 @@
     ../../modules/packages/development.nix
     ../../modules/packages/docker.nix
     ../../modules/packages/terminal.nix
+    ../../modules/packages/games.nix
   ];
 
   networking.hostName = "perCode";

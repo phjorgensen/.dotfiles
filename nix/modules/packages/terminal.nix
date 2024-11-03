@@ -26,7 +26,7 @@
     # TUIs
     lazygit
     lazydocker
-    yazi
+    # yazi
     btop
     w3m # terminal browser
 
