@@ -1,8 +1,14 @@
+-- Also have some code for this plugin in phjorgensen/init.lua
 return {
   "leath-dub/snipe.nvim",
-  config = function()
-    local snipe = require("snipe")
-    snipe.setup()
-    vim.keymap.set("n", "gb", snipe.create_buffer_menu_toggler())
-  end,
+  keys = {
+    {
+      "gb",
+      function()
+        require("snipe").open_buffer_menu()
+      end,
+      desc = "Open Snipe buffer menu",
+    },
+  },
+  opts = {},
 }
