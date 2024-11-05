@@ -1,6 +1,9 @@
 return {
   "echasnovski/mini.nvim",
   version = false,
+  dependencies = {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+  },
   config = function()
     require("mini.ai").setup({})
 
@@ -11,7 +14,11 @@ return {
     })
 
     require("mini.clue").setup({})
-    require("mini.comment").setup({})
+    require("mini.comment").setup({
+      options = {
+        ignore_blank_lines = true,
+      },
+    })
 
     require("mini.completion").setup({
       delay = {
