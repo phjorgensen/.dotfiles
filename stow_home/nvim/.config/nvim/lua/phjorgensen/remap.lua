@@ -34,9 +34,9 @@ vim.keymap.set("n", "Q", "<nop>") -- I don't know what Q does, but It's bad appa
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz") -- find errors?
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz") -- find errors?
 
-vim.keymap.set("n", "<leader>sc", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>")
-vim.keymap.set("n", "<leader>sr", ":%s/<C-r><C-w>//gI<Left><Left><Left>")
-vim.keymap.set("v", "<leader>s", ":s///gI<Left><Left><Left><Left>")
+vim.keymap.set("n", "<leader>sc", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "Search and replace" })
+vim.keymap.set("v", "<leader>sc", ":s///gI<Left><Left><Left><Left>", { desc = "Search and replace selection" })
+-- vim.keymap.set("n", "<leader>sr", ":%s/<C-r><C-w>//gI<Left><Left><Left>", { desc = "Search and replace, with clearing the old value" })
 
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
