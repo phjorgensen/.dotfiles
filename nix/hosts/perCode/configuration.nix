@@ -15,6 +15,7 @@
     ../../modules/stylix/cursor-banana.nix
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
+    ../../modules/packages/deployment.nix
     ../../modules/packages/docker.nix
     ../../modules/packages/terminal.nix
     ../../modules/packages/games.nix
