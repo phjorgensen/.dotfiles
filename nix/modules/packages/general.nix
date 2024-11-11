@@ -35,6 +35,7 @@
     mission-center # hardware monitoring
     openssl_3_3
     gnupg
+    dmidecode # BIOS info
   ];
 
   programs = {
