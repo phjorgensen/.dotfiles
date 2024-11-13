@@ -24,13 +24,26 @@ return {
           "--hidden",
         },
       },
+      pickers = {
+        find_files = {
+          theme = "ivy",
+        },
+        git_files = {
+          theme = "ivy",
+        },
+        live_grep = {
+          theme = "ivy",
+        },
+        resume = {
+          theme = "ivy",
+        },
+      },
     })
 
     local builtin = require("telescope.builtin")
 
     vim.keymap.set("n", "<leader>sa", builtin.find_files)
     vim.keymap.set("n", "<leader>sf", builtin.git_files)
-    vim.keymap.set("n", "<leader>ff", "<cmd>Telescope frecency workspace=CWD theme=ivy<cr>")
     -- Not sure why ThePrimeagen added this instead of using live_grep, but keeping it in case I find out why.
     -- vim.keymap.set("n", "<leader>ps", function()
     --   builtin.grep_string({ search = vim.fn.input("Grep > ") })
