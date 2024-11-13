@@ -38,19 +38,19 @@ vim.api.nvim_create_autocmd("LspAttach", {
       vim.lsp.buf.hover()
     end, opts)
 
-    vim.keymap.set("n", "<leader>vws", function()
+    vim.keymap.set("n", "<leader>lws", function()
       vim.lsp.buf.workspace_symbol()
     end, opts)
 
-    vim.keymap.set("n", "<leader>vca", function()
+    vim.keymap.set("n", "<leader>la", function()
       vim.lsp.buf.code_action()
     end, opts)
 
-    vim.keymap.set("n", "<leader>vrr", function()
+    vim.keymap.set("n", "<leader>lrr", function()
       vim.lsp.buf.references()
     end, opts)
 
-    vim.keymap.set("n", "<leader>vrn", function()
+    vim.keymap.set("n", "<leader>lrn", function()
       vim.lsp.buf.rename()
     end, opts)
 
@@ -58,15 +58,15 @@ vim.api.nvim_create_autocmd("LspAttach", {
       vim.lsp.buf.signature_help()
     end, opts)
 
-    vim.keymap.set("n", "<leader>vd", function()
+    vim.keymap.set("n", "<leader>ld", function()
       vim.diagnostic.open_float()
     end, opts)
 
-    vim.keymap.set("n", "]d", function()
+    vim.keymap.set("n", "<leader>ln", function()
       vim.diagnostic.goto_next()
     end, opts)
 
-    vim.keymap.set("n", "[d", function()
+    vim.keymap.set("n", "<leader>lp", function()
       vim.diagnostic.goto_prev()
     end, opts)
 
