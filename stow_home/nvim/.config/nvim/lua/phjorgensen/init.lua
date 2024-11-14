@@ -30,45 +30,21 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
     vim.keymap.set("n", "<leader>lsr", "<cmd>LspRestart<cr>", opts)
 
-    vim.keymap.set("n", "gd", function()
-      vim.lsp.buf.definition()
-    end, opts)
+    vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+    vim.keymap.set({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, opts)
 
-    vim.keymap.set("n", "K", function()
-      vim.lsp.buf.hover()
-    end, opts)
+    vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
+    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
+    vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)
 
-    vim.keymap.set("n", "<leader>lws", function()
-      vim.lsp.buf.workspace_symbol()
-    end, opts)
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+    vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 
-    vim.keymap.set("n", "<leader>la", function()
-      vim.lsp.buf.code_action()
-    end, opts)
-
-    vim.keymap.set("n", "<leader>lrr", function()
-      vim.lsp.buf.references()
-    end, opts)
-
-    vim.keymap.set("n", "<leader>lrn", function()
-      vim.lsp.buf.rename()
-    end, opts)
-
-    vim.keymap.set("i", "<C-h>", function()
-      vim.lsp.buf.signature_help()
-    end, opts)
-
-    vim.keymap.set("n", "<leader>ld", function()
-      vim.diagnostic.open_float()
-    end, opts)
-
-    vim.keymap.set("n", "<leader>ln", function()
-      vim.diagnostic.goto_next()
-    end, opts)
-
-    vim.keymap.set("n", "<leader>lp", function()
-      vim.diagnostic.goto_prev()
-    end, opts)
+    vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
+    vim.keymap.set("n", "<leader>vn", vim.diagnostic.goto_next, opts)
+    vim.keymap.set("n", "<leader>vp", vim.diagnostic.goto_prev, opts)
 
     vim.diagnostic.config({
       float = {
