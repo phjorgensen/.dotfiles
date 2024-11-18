@@ -25,5 +25,6 @@
     nodePackages.intelephense # PHP LSP
 
     postman
+    bruno
   ];
 }
