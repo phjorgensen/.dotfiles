@@ -32,7 +32,8 @@
     pasystray
     networkmanagerapplet
     arandr
-    mission-center # hardware monitoring
+    # Build failed, re-add later
+    # mission-center # hardware monitoring
     openssl_3_3
     gnupg
     dmidecode # BIOS info
