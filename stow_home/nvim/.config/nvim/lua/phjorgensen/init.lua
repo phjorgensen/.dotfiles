@@ -28,32 +28,28 @@ vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(e)
     local opts = { buffer = e.buf }
 
-    -- LSP server
+    -- LSP Server
     vim.keymap.set("n", "<leader>lsr", "<cmd>LspRestart<cr>", opts)
 
     -- Info
-    vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<cr>", opts)
+    vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
     vim.keymap.set({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, opts)
 
-    -- Peek
-    vim.keymap.set("n", "<leader>pd", "<cmd>Lspsaga peek_definition<cr>", opts)
-    vim.keymap.set("n", "<leader>pt", "<cmd>Lspsaga peek_type_definition<cr>", opts)
-
     -- Go to
-    vim.keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<cr>", opts)
+    vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
     vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
     vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-    vim.keymap.set("n", "gt", "<cmd>Lspsaga goto_type_definition<cr>", opts)
+    vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)
 
     -- Actions
-    vim.keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<cr>", opts)
-    vim.keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<cr>", opts)
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+    vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 
     -- Diagnostics
     vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
-    vim.keymap.set("n", "<leader>vn", "<cmd>Lspsaga diagnostic_jump_next<cr>", opts)
-    vim.keymap.set("n", "<leader>vp", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opts)
+    vim.keymap.set("n", "<leader>vn", vim.diagnostic.goto_next, opts)
+    vim.keymap.set("n", "<leader>vp", vim.diagnostic.goto_prev, opts)
 
     vim.diagnostic.config({
       float = {
