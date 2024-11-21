@@ -7,9 +7,9 @@ return {
       vim.cmd("Neoformat")
     end)
 
-    vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-      pattern = { "*" },
-      command = "Neoformat",
-    })
+    -- vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+    --   pattern = { "*" },
+    --   command = "Neoformat",
+    -- })
   end,
 }
