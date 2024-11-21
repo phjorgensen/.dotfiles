@@ -12,7 +12,7 @@
     obsidian
     cheese
     flameshot
-    libreoffice-qt6-fresh
+    # libreoffice-qt6-fresh
     vlc
     krita
     gimp
