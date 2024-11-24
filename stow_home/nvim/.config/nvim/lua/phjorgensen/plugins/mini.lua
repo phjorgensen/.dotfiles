@@ -8,6 +8,7 @@ return {
     require("mini.ai").setup({})
 
     local theme = require("phjorgensen.base16-themes.base16-tomorrow-night")
+
     require("mini.base16").setup({
       palette = theme,
       use_cterm = true,
@@ -41,7 +42,6 @@ return {
     require("mini.icons").setup({})
     require("mini.notify").setup({})
     require("mini.pairs").setup({})
-    require("mini.starter").setup({})
     require("mini.statusline").setup({})
     require("mini.surround").setup({})
     require("mini.trailspace").setup({})
