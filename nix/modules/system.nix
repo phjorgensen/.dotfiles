@@ -10,10 +10,14 @@
     };
   };
 
-  fonts.fontconfig.defaultFonts = {
-    serif = ["Liberation Serif"];
-    sansSerif = ["Liberation Sans"];
-    monospace = ["BerkeleyMono"];
+  fonts = {
+    enableDefaultPackages = true;
+
+    fontconfig.defaultFonts = {
+      serif = ["Liberation Serif"];
+      sansSerif = ["Liberation Sans"];
+      monospace = ["BerkeleyMono"];
+    };
   };
 
   xdg.mime.defaultApplications = {
