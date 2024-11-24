@@ -37,6 +37,7 @@
     openssl_3_3
     gnupg
     dmidecode # BIOS info
+    exiftool
   ];
 
   programs = {

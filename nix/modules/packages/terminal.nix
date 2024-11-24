@@ -2,6 +2,8 @@
   environment.systemPackages = with pkgs; [
     # Terminals
     kitty
+    alacritty
+    wezterm
     rxvt-unicode
 
     # Terminal utils
