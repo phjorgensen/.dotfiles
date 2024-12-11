@@ -12,6 +12,7 @@
     fd # better find
     zoxide # better cd
     bat # better cat
+    zip # arcive zip
     unzip # archive unzip
     unar # archive unpacker
     jq # json processor
