@@ -10,9 +10,12 @@
     xfce.thunar
     nomacs
     obsidian
+    qownnotes
+    joplin
+    joplin-desktop
     cheese
     flameshot
-    # libreoffice-qt6-fresh
+    libreoffice-qt6-fresh
     vlc
     krita
     gimp
