@@ -20,6 +20,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    ghostty = {
+      url = "git+ssh://git@github.com/ghostty-org/ghostty";
+      inputs.nixpkgs-stable.follows = "nixpkgs";
+      inputs.nixpkgs-unstable.follows = "nixpkgs";
+    };
+
     # wezterm = {
     #   url = "github:wez/wezterm?dir=nix";
     #   inputs.nixpkgs.follows = "nixpkgs";
@@ -31,6 +37,7 @@
     home-manager,
     alejandra,
     stylix,
+    ghostty,
     # wezterm,
     ...
   } @ inputs: {
@@ -62,7 +69,10 @@
             home-manager.backupFileExtension = "backup";
           }
           {
-            environment.systemPackages = [alejandra.defaultPackage.${system}];
+            environment.systemPackages = [
+              alejandra.defaultPackage.${system}
+              ghostty.packages.${system}.default
+            ];
           }
           # {
           #   nix.settings = {
@@ -93,7 +103,10 @@
             home-manager.backupFileExtension = "backup";
           }
           {
-            environment.systemPackages = [alejandra.defaultPackage.${system}];
+            environment.systemPackages = [
+              alejandra.defaultPackage.${system}
+              ghostty.packages.${system}.default
+            ];
           }
           # {
           #   nix.settings = {
