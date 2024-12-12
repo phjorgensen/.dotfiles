@@ -1,0 +1,7 @@
+gtk-titlebar = false
+
+theme = Tomorrow Night
+background-opacity = 0.93
+
+# font-family = "BerkeleyMono"
+font-size = 13
