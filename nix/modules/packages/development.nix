@@ -24,6 +24,8 @@
     nodePackages.svelte-language-server
     nodePackages.intelephense # PHP LSP
 
+    devcontainer
+
     postman
     bruno
   ];
