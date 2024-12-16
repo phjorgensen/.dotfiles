@@ -8,9 +8,15 @@
     rustup
     go
 
+    # IDEs
+    vscode
+
     # Formatters
     stylua
     prettierd
+
+    # SDKs
+    dotnetCorePackages.dotnet_9.sdk
 
     # LSPs
     lua-language-server
