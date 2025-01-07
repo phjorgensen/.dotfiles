@@ -4,7 +4,7 @@
     git-credential-oauth
 
     gcc
-    nodejs
+    nodejs_20
     rustup
     go
 
