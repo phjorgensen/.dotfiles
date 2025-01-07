@@ -35,6 +35,14 @@ alias format='npm run format'
 alias lgit='lazygit'
 alias ldocker='lazydocker'
 
+nu() {
+  npm install --save $1@latest
+}
+
+nud() {
+  npm install --save -D $1@latest
+}
+
 mkcd() {
   mkdir -p $1 && cd $1
 }
