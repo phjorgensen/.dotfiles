@@ -36,6 +36,7 @@
     networkmanagerapplet
     arandr
     mission-center # hardware monitoring
+    keychain
     openssl_3_3
     gnupg
     dmidecode # BIOS info
