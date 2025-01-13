@@ -8,6 +8,7 @@
     ../../modules/time_and_lang.nix
     ../../modules/enable-flakes.nix
     ../../modules/window-managers/i3.nix
+    ../../modules/window-managers/hyprland.nix
     ../../modules/audio/pipewire.nix
     ../../modules/zsh.nix
     ../../modules/main-user.nix
