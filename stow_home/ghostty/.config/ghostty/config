@@ -1,4 +1,4 @@
-gtk-titlebar = false
+window-decoration = false
 
 theme = Tomorrow Night
 background-opacity = 0.93
