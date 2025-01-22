@@ -6,6 +6,7 @@
     ../../modules/network.nix
     ../../modules/bluetooth.nix
     ../../modules/time_and_lang.nix
+    ../../modules/security.nix
     ../../modules/enable-flakes.nix
     ../../modules/window-managers/i3.nix
     ../../modules/window-managers/hyprland.nix
@@ -17,6 +18,7 @@
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
     ../../modules/packages/docker.nix
+    ../../modules/packages/security.nix
     ../../modules/packages/terminal.nix
     ../../modules/packages/work.nix
   ];
