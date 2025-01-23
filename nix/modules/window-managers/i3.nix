@@ -21,13 +21,5 @@
         dunst
       ];
     };
-    # https://gitlab.com/jD91mZM2/xidlehook
-
-    displayManager.gdm = {
-      enable = true;
-      banner = ''
-        Filip er cringe
-      '';
-    };
   };
 }
