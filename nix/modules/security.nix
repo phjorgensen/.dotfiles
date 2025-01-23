@@ -1,3 +1,3 @@
 {...}: {
-  services.yubikey-agent.enable = true;
+  # services.yubikey-agent.enable = true;
 }
