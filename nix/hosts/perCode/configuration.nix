@@ -15,7 +15,7 @@
     ../../modules/zsh.nix
     ../../modules/main-user.nix
     ../../modules/stylix/general.nix
-    ../../modules/stylix/cursor-banana.nix
+    ../../modules/stylix/cursor-bibata.nix
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
     ../../modules/packages/deployment.nix
