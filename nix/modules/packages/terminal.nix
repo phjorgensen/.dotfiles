@@ -3,8 +3,6 @@
     # Terminals
     kitty
     alacritty
-    wezterm
-    rxvt-unicode
 
     # Terminal utils
     fzf # fuzzy search

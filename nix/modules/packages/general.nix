@@ -41,6 +41,7 @@
     gnupg
     dmidecode # BIOS info
     exiftool
+    cachix
   ];
 
   programs = {

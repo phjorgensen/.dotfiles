@@ -26,10 +26,10 @@
       inputs.nixpkgs-unstable.follows = "nixpkgs";
     };
 
-    # wezterm = {
-    #   url = "github:wez/wezterm?dir=nix";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    wezterm = {
+      url = "github:wez/wezterm?dir=nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -38,7 +38,7 @@
     alejandra,
     stylix,
     ghostty,
-    # wezterm,
+    wezterm,
     ...
   } @ inputs: {
     system.autoUpgrade = {
@@ -63,28 +63,24 @@
           stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
-            home-manager.backupFileExtension = "backup";
-          }
-          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
+              backupFileExtension = "backup";
+            };
+
+            nix.settings = {
+              substituters = ["https://wezterm.cachix.org"];
+              trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
+            };
+
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
               ghostty.packages.${system}.default
+              wezterm.packages.${system}.default
             ];
           }
-          # {
-          #   nix.settings = {
-          #     substituters = ["https://wezterm.cachix.org"];
-          #     trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
-          #   };
-          # }
-          # {
-          #   environment.systemPackages = [
-          #     inputs.wezterm.packages.${system}.default
-          #   ];
-          # }
         ];
       };
 
@@ -97,28 +93,24 @@
           stylix.nixosModules.stylix
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
-            home-manager.backupFileExtension = "backup";
-          }
-          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
+              backupFileExtension = "backup";
+            };
+
+            nix.settings = {
+              substituters = ["https://wezterm.cachix.org"];
+              trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
+            };
+
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
               ghostty.packages.${system}.default
+              wezterm.packages.${system}.default
             ];
           }
-          # {
-          #   nix.settings = {
-          #     substituters = ["https://wezterm.cachix.org"];
-          #     trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
-          #   };
-          # }
-          # {
-          #   environment.systemPackages = [
-          #     inputs.wezterm.packages.${system}.default
-          #   ];
-          # }
         ];
       };
     };
