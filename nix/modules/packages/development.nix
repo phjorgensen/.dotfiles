@@ -29,6 +29,7 @@
     nodePackages.typescript-language-server
     nodePackages.svelte-language-server
     nodePackages.intelephense # PHP LSP
+    hyprls
 
     devcontainer
 

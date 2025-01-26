@@ -39,5 +39,6 @@ return {
     lspconfig.intelephense.setup({})
     lspconfig.gopls.setup({})
     lspconfig.marksman.setup({})
+    lspconfig.hyprls.setup({})
   end,
 }
