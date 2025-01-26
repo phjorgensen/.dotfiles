@@ -1,4 +1,8 @@
 {pkgs, ...}: {
+  imports = [
+    ../../modules/audio/pipewire.nix
+  ];
+
   programs.hyprland = {
     enable = true;
     withUWSM = true;
@@ -10,9 +14,25 @@
   services.hypridle.enable = true;
 
   environment.systemPackages = with pkgs; [
+    # Authentication agent
+    hyprpolkitagent
+
+    # Hyprland default terminal
     kitty
+
     hyprpaper
+    dunst
+    wofi
+
+    # PulseAudio manager
+    kdePackages.plasma-pa
+
+    # file picker may not work, this should fix it
+    # xdg-desktop-portal-gtk
   ];
 
+  qt.enable = true;
+
+  # Tell apps to use wayland
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }
