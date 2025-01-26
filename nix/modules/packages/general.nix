@@ -8,6 +8,8 @@
 
     # File handlers
     xfce.thunar
+    kdePackages.dolphin
+    nautilus
     nomacs
     obsidian
     qownnotes
@@ -42,6 +44,7 @@
     dmidecode # BIOS info
     exiftool
     cachix
+    udiskie # USB auto mounting
   ];
 
   programs = {
