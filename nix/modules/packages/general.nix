@@ -46,6 +46,7 @@
     exiftool
     cachix
     udiskie # USB auto mounting
+    swww
   ];
 
   programs = {
