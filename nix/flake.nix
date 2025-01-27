@@ -20,16 +20,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
-      inputs.nixpkgs-stable.follows = "nixpkgs";
-      inputs.nixpkgs-unstable.follows = "nixpkgs";
-    };
+    # ghostty = {
+    #   url = "github:ghostty-org/ghostty";
+    #   inputs.nixpkgs-stable.follows = "nixpkgs";
+    #   inputs.nixpkgs-unstable.follows = "nixpkgs";
+    # };
 
-    wezterm = {
-      url = "github:wez/wezterm?dir=nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # wezterm = {
+    #   url = "github:wez/wezterm?dir=nix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = {
@@ -37,8 +37,8 @@
     home-manager,
     alejandra,
     stylix,
-    ghostty,
-    wezterm,
+    # ghostty,
+    # wezterm,
     ...
   } @ inputs: {
     system.autoUpgrade = {
@@ -70,15 +70,15 @@
               backupFileExtension = "backup";
             };
 
-            nix.settings = {
-              substituters = ["https://wezterm.cachix.org"];
-              trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
-            };
+            # nix.settings = {
+            #   substituters = ["https://wezterm.cachix.org"];
+            #   trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
+            # };
 
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
-              ghostty.packages.${system}.default
-              wezterm.packages.${system}.default
+              # ghostty.packages.${system}.default
+              # wezterm.packages.${system}.default
             ];
           }
         ];
@@ -100,15 +100,15 @@
               backupFileExtension = "backup";
             };
 
-            nix.settings = {
-              substituters = ["https://wezterm.cachix.org"];
-              trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
-            };
+            # nix.settings = {
+            #   substituters = ["https://wezterm.cachix.org"];
+            #   trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
+            # };
 
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
-              ghostty.packages.${system}.default
-              wezterm.packages.${system}.default
+              # ghostty.packages.${system}.default
+              # wezterm.packages.${system}.default
             ];
           }
         ];

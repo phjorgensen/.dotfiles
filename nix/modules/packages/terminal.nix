@@ -3,6 +3,7 @@
     # Terminals
     kitty
     alacritty
+    ghostty
 
     # Terminal utils
     fzf # fuzzy search
