@@ -16,7 +16,9 @@
     joplin
     joplin-desktop
     cheese
-    flameshot
+    flameshot # Screenshot program for X11
+    grimblast # Screenshot program for Hyprland
+    wl-clipboard
     libreoffice-qt6-fresh
     vlc
     krita
