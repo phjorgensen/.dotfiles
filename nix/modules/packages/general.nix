@@ -9,7 +9,6 @@
     # File handlers
     xfce.thunar
     kdePackages.dolphin
-    nautilus
     nomacs
     obsidian
     qownnotes
