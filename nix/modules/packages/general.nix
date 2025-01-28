@@ -47,6 +47,14 @@
     cachix
     udiskie # USB auto mounting
     swww
+    font-awesome
+    # line-awesome
+  ];
+
+  fonts.packages = [
+    pkgs.nerd-fonts._0xproto
+    pkgs.nerd-fonts.droid-sans-mono
+    pkgs.nerd-fonts.fira-code
   ];
 
   programs = {
