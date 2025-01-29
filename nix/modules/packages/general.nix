@@ -24,6 +24,7 @@
     gimp
     gparted
     zathura
+    obs-studio
 
     # Messages
     telegram-desktop
