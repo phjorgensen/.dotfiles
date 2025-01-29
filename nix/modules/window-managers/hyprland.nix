@@ -21,11 +21,13 @@
     kitty
 
     hyprpaper
+    swww
     dunst
     wofi
 
     # PulseAudio manager
     kdePackages.plasma-pa
+    swaynotificationcenter
 
     # file picker may not work, this should fix it
     # xdg-desktop-portal-gtk

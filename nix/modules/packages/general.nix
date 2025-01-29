@@ -47,7 +47,6 @@
     exiftool
     cachix
     udiskie # USB auto mounting
-    swww
     font-awesome
     # line-awesome
   ];
