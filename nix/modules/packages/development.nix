@@ -7,6 +7,7 @@
     nodejs_20
     rustup
     go
+    nim
 
     # IDEs
     vscode
