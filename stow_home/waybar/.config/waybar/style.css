@@ -1,11 +1,12 @@
 * {
-  font-family: FontAwesome, "NotoSansMono Nerd Font", FiraCode, Roboto,
-    Helvetica, Arial, sans-serif;
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
 
 window#waybar {
-  background-color: rgba(43, 48, 59, 0);
+  background-color: rgba(43, 48, 59, 0.5);
+  border-bottom: 3px solid rgba(100, 114, 125, 0.5);
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -15,23 +16,47 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+  background-color: #3f3f3f;
+}
+
+window#waybar.chromium {
+  background-color: #000000;
+  border: none;
+}
+
 button {
   /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 -3px transparent;
   /* Avoid rounded borders under each button name */
   border: none;
+  border-radius: 0;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+  background-color: #a37800;
 }
 
 #workspaces button {
-  padding: 5px;
+  padding: 0 5px;
   background-color: transparent;
   color: #ffffff;
-  border-radius: 5px;
 }
 
 #workspaces button:hover {
@@ -40,6 +65,7 @@ button:hover {
 
 #workspaces button.active {
   background-color: #64727d;
+  box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.urgent {
@@ -48,7 +74,7 @@ button:hover {
 
 #mode {
   background-color: #64727d;
-  border-radius: 10px;
+  box-shadow: inset 0 -3px #ffffff;
 }
 
 #clock,
@@ -68,10 +94,8 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-  padding: 10px;
-  margin: 4px;
+  padding: 0 10px;
   color: #ffffff;
-  border-radius: 10px;
 }
 
 #window,
@@ -91,13 +115,11 @@ button:hover {
 
 #clock {
   background-color: #64727d;
-  border-radius: 10px;
 }
 
 #battery {
   background-color: #ffffff;
   color: #000000;
-  border-radius: 10px;
 }
 
 #battery.charging,
@@ -126,7 +148,6 @@ button:hover {
 
 #power-profiles-daemon {
   padding-right: 15px;
-  border-radius: 10px;
 }
 
 #power-profiles-daemon.performance {
@@ -151,27 +172,22 @@ label:focus {
 #cpu {
   background-color: #2ecc71;
   color: #000000;
-  border-radius: 10px;
 }
 
 #memory {
   background-color: #9b59b6;
-  border-radius: 10px;
 }
 
 #disk {
   background-color: #964b00;
-  border-radius: 10px;
 }
 
 #backlight {
   background-color: #90b1b1;
-  border-radius: 10px;
 }
 
 #network {
   background-color: #2980b9;
-  border-radius: 10px;
 }
 
 #network.disconnected {
@@ -181,7 +197,6 @@ label:focus {
 #pulseaudio {
   background-color: #f1c40f;
   color: #000000;
-  border-radius: 10px;
 }
 
 #pulseaudio.muted {
@@ -189,14 +204,9 @@ label:focus {
   color: #2a5c45;
 }
 
-#pulseaudio:hover {
-  background-color: #a37800;
-}
-
 #wireplumber {
   background-color: #fff0f5;
   color: #000000;
-  border-radius: 10px;
 }
 
 #wireplumber.muted {
@@ -207,7 +217,6 @@ label:focus {
   background-color: #66cc99;
   color: #2a5c45;
   min-width: 100px;
-  border-radius: 10px;
 }
 
 #custom-media.custom-spotify {
@@ -220,7 +229,6 @@ label:focus {
 
 #temperature {
   background-color: #f0932b;
-  border-radius: 10px;
 }
 
 #temperature.critical {
@@ -274,28 +282,28 @@ label:focus {
   min-width: 16px;
 }
 
-#custom-notification {
-  font-family: "NotoSansMono Nerd Font";
-  background-color: orange;
-
-  min-width: 5px;
-  min-height: 5px;
-
-  padding: 5px;
-  margin: 5px;
-  border-radius: 999px;
+#keyboard-state {
+  background: #97e1ad;
+  color: #000000;
+  padding: 0 0px;
+  margin: 0 5px;
+  min-width: 16px;
 }
 
-#custom-power {
-  font-family: "NotoSansMono Nerd Font";
-  background-color: red;
+#keyboard-state > label {
+  padding: 0 5px;
+}
 
-  min-width: 5px;
-  min-height: 5px;
+#keyboard-state > label.locked {
+  background: rgba(0, 0, 0, 0.2);
+}
 
-  padding: 5px;
-  margin: 5px;
-  border-radius: 999px;
+#scratchpad {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+  background-color: transparent;
 }
 
 #privacy {
@@ -317,13 +325,4 @@ label:focus {
 
 #privacy-item.audio-out {
   background-color: #0069d4;
-}
-
-window#waybar.termite {
-  background-color: #3f3f3f;
-}
-
-window#waybar.chromium {
-  background-color: #000000;
-  border: none;
 }
