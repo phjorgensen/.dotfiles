@@ -13,13 +13,13 @@
   "modules-center": ["clock"],
 
   "modules-right": [
-    "tray",
-    "cpu_text",
+    "pulseaudio",
     "cpu",
     "memory",
-    "battery",
     "network",
-    "pulseaudio",
+    "battery",
+    "tray",
+    "custom/shutdown",
   ],
 
   "hyprland/workspaces": {
@@ -77,11 +77,17 @@
 
   "pulseaudio": {
     "scroll-step": 5,
-    "max-volume": 150,
+    "max-volume": 100,
     "format": "vol {volume}%",
     "format-bluetooth": "vol {volume}%",
     "nospacing": 1,
     "on-click": "pavucontrol",
+    "tooltip": false,
+  },
+
+  "custom/shutdown": {
+    "format": "shutdown",
+    "on-click": "shutdown 0",
     "tooltip": false,
   },
 }
