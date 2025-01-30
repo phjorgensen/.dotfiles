@@ -50,6 +50,7 @@
     udiskie # USB auto mounting
     font-awesome
     # line-awesome
+    pywal
   ];
 
   fonts.packages = [
