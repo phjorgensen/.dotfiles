@@ -96,6 +96,7 @@ button:hover {
 #mpd {
   padding: 0 10px;
   color: #ffffff;
+  border-radius: 5px;
 }
 
 #window,
@@ -115,11 +116,13 @@ button:hover {
 
 #clock {
   background-color: #64727d;
+  border-radius: 5px;
 }
 
 #battery {
   background-color: #ffffff;
   color: #000000;
+  border-radius: 5px;
 }
 
 #battery.charging,
@@ -148,6 +151,7 @@ button:hover {
 
 #power-profiles-daemon {
   padding-right: 15px;
+  border-radius: 5px;
 }
 
 #power-profiles-daemon.performance {
@@ -172,22 +176,27 @@ label:focus {
 #cpu {
   background-color: #2ecc71;
   color: #000000;
+  border-radius: 5px;
 }
 
 #memory {
   background-color: #9b59b6;
+  border-radius: 5px;
 }
 
 #disk {
   background-color: #964b00;
+  border-radius: 5px;
 }
 
 #backlight {
   background-color: #90b1b1;
+  border-radius: 5px;
 }
 
 #network {
   background-color: #2980b9;
+  border-radius: 5px;
 }
 
 #network.disconnected {
@@ -197,6 +206,7 @@ label:focus {
 #pulseaudio {
   background-color: #f1c40f;
   color: #000000;
+  border-radius: 5px;
 }
 
 #pulseaudio.muted {
@@ -207,6 +217,7 @@ label:focus {
 #wireplumber {
   background-color: #fff0f5;
   color: #000000;
+  border-radius: 5px;
 }
 
 #wireplumber.muted {
@@ -217,6 +228,7 @@ label:focus {
   background-color: #66cc99;
   color: #2a5c45;
   min-width: 100px;
+  border-radius: 5px;
 }
 
 #custom-media.custom-spotify {
@@ -229,6 +241,7 @@ label:focus {
 
 #temperature {
   background-color: #f0932b;
+  border-radius: 5px;
 }
 
 #temperature.critical {
@@ -237,6 +250,7 @@ label:focus {
 
 #tray {
   background-color: #2980b9;
+  border-radius: 5px;
 }
 
 #tray > .passive {
@@ -250,6 +264,7 @@ label:focus {
 
 #idle_inhibitor {
   background-color: #2d3436;
+  border-radius: 5px;
 }
 
 #idle_inhibitor.activated {
@@ -260,6 +275,7 @@ label:focus {
 #mpd {
   background-color: #66cc99;
   color: #2a5c45;
+  border-radius: 5px;
 }
 
 #mpd.disconnected {
@@ -280,6 +296,7 @@ label:focus {
   padding: 0 5px;
   margin: 0 5px;
   min-width: 16px;
+  border-radius: 5px;
 }
 
 #keyboard-state {
@@ -288,6 +305,7 @@ label:focus {
   padding: 0 0px;
   margin: 0 5px;
   min-width: 16px;
+  border-radius: 5px;
 }
 
 #keyboard-state > label {
@@ -300,6 +318,7 @@ label:focus {
 
 #scratchpad {
   background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 #scratchpad.empty {
@@ -308,6 +327,7 @@ label:focus {
 
 #privacy {
   padding: 0;
+  border-radius: 5px;
 }
 
 #privacy-item {
