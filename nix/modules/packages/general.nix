@@ -18,6 +18,7 @@
     flameshot # Screenshot program for X11
     grimblast # Screenshot program for Hyprland
     wl-clipboard
+    copyq
     libreoffice-qt6-fresh
     vlc
     krita
