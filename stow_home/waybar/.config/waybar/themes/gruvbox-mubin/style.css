@@ -25,7 +25,8 @@ tooltip {
 #network,
 #battery,
 #tray,
-#custom-shutdown {
+#custom-nc,
+#custom-pwr {
   margin: 6px 6px 6px 0px;
   padding: 2px 8px;
 }
@@ -70,11 +71,12 @@ tooltip {
   color: #6c782e;
 }
 
+#pulseaudio,
 #cpu,
 #memory,
 #network,
-#custom-shutdown,
-#pulseaudio {
+#custom-nc,
+#custom-pwr {
   background-color: #ddc7a1;
   border: 2px solid #c7ab7a;
   color: #1d2021;

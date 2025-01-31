@@ -18,8 +18,9 @@
     "memory",
     "network",
     "battery",
+    "custom/nc",
     "tray",
-    "custom/shutdown",
+    "custom/pwr",
   ],
 
   "hyprland/workspaces": {
@@ -85,8 +86,14 @@
     "tooltip": false,
   },
 
-  "custom/shutdown": {
-    "format": "shutdown",
+  "custom/nc": {
+    "format": "nc",
+    "on-click": "swaync-client -t",
+    "tooltip": false,
+  },
+
+  "custom/pwr": {
+    "format": "pwr",
     "on-click": "shutdown 0",
     "tooltip": false,
   },
