@@ -20,7 +20,6 @@
     "battery",
     "custom/nc",
     "tray",
-    "custom/pwr",
   ],
 
   "hyprland/workspaces": {
@@ -119,12 +118,6 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true,
-    "tooltip": false,
-  },
-
-  "custom/pwr": {
-    "format": "pwr",
-    "on-click": "shutdown 0",
     "tooltip": false,
   },
 }

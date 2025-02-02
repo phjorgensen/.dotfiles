@@ -25,6 +25,9 @@
     dunst
     wofi
 
+    # Logout menu
+    wlogout
+
     # PulseAudio manager
     kdePackages.plasma-pa
     swaynotificationcenter
