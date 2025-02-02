@@ -21,6 +21,7 @@
     copyq
     libreoffice-qt6-fresh
     vlc
+    mpv
     krita
     gimp
     gparted
