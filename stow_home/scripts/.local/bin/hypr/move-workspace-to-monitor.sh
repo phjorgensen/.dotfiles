@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 foo="$(hyprctl dispatch movecurrentworkspacetomonitor l)"
 
