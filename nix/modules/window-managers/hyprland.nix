@@ -20,17 +20,25 @@
     # Hyprland default terminal
     kitty
 
-    hyprpaper
+    # Wallpaper manager
+    # hyprpaper
     swww
-    dunst
-    wofi
 
     # Logout menu
     wlogout
 
+    # Nofification daemon
+    # dunst
+    swaynotificationcenter
+
+    # App launcher
+    kickoff
+    # wofi
+    # rofi
+    # ulauncher
+
     # PulseAudio manager
     kdePackages.plasma-pa
-    swaynotificationcenter
 
     # file picker may not work, this should fix it
     # xdg-desktop-portal-gtk
