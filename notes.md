@@ -2,6 +2,7 @@
 
 - Good scripting languages
   - Bash
+  - Nim?
   - Python
   - Go
 
