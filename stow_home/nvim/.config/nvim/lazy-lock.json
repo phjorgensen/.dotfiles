@@ -1,6 +1,6 @@
 {
   "diffview.nvim": { "branch": "main", "commit": "4516612fe98ff56ae0415a259ff6361a89419b0a" },
-  "gitsigns.nvim": { "branch": "main", "commit": "cf1ffe682d3ac3a3cb89a7bdf50cc15ff1fadb8e" },
+  "gitsigns.nvim": { "branch": "main", "commit": "9772ce68a9a6d156f3f2166bfd0a17a09ab37eba" },
   "harpoon": { "branch": "harpoon2", "commit": "a84ab829eaf3678b586609888ef52f7779102263" },
   "lazy.nvim": { "branch": "main", "commit": "7527af40ddd4a93a02911be570b32609b9d4ea53" },
   "mini.nvim": { "branch": "main", "commit": "87fc38a8a2b8d498cecb021d057a38ea2e9f5a79" },
@@ -15,7 +15,7 @@
   "plenary.nvim": { "branch": "master", "commit": "3707cdb1e43f5cea73afb6037e6494e7ce847a66" },
   "pomo.nvim": { "branch": "main", "commit": "7e06e5221d8d1e596a0ab29dd4d7fcee5f3cd05a" },
   "render-markdown.nvim": { "branch": "main", "commit": "2a9e0ab6043bfb4996ce6a6a35594ab357e5d299" },
-  "snacks.nvim": { "branch": "main", "commit": "04d4bd74758652deb466d24aaa53f0272798c9cd" },
+  "snacks.nvim": { "branch": "main", "commit": "c61114fb32910863a543a4a7a1f63e9915983d26" },
   "snipe.nvim": { "branch": "main", "commit": "0d0a482ac713370196e4fc0025d5aaac5030104d" },
   "telescope.nvim": { "branch": "master", "commit": "415af52339215926d705cccc08145f3782c4d132" },
   "todo-comments.nvim": { "branch": "main", "commit": "304a8d204ee787d2544d8bc23cd38d2f929e7cc5" },
