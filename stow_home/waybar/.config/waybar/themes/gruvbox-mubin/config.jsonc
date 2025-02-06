@@ -101,9 +101,11 @@
     "scroll-step": 5,
     "max-volume": 100,
     "format": "vol {volume}%",
+    "format-muted": "muted",
     "format-bluetooth": "vol {volume}%",
     "nospacing": 1,
-    "on-click": "pavucontrol",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
     "tooltip": false,
   },
 
