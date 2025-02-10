@@ -1,0 +1,35 @@
+# Characters shown in front of the query.
+prompt = 'Search: '
+
+# space between window border and the content in pixel
+padding = 150
+
+# list of otf or ttf fonts. later elements work as fallback
+fonts = [
+  'BerkeleyMono',
+  'Noto Sans Mono'
+]
+font_size = 32.0
+
+[history]
+decrease_interval = 48 # interval to decrease the number of launches in hours
+
+# color format: rgb or rgba, if transparency is desired
+[colors]
+background = '#282828DD'
+prompt = '#83A598FF'
+text = '#FBF1C7FF'          # for search results
+text_query = '#FBF1C7FF'    # for the search query
+text_selected = '#458588FF' # for the currently selected result
+
+# keybindings syntax: ctrl/shift/alt/logo as modifiers and a key joined by '+' signs
+# A list of available keys can be found here: https://docs.rs/crate/x11-keysymdef/0.2.0/source/src/keysym.json
+[keybindings]
+paste = ["ctrl+v"]
+execute = ["KP_Enter", "Return"]
+delete = ["KP_Delete", "Delete", "BackSpace"]
+delete_word = ["ctrl+KP_Delete", "ctrl+Delete", "ctrl+BackSpace"]
+complete = ["Tab"]
+nav_up = ["Up", "ctrl+p"]
+nav_down = ["Down", "ctrl+n"]
+exit = ["Escape"]
