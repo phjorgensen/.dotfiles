@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    vulnix
+    # vulnix
     yubikey-manager
     # yubikey-touch-detector
   ];
