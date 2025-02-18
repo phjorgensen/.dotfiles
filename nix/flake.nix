@@ -5,11 +5,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     alejandra = {
       url = "github:kamadorueda/alejandra/3.0.0";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -34,7 +29,6 @@
 
   outputs = {
     nixpkgs,
-    home-manager,
     alejandra,
     stylix,
     # ghostty,
@@ -61,15 +55,7 @@
         modules = [
           ./hosts/perCode/configuration.nix
           stylix.nixosModules.stylix
-          home-manager.nixosModules.home-manager
           {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
-              backupFileExtension = "backup";
-            };
-
             # nix.settings = {
             #   substituters = ["https://wezterm.cachix.org"];
             #   trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
@@ -91,15 +77,7 @@
         modules = [
           ./hosts/perWork/configuration.nix
           stylix.nixosModules.stylix
-          home-manager.nixosModules.home-manager
           {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.phj = import ../stow_home/home-manager/.config/home-manager/home.nix;
-              backupFileExtension = "backup";
-            };
-
             # nix.settings = {
             #   substituters = ["https://wezterm.cachix.org"];
             #   trusted-public-keys = ["wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="];
