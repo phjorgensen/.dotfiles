@@ -37,5 +37,6 @@
     postman
     bruno
     mosquitto # MQTT broker and client
+    ngrok
   ];
 }
