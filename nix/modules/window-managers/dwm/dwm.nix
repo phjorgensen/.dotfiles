@@ -9,6 +9,12 @@
         conf = ./config.def.h;
       };
     };
+
+    # Configure keymap in X11
+    xkb = {
+      layout = "no";
+      variant = "";
+    };
   };
 
   environment.systemPackages = with pkgs; [

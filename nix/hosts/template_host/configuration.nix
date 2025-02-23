@@ -7,7 +7,7 @@
     #../../modules/bootloader/systemd-boot.nix
     ../../modules/network.nix
     ../../modules/bluetooth.nix
-    ../../modules/time_and_lang.nix
+    ../../modules/time-and-lang.nix
     ../../modules/enable-flakes.nix
     ../../modules/window-managers/i3.nix
     ../../modules/audio/pulseaudio.nix

@@ -21,5 +21,11 @@
         dunst
       ];
     };
+
+    # Configure keymap in X11
+    xkb = {
+      layout = "no";
+      variant = "";
+    };
   };
 }
