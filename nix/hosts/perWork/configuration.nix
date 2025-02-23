@@ -8,9 +8,8 @@
     ../../modules/time-and-lang.nix
     ../../modules/security.nix
     ../../modules/enable-flakes.nix
-    ../../modules/window-managers/i3.nix
     ../../modules/window-managers/hyprland.nix
-    ../../modules/display-managers/greetd.nix
+    ../../modules/display-managers/sddm.nix
     ../../modules/audio/pipewire.nix
     ../../modules/zsh.nix
     ../../modules/main-user.nix
