@@ -43,7 +43,7 @@
     arandr
     mission-center # hardware monitoring
     keychain
-    openssl_3_3
+    openssl
     gnupg
     dmidecode # BIOS info
     exiftool
