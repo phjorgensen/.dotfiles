@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex) -- go back to Ex
+vim.keymap.set("n", "<leader>pv", "<cmd>Ex<CR>")
 
 -- Move between splits
 vim.keymap.set("n", "<C-h>", "<cmd>wincmd h<CR>", { silent = true })
@@ -18,28 +18,27 @@ vim.keymap.set("n", "n", "nzzzv") -- when going to next search, keep cursor in t
 vim.keymap.set("n", "N", "Nzzzv") -- when going to previous search, keep cursor in the middle of the screen
 
 vim.keymap.set("x", "<leader>p", [["_dP]]) -- paste without replacing paste buffer
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]]) -- delete to void, not to clipboard
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]]) -- delete removed to void, not to clipboard
+vim.keymap.set({ "n", "v" }, "<leader>c", [["_c]]) -- delete changed to void, not to clipboard
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]]) -- copy to system clipboard
 vim.keymap.set("n", "<leader>Y", [["+Y]]) -- copy to system clipboard
 
 vim.keymap.set("i", "<C-c>", "<Esc>") -- exiting insert mode with Ctrl-c will use Esc
 
-vim.keymap.set("n", "Q", "<nop>") -- I don't know what Q does, but It's bad apparently
--- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>") -- maybe add again if i add tmux at some point
+vim.keymap.set("n", "Q", "@a") -- Bind Q to run the macro stored in the A register, instead of entering Ex mode
 
--- From ThePrimeagen, not sure what it does, find keybinds for it to test
--- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
--- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz") -- find errors?
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz") -- find errors?
+-- Not sure what this does, test to figure it out
+vim.keymap.set("n", "<leader>cn", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<leader>cp", "<cmd>cprev<CR>zz")
+
+-- Not sure what this does, test to figure it out
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>sc", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "Search and replace" })
 vim.keymap.set("v", "<leader>sc", ":s///gI<Left><Left><Left><Left>", { desc = "Search and replace selection" })
--- vim.keymap.set("n", "<leader>sr", ":%s/<C-r><C-w>//gI<Left><Left><Left>", { desc = "Search and replace, with clearing the old value" })
 
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader><leader>", function()
-  vim.cmd("so")
-end)
+vim.keymap.set("n", "<leader>so", "<cmd>so<CR>")
