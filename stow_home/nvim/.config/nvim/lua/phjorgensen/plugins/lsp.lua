@@ -1,9 +1,12 @@
 return {
   "neovim/nvim-lspconfig",
+  dependencies = { "saghen/blink.cmp" },
   config = function()
+    local capabilities = require("blink.cmp").get_lsp_capabilities()
     local lspconfig = require("lspconfig")
 
     lspconfig.lua_ls.setup({
+      capabilities = capabilities,
       settings = {
         Lua = {
           runtime = {
@@ -23,6 +26,7 @@ return {
 
     lspconfig.nil_ls.setup({
       autostart = true,
+      capabilities = capabilities,
       settings = {
         ["nil"] = {
           formatting = {
@@ -32,13 +36,13 @@ return {
       },
     })
 
-    lspconfig.rust_analyzer.setup({})
-    lspconfig.ts_ls.setup({})
-    lspconfig.svelte.setup({})
-    lspconfig.tailwindcss.setup({})
-    lspconfig.intelephense.setup({})
-    lspconfig.gopls.setup({})
-    lspconfig.marksman.setup({})
-    lspconfig.hyprls.setup({})
+    lspconfig.rust_analyzer.setup({ capabilities = capabilities })
+    lspconfig.ts_ls.setup({ capabilities = capabilities })
+    lspconfig.svelte.setup({ capabilities = capabilities })
+    lspconfig.tailwindcss.setup({ capabilities = capabilities })
+    lspconfig.intelephense.setup({ capabilities = capabilities })
+    lspconfig.gopls.setup({ capabilities = capabilities })
+    lspconfig.marksman.setup({ capabilities = capabilities })
+    lspconfig.hyprls.setup({ capabilities = capabilities })
   end,
 }

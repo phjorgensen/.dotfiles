@@ -21,21 +21,21 @@ return {
       },
     })
 
-    require("mini.completion").setup({
-      delay = {
-        completion = 10, -- 100,
-        info = 10, -- 100,
-        signature = 10, -- 50,
-      },
-      window = {
-        info = {
-          border = "single",
-        },
-        signature = {
-          border = "single",
-        },
-      },
-    })
+    -- require("mini.completion").setup({
+    --   delay = {
+    --     completion = 10, -- 100,
+    --     info = 10, -- 100,
+    --     signature = 10, -- 50,
+    --   },
+    --   window = {
+    --     info = {
+    --       border = "single",
+    --     },
+    --     signature = {
+    --       border = "single",
+    --     },
+    --   },
+    -- })
 
     require("mini.git").setup({})
     require("mini.hipatterns").setup({})
