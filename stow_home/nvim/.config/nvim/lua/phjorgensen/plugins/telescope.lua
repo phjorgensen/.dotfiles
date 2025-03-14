@@ -43,8 +43,8 @@ return {
     local builtin = require("telescope.builtin")
 
     -- Trying out some new keybinds
-    vim.keymap.set("n", "<leader><leader>", builtin.find_files)
-    vim.keymap.set("n", "<leader>f", builtin.find_files)
+    vim.keymap.set("n", "<leader><leader>", builtin.git_files)
+    vim.keymap.set("n", "<leader>f", builtin.git_files)
     vim.keymap.set("n", "<leader>/", builtin.live_grep)
 
     vim.keymap.set("n", "<leader>sa", builtin.find_files)
