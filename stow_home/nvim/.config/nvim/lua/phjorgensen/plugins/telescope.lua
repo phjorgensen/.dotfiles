@@ -35,13 +35,15 @@ return {
     local builtin = require("telescope.builtin")
 
     -- Trying out some new keybinds
-    vim.keymap.set("n", "<leader><leader>", builtin.git_files, { desc = "Search project files" })
-    vim.keymap.set("n", "<leader>f", builtin.git_files, { desc = "Search project files" })
-    vim.keymap.set("n", "<leader>/", builtin.live_grep, { desc = "Search for text in project files" })
+    vim.keymap.set("n", "<leader><leader>", builtin.git_files, { desc = "Search files" })
+    vim.keymap.set("n", "<leader>f", builtin.git_files, { desc = "Search files" })
+    vim.keymap.set("n", "<leader>F", builtin.find_files, { desc = "Search all files" })
+    vim.keymap.set("n", "<leader>/", builtin.live_grep, { desc = "Search in files (grep)" })
 
-    vim.keymap.set("n", "<leader>sa", builtin.find_files, { desc = "Search all project files" })
-    vim.keymap.set("n", "<leader>sf", builtin.git_files, { desc = "Search project files" })
-    vim.keymap.set("n", "<leader>sg", builtin.live_grep, { desc = "Search for text in project files" })
-    vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "Resume search" })
+    -- vim.keymap.set("n", "<leader>sa", builtin.find_files, { desc = "Search all files" })
+    -- vim.keymap.set("n", "<leader>sf", builtin.git_files, { desc = "Search files" })
+    -- vim.keymap.set("n", "<leader>sg", builtin.live_grep, { desc = "Search in files (grep)" })
+
+    vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "Resume telescope" })
   end,
 }
