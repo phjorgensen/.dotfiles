@@ -31,7 +31,8 @@ export DOTFILES=$HOME/.dotfiles
 export PATH="$HOME/.adr-tools/src:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
-
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 { alias air="$(go env GOPATH)/bin/air"; } 2>/dev/null
 
@@ -40,7 +41,5 @@ bindkey -s ^f "go-tmux-sessionizer search\n"
 export JAVA_HOME=/usr/local/android-studio/jbr 2> /dev/null
 export ANDROID_HOME="$HOME/Android/Sdk" 2> /dev/null
 export NDK_HOME="$ANDROID_HOME/ndk/26.2.11394342" 2> /dev/null
-
-export PATH=$PATH:$HOME/go/bin 2> /dev/null
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
