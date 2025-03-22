@@ -27,6 +27,7 @@
     gparted
     zathura
     obs-studio
+    emacs
 
     # Messages
     telegram-desktop
