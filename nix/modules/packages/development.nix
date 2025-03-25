@@ -10,7 +10,7 @@
     nim
 
     # IDEs
-    zed-editor
+    # zed-editor
     vscode
 
     # Formatters
