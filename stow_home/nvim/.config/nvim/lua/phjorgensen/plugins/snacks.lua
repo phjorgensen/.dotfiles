@@ -246,13 +246,13 @@ return {
     --   end,
     --   desc = "Buffers",
     -- },
-    -- {
-    --   "<leader>fc",
-    --   function()
-    --     Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
-    --   end,
-    --   desc = "Find Config File",
-    -- },
+    {
+      "<leader>fc",
+      function()
+        Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
+      end,
+      desc = "Find Config File",
+    },
     {
       "<leader>ff",
       function()
