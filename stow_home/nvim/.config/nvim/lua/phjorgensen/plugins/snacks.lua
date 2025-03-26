@@ -197,13 +197,6 @@ return {
     },
     -- Top Pickers & Explorer
     {
-      "<leader><space>",
-      function()
-        Snacks.picker.smart()
-      end,
-      desc = "Smart Find Files",
-    },
-    {
       "<leader>,",
       function()
         Snacks.picker.buffers()
@@ -240,42 +233,35 @@ return {
     },
     -- find
     -- {
-    --   "<leader>fb",
+    --   "<leader>fc",
     --   function()
-    --     Snacks.picker.buffers()
+    --     Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
     --   end,
-    --   desc = "Buffers",
+    --   desc = "Find Config File",
     -- },
     {
-      "<leader>fc",
-      function()
-        Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
-      end,
-      desc = "Find Config File",
-    },
-    {
-      "<leader>ff",
+      "<leader>f",
       function()
         Snacks.picker.smart()
       end,
       desc = "Smart Find Files",
     },
     -- {
-    --   "<leader>fg",
+    --   "<leader>sg",
     --   function()
     --     Snacks.picker.git_files()
     --   end,
     --   desc = "Find Git Files",
     -- },
     -- {
-    --   "<leader>fp",
+    --   "<leader>sp",
     --   function()
     --     Snacks.picker.projects()
     --   end,
     --   desc = "Projects",
     -- },
     {
-      "<leader>fr",
+      "<leader>sR",
       function()
         Snacks.picker.recent()
       end,
@@ -302,27 +288,6 @@ return {
         Snacks.picker.git_log_line()
       end,
       desc = "Git Log Line",
-    },
-    {
-      "<leader>gs",
-      function()
-        Snacks.picker.git_status()
-      end,
-      desc = "Git Status",
-    },
-    {
-      "<leader>gS",
-      function()
-        Snacks.picker.git_stash()
-      end,
-      desc = "Git Stash",
-    },
-    {
-      "<leader>gd",
-      function()
-        Snacks.picker.git_diff()
-      end,
-      desc = "Git Diff (Hunks)",
     },
     {
       "<leader>gf",
@@ -489,7 +454,7 @@ return {
       desc = "Quickfix List",
     },
     {
-      "<leader>sR",
+      "<leader>sr",
       function()
         Snacks.picker.resume()
       end,
