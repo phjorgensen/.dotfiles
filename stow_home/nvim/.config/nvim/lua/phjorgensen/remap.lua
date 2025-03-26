@@ -12,8 +12,8 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move selection down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move selection up
 
 vim.keymap.set("n", "J", "mzJ`z") -- keep moving line below to the end of current line
-vim.keymap.set("n", "<C-d>", "<C-d>zz") -- when moving half page down, keep cursor in the middle of the screen
-vim.keymap.set("n", "<C-u>", "<C-u>zz") -- when moving half page up, keep cursor in the middle of the screen
+-- vim.keymap.set("n", "<C-d>", "<C-d>zz") -- when moving half page down, keep cursor in the middle of the screen
+-- vim.keymap.set("n", "<C-u>", "<C-u>zz") -- when moving half page up, keep cursor in the middle of the screen
 vim.keymap.set("n", "n", "nzzzv") -- when going to next search, keep cursor in the middle of the screen
 vim.keymap.set("n", "N", "Nzzzv") -- when going to previous search, keep cursor in the middle of the screen
 
