@@ -1,0 +1,135 @@
+{
+  "layer": "top",
+  "spacing": 0,
+  "height": 0,
+
+  "margin-top": 8,
+  "margin-right": 8,
+  "margin-bottom": 0,
+  "margin-left": 8,
+
+  "modules-left": ["hyprland/workspaces"],
+
+  "modules-center": ["clock"],
+
+  "modules-right": [
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "network",
+    "battery",
+    "custom/nc",
+    "tray",
+  ],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十",
+      // "1": "一 いち ichi",
+      // "2": "二 に ni",
+      // "3": "三 さん san",
+      // "4": "四 よん yon",
+      // "5": "五 ご go",
+      // "6": "六 ろく roku",
+      // "7": "七 なな nana",
+      // "8": "八 はち hachi",
+      // "9": "九 きゅう kyū",
+      // "10": "十 じゅう jū",
+    },
+  },
+
+  "tray": {
+    "spacing": 10,
+    "tooltip": false,
+  },
+
+  "clock": {
+    "format": "{:%A - %F - %T}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "interval": 1,
+  },
+
+  "cpu": {
+    "format": "cpu {usage}%",
+    "interval": 2,
+
+    "states": {
+      "critical": 90,
+    },
+  },
+
+  "memory": {
+    "format": "mem {percentage}%",
+    "interval": 2,
+
+    "states": {
+      "critical": 80,
+    },
+  },
+
+  "battery": {
+    "format": "bat {capacity}%",
+    "interval": 5,
+    "states": {
+      "warning": 20,
+      "critical": 10,
+    },
+    "tooltip": false,
+  },
+
+  "network": {
+    "format-wifi": "wifi {bandwidthDownBits}",
+    "format-ethernet": "enth {bandwidthDownBits}",
+    "format-disconnected": "no network",
+    "interval": 5,
+    "tooltip": false,
+  },
+
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 100,
+    "format": "vol {volume}%",
+    "format-muted": "muted",
+    "format-bluetooth": "vol {volume}%",
+    "nospacing": 1,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "tooltip": false,
+  },
+
+  // For some reason, this is still not displayed when signing in...
+  // Seems to be some race condition between starting the daemon before
+  // trying to subscribe to the client.
+  "custom/nc": {
+    "format": "{icon} {}",
+    "format-icons": {
+      "notification": "<span foreground='#CC241D'>nots</span>",
+      "none": "nots",
+      "dnd-notification": "<span foreground='#CC241D'>dnd</span>",
+      "dnd-none": "dnd",
+      "inhibited-notification": "<span foreground='#CC241D'>inots</span>",
+      "inhibited-none": "inots",
+      "dnd-inhibited-notification": "<span foreground='#CC241D'>dnd</span>",
+      "dnd-inhibited-none": "dnd",
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true,
+    "tooltip": false,
+  },
+}
