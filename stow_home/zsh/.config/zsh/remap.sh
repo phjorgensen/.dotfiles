@@ -5,6 +5,9 @@ alias svi='sudo nvim'
 alias svim='sudo nvim'
 alias snvim='sudo nvim'
 
+# Cat
+alias cat=bat
+
 # Has to be single quotes.
 alias fuck='sudo $(fc -ln -1)'
 
@@ -19,6 +22,10 @@ source ~/.config/fav_paths_local.sh 2> /dev/null
 alias myip='curl http://ipecho.net/plain; echo'
 alias srcconf='source ~/.zshrc'
 
+# Open lazy
+alias lgit='lazygit'
+alias ldocker='lazydocker'
+
 # Node
 alias ni='npm install --save '
 alias nid='npm install --save -D '
@@ -30,10 +37,6 @@ alias typecheck='npm run test:ts'
 alias sveltecheck='npm run test:svelte-only'
 alias test='npm run test'
 alias format='npm run format'
-
-# Open lazy
-alias lgit='lazygit'
-alias ldocker='lazydocker'
 
 nu() {
   npm install --save $1@latest
