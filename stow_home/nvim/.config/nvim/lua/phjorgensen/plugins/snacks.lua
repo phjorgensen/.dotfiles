@@ -23,7 +23,16 @@ return {
       timeout = 3000,
     },
     notify = { enabled = true },
-    -- picker = { enabled = true },
+    picker = {
+      enabled = true,
+      sources = {
+        explorer = {
+          -- focus = "input",
+          auto_close = true,
+          include = { "*" },
+        },
+      },
+    },
     profiler = { enabled = true },
     quickfile = { enabled = true },
     rename = { enabled = true },
@@ -44,20 +53,20 @@ return {
     },
   },
   keys = {
-    {
-      "<leader>.",
-      function()
-        Snacks.scratch()
-      end,
-      desc = "Toggle Scratch Buffer",
-    },
-    {
-      "<leader>S",
-      function()
-        Snacks.scratch.select()
-      end,
-      desc = "Select Scratch Buffer",
-    },
+    -- {
+    --   "<leader>.",
+    --   function()
+    --     Snacks.scratch()
+    --   end,
+    --   desc = "Toggle Scratch Buffer",
+    -- },
+    -- {
+    --   "<leader>S",
+    --   function()
+    --     Snacks.scratch.select()
+    --   end,
+    --   desc = "Select Scratch Buffer",
+    -- },
     {
       "<leader>n",
       function()
@@ -65,20 +74,20 @@ return {
       end,
       desc = "Notification History",
     },
-    {
-      "<leader>dme",
-      function()
-        Snacks.dim.enable()
-      end,
-      desc = "Enable dim",
-    },
-    {
-      "<leader>dmd",
-      function()
-        Snacks.dim.disable()
-      end,
-      desc = "Enable dim",
-    },
+    -- {
+    --   "<leader>dme",
+    --   function()
+    --     Snacks.dim.enable()
+    --   end,
+    --   desc = "Enable dim",
+    -- },
+    -- {
+    --   "<leader>dmd",
+    --   function()
+    --     Snacks.dim.disable()
+    --   end,
+    --   desc = "Enable dim",
+    -- },
     {
       "<leader>bd",
       function()
@@ -135,36 +144,36 @@ return {
       end,
       desc = "Dismiss All Notifications",
     },
-    {
-      "<c-/>",
-      function()
-        Snacks.terminal()
-      end,
-      desc = "Toggle Terminal",
-    },
-    {
-      "<c-_>",
-      function()
-        Snacks.terminal()
-      end,
-      desc = "which_key_ignore",
-    },
-    {
-      "]]",
-      function()
-        Snacks.words.jump(vim.v.count1)
-      end,
-      desc = "Next Reference",
-      mode = { "n", "t" },
-    },
-    {
-      "[[",
-      function()
-        Snacks.words.jump(-vim.v.count1)
-      end,
-      desc = "Prev Reference",
-      mode = { "n", "t" },
-    },
+    -- {
+    --   "<c-/>",
+    --   function()
+    --     Snacks.terminal()
+    --   end,
+    --   desc = "Toggle Terminal",
+    -- },
+    -- {
+    --   "<c-_>",
+    --   function()
+    --     Snacks.terminal()
+    --   end,
+    --   desc = "which_key_ignore",
+    -- },
+    -- {
+    --   "]]",
+    --   function()
+    --     Snacks.words.jump(vim.v.count1)
+    --   end,
+    --   desc = "Next Reference",
+    --   mode = { "n", "t" },
+    -- },
+    -- {
+    --   "[[",
+    --   function()
+    --     Snacks.words.jump(-vim.v.count1)
+    --   end,
+    --   desc = "Prev Reference",
+    --   mode = { "n", "t" },
+    -- },
     {
       "<leader>N",
       desc = "Neovim News",
@@ -195,28 +204,29 @@ return {
         Snacks.debug.backtrace(...)
       end,
     },
+
     -- Top Pickers & Explorer
-    {
-      "<leader>,",
-      function()
-        Snacks.picker.buffers()
-      end,
-      desc = "Buffers",
-    },
-    {
-      "<leader>/",
-      function()
-        Snacks.picker.grep()
-      end,
-      desc = "Grep",
-    },
-    {
-      "<leader>:",
-      function()
-        Snacks.picker.command_history()
-      end,
-      desc = "Command History",
-    },
+    -- {
+    --   "<leader>,",
+    --   function()
+    --     Snacks.picker.buffers()
+    --   end,
+    --   desc = "Buffers",
+    -- },
+    -- {
+    --   "<leader>/",
+    --   function()
+    --     Snacks.picker.grep()
+    --   end,
+    --   desc = "Grep",
+    -- },
+    -- {
+    --   "<leader>:",
+    --   function()
+    --     Snacks.picker.command_history()
+    --   end,
+    --   desc = "Command History",
+    -- },
     {
       "<leader>n",
       function()
@@ -231,6 +241,7 @@ return {
       end,
       desc = "File Explorer",
     },
+
     -- find
     -- {
     --   "<leader>fc",
@@ -239,13 +250,13 @@ return {
     --   end,
     --   desc = "Find Config File",
     -- },
-    {
-      "<leader>f",
-      function()
-        Snacks.picker.smart()
-      end,
-      desc = "Smart Find Files",
-    },
+    -- {
+    --   "<leader>f",
+    --   function()
+    --     Snacks.picker.smart()
+    --   end,
+    --   desc = "Smart Find Files",
+    -- },
     -- {
     --   "<leader>sg",
     --   function()
@@ -267,6 +278,7 @@ return {
       end,
       desc = "Recent",
     },
+
     -- git
     {
       "<leader>gb",
@@ -296,6 +308,7 @@ return {
       end,
       desc = "Git Log File",
     },
+
     -- Grep
     {
       "<leader>sb",
@@ -439,13 +452,13 @@ return {
       end,
       desc = "Man Pages",
     },
-    {
-      "<leader>sp",
-      function()
-        Snacks.picker.lazy()
-      end,
-      desc = "Search for Plugin Spec",
-    },
+    -- {
+    --   "<leader>sp",
+    --   function()
+    --     Snacks.picker.lazy()
+    --   end,
+    --   desc = "Search for Plugin Spec",
+    -- },
     {
       "<leader>sq",
       function()
@@ -453,20 +466,20 @@ return {
       end,
       desc = "Quickfix List",
     },
-    {
-      "<leader>sr",
-      function()
-        Snacks.picker.resume()
-      end,
-      desc = "Resume",
-    },
-    {
-      "<leader>su",
-      function()
-        Snacks.picker.undo()
-      end,
-      desc = "Undo History",
-    },
+    -- {
+    --   "<leader>sr",
+    --   function()
+    --     Snacks.picker.resume()
+    --   end,
+    --   desc = "Resume",
+    -- },
+    -- {
+    --   "<leader>su",
+    --   function()
+    --     Snacks.picker.undo()
+    --   end,
+    --   desc = "Undo History",
+    -- },
     {
       "<leader>uC",
       function()
@@ -474,57 +487,58 @@ return {
       end,
       desc = "Colorschemes",
     },
+
     -- LSP
-    {
-      "gd",
-      function()
-        Snacks.picker.lsp_definitions()
-      end,
-      desc = "Goto Definition",
-    },
-    {
-      "gD",
-      function()
-        Snacks.picker.lsp_declarations()
-      end,
-      desc = "Goto Declaration",
-    },
-    {
-      "gr",
-      function()
-        Snacks.picker.lsp_references()
-      end,
-      nowait = true,
-      desc = "References",
-    },
-    {
-      "gI",
-      function()
-        Snacks.picker.lsp_implementations()
-      end,
-      desc = "Goto Implementation",
-    },
-    {
-      "gy",
-      function()
-        Snacks.picker.lsp_type_definitions()
-      end,
-      desc = "Goto T[y]pe Definition",
-    },
-    {
-      "<leader>ss",
-      function()
-        Snacks.picker.lsp_symbols()
-      end,
-      desc = "LSP Symbols",
-    },
-    {
-      "<leader>sS",
-      function()
-        Snacks.picker.lsp_workspace_symbols()
-      end,
-      desc = "LSP Workspace Symbols",
-    },
+    -- {
+    --   "gd",
+    --   function()
+    --     Snacks.picker.lsp_definitions()
+    --   end,
+    --   desc = "Goto Definition",
+    -- },
+    -- {
+    --   "gD",
+    --   function()
+    --     Snacks.picker.lsp_declarations()
+    --   end,
+    --   desc = "Goto Declaration",
+    -- },
+    -- {
+    --   "gr",
+    --   function()
+    --     Snacks.picker.lsp_references()
+    --   end,
+    --   nowait = true,
+    --   desc = "References",
+    -- },
+    -- {
+    --   "gI",
+    --   function()
+    --     Snacks.picker.lsp_implementations()
+    --   end,
+    --   desc = "Goto Implementation",
+    -- },
+    -- {
+    --   "gy",
+    --   function()
+    --     Snacks.picker.lsp_type_definitions()
+    --   end,
+    --   desc = "Goto T[y]pe Definition",
+    -- },
+    -- {
+    --   "<leader>ss",
+    --   function()
+    --     Snacks.picker.lsp_symbols()
+    --   end,
+    --   desc = "LSP Symbols",
+    -- },
+    -- {
+    --   "<leader>sS",
+    --   function()
+    --     Snacks.picker.lsp_workspace_symbols()
+    --   end,
+    --   desc = "LSP Workspace Symbols",
+    -- },
   },
   init = function()
     vim.api.nvim_create_autocmd("User", {
