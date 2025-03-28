@@ -1,1 +1,6 @@
-@theme "~/.config/rofi/themes/tomorrow-night.rasi"
+configuration {
+  modes: [ combi ];
+  combi-modes: [ window, drun, run ];
+}
+
+@theme "themes/catppuccin/layout-big.rasi"
