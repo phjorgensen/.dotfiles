@@ -33,7 +33,7 @@
     swaynotificationcenter
 
     # App launcher
-    # kickoff
+    kickoff
     # rofi
     wofi
     # ulauncher
