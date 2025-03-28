@@ -115,13 +115,13 @@
   "custom/nc": {
     "format": "{icon} {}",
     "format-icons": {
-      "notification": "<span foreground='#CC241D'>nots</span>",
+      "notification": "<span foreground='#f38ba8'>nots</span>",
       "none": "nots",
-      "dnd-notification": "<span foreground='#CC241D'>dnd</span>",
+      "dnd-notification": "<span foreground='#f38ba8'>dnd</span>",
       "dnd-none": "dnd",
-      "inhibited-notification": "<span foreground='#CC241D'>inots</span>",
+      "inhibited-notification": "<span foreground='#f38ba8'>inots</span>",
       "inhibited-none": "inots",
-      "dnd-inhibited-notification": "<span foreground='#CC241D'>dnd</span>",
+      "dnd-inhibited-notification": "<span foreground='#f38ba8'>dnd</span>",
       "dnd-inhibited-none": "dnd",
     },
     "return-type": "json",
