@@ -11,7 +11,7 @@
   border-color:                @foreground;
   normal-background:           @background;
   selected-urgent-background:  @red;
-  alternate-active-background: @lightbg;
+  alternate-active-background: @background;
   spacing:                     2;
   alternate-normal-foreground: @foreground;
   urgent-background:           @background;
@@ -21,7 +21,7 @@
   selected-active-background:  @blue;
   active-background:           @background;
   selected-normal-background:  @lightfg;
-  alternate-normal-background: @lightbg;
+  alternate-normal-background: @background;
   foreground:                  @text;
   selected-urgent-foreground:  @background;
   normal-foreground:           @foreground;
