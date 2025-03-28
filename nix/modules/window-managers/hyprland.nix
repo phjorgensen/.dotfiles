@@ -33,9 +33,9 @@
     swaynotificationcenter
 
     # App launcher
-    kickoff
-    # wofi
+    # kickoff
     # rofi
+    wofi
     # ulauncher
 
     # PulseAudio manager
