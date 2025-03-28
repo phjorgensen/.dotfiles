@@ -90,6 +90,26 @@
         "type": "github"
       }
     },
+    "catppuccin": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1742599566,
+        "narHash": "sha256-xr6ntmiUPXSh9o9mJ7og9vxALMQs1EQhIhWUAO2D1M0=",
+        "owner": "catppuccin",
+        "repo": "nix",
+        "rev": "5e303e8d7e251868fa79f83bbda69da90aa62402",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "nix",
+        "type": "github"
+      }
+    },
     "fenix": {
       "inputs": {
         "nixpkgs": [
@@ -346,6 +366,7 @@
     "root": {
       "inputs": {
         "alejandra": "alejandra",
+        "catppuccin": "catppuccin",
         "nixpkgs": "nixpkgs",
         "stylix": "stylix"
       }

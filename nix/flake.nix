@@ -15,6 +15,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    catppuccin = {
+      url = "github:catppuccin/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # ghostty = {
     #   url = "github:ghostty-org/ghostty";
     #   inputs.nixpkgs-stable.follows = "nixpkgs";
@@ -31,6 +36,7 @@
     nixpkgs,
     alejandra,
     stylix,
+    catppuccin,
     # ghostty,
     # wezterm,
     ...
@@ -55,6 +61,13 @@
         modules = [
           ./hosts/perCode/configuration.nix
           stylix.nixosModules.stylix
+          catppuccin.nixosModules.catppuccin
+          {
+            catppuccin = {
+              enable = true;
+              flavor = "mocha";
+            };
+          }
           {
             # nix.settings = {
             #   substituters = ["https://wezterm.cachix.org"];
@@ -77,6 +90,13 @@
         modules = [
           ./hosts/perWork/configuration.nix
           stylix.nixosModules.stylix
+          catppuccin.nixosModules.catppuccin
+          {
+            catppuccin = {
+              enable = true;
+              flavor = "mocha";
+            };
+          }
           {
             # nix.settings = {
             #   substituters = ["https://wezterm.cachix.org"];
