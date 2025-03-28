@@ -46,7 +46,8 @@ tooltip {
 }
 
 #workspaces button.urgent {
-  background-color: @red;
+  background-color: @peach;
+  color: @mantle;
 }
 
 #clock,
