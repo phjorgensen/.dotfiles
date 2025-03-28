@@ -172,7 +172,13 @@ inputbar {
     padding:    1px ;
     spacing:    0px ;
     text-color: @normal-foreground;
-    children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+    children:   [
+        "entry",
+        "num-filtered-rows",
+        "textbox-num-sep",
+        "num-rows",
+        "case-indicator"
+    ];
 }
 
 case-indicator {
@@ -182,10 +188,14 @@ case-indicator {
 
 entry {
     text-color:        @normal-foreground;
-    cursor:            text;
     spacing:           0;
+
     placeholder-color: Gray;
     placeholder: "Filter";
+
+    cursor: text;
+    cursor-color: @normal-foreground;
+    cursor-width: 8px;
 }
 
 prompt {
