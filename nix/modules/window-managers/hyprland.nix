@@ -34,7 +34,7 @@
 
     # App launcher
     kickoff
-    rofi
+    rofi-wayland
     wofi
     # ulauncher
 
