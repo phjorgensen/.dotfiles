@@ -11,6 +11,15 @@ return {
     harpoon:setup()
     harpoon:extend(harpoon_extensions.builtins.highlight_current_file())
 
+    vim.api.nvim_create_autocmd({ "Filetype" }, {
+      pattern = "harpoon",
+      callback = function()
+        vim.opt.cursorline = true
+        vim.api.nvim_set_hl(0, "HarpoonWindow", { link = "Normal" })
+        vim.api.nvim_set_hl(0, "HarpoonBorder", { link = "Normal" })
+      end,
+    })
+
     vim.keymap.set("n", "<leader>a", function()
       harpoon:list():add()
     end, { desc = "Add file to harpoon" })
