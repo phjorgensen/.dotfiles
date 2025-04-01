@@ -38,3 +38,5 @@ export PATH="$HOME/go/bin:$PATH"
 export JAVA_HOME=/usr/local/android-studio/jbr 2> /dev/null
 export ANDROID_HOME="$HOME/Android/Sdk" 2> /dev/null
 export NDK_HOME="$ANDROID_HOME/ndk/26.2.11394342" 2> /dev/null
+
+[ -f ~/.config/fzf/config.sh ] && source ~/.config/fzf/config.sh
