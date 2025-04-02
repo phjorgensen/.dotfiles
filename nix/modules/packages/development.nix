@@ -4,7 +4,7 @@
     git-credential-oauth
 
     gcc
-    nodejs_20
+    nodejs
     rustup
     go
     nim
