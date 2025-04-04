@@ -10,7 +10,7 @@
 
   "modules-left": ["hyprland/workspaces"],
 
-  "modules-center": ["clock"],
+  "modules-center": ["clock#time"],
 
   "modules-right": [
     "pulseaudio",
@@ -20,6 +20,7 @@
     "battery",
     "custom/nc",
     "tray",
+    "clock#date",
   ],
 
   "hyprland/workspaces": {
@@ -55,10 +56,14 @@
     "tooltip": false,
   },
 
-  "clock": {
-    "format": "{:%A - %F - %T}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+  "clock#time": {
+    "format": "{:%T}",
     "interval": 1,
+  },
+
+  "clock#date": {
+    "format": "{:%a %F}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
   },
 
   "cpu": {
