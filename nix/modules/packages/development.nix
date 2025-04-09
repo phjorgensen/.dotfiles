@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     git
-    git-credential-oauth
+    # git-credential-oauth
 
     gcc
     nodejs
@@ -22,22 +22,22 @@
 
     # LSPs
     lua-language-server
-    marksman # Markdown LSP
-    nil # Nix LSP
-    gopls
+    marksman # Markdown
+    nil # Nix
+    gopls # Go
     rust-analyzer
     typescript
     tailwindcss-language-server
     nodePackages.typescript-language-server
     nodePackages.svelte-language-server
-    nodePackages.intelephense # PHP LSP
-    hyprls
+    nodePackages.intelephense # PHP
+    hyprls # Hyprland
 
     devcontainer
 
-    postman
-    bruno
+    # postman
+    # bruno
     mosquitto # MQTT broker and client
-    ngrok
+    # ngrok
   ];
 }

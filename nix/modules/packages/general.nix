@@ -6,43 +6,43 @@
     firefox
     vivaldi
 
+    # Note-taking programs
+    obsidian
+    # qownnotes
+    # joplin
+    # joplin-desktop
+
     # File handlers
     xfce.thunar
-    kdePackages.dolphin
+    # kdePackages.dolphin
     nomacs
-    obsidian
-    qownnotes
-    joplin
-    joplin-desktop
-    cheese
-    flameshot # Screenshot program for X11
-    grimblast # Screenshot program for Hyprland
-    wl-clipboard
-    copyq
     libreoffice-qt6-fresh
-    vlc
-    mpv
-    krita
+    vlc # media player
+    mpv # media player
+    # krita
     gimp
-    gparted
-    zathura
+    zathura # document viewer
     obs-studio
-    emacs
+    # emacs
+
+    cheese # webcam capture
 
     # Messages
     telegram-desktop
 
     # Utility
     qalculate-qt
+    libqalculate
     lxappearance
 
     # System
-    nitrogen
+    # nitrogen
     pavucontrol
     pasystray
     networkmanagerapplet
     arandr
     mission-center # hardware monitoring
+    gparted # partition editor
     keychain
     openssl
     gnupg
@@ -53,6 +53,10 @@
     font-awesome
     # line-awesome
     pywal
+    # flameshot # screenshot program for X11
+    grimblast # screenshot program for Hyprland
+    wl-clipboard # wayland clipboard utilities
+    copyq # clipboard history
   ];
 
   fonts.packages = [
