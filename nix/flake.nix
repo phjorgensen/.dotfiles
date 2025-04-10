@@ -20,6 +20,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    anyrun = {
+      url = "github:anyrun-org/anyrun";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # ghostty = {
     #   url = "github:ghostty-org/ghostty";
     #   inputs.nixpkgs-stable.follows = "nixpkgs";
@@ -37,6 +42,7 @@
     alejandra,
     stylix,
     catppuccin,
+    anyrun,
     # ghostty,
     # wezterm,
     ...
@@ -76,6 +82,7 @@
 
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
+              anyrun.packages.${system}.anyrun
               # ghostty.packages.${system}.default
               # wezterm.packages.${system}.default
             ];
@@ -105,6 +112,7 @@
 
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
+              anyrun.packages.${system}.anyrun
               # ghostty.packages.${system}.default
               # wezterm.packages.${system}.default
             ];

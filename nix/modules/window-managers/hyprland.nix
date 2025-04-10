@@ -35,7 +35,10 @@
     # App launcher
     kickoff
     rofi-wayland
-    wofi
+    # wofi
+    bemenu
+    tofi
+    walker
     # ulauncher
 
     # PulseAudio manager
