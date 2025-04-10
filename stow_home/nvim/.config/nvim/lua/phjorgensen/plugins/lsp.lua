@@ -44,5 +44,6 @@ return {
     lspconfig.gopls.setup({ capabilities = capabilities })
     lspconfig.marksman.setup({ capabilities = capabilities })
     lspconfig.hyprls.setup({ capabilities = capabilities })
+    lspconfig.sourcekit.setup({ capabilities = capabilities })
   end,
 }

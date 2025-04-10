@@ -20,6 +20,8 @@
     # SDKs
     dotnetCorePackages.dotnet_9.sdk
 
+    tree-sitter # For generating definitions for some languages (i.e. Swift)
+
     # LSPs
     lua-language-server
     marksman # Markdown
@@ -32,6 +34,7 @@
     nodePackages.svelte-language-server
     nodePackages.intelephense # PHP
     hyprls # Hyprland
+    sourcekit-lsp # Swift
 
     devcontainer
 
