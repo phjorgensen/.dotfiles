@@ -36,6 +36,7 @@
     tmux
     zellij
     fastfetch
+    microfetch
     starship
   ];
 }
