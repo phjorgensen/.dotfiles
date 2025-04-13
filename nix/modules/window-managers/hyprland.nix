@@ -33,7 +33,6 @@
     swaynotificationcenter
 
     # App launcher
-    kickoff
     rofi-wayland
     # wofi
     bemenu
