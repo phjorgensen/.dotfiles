@@ -40,5 +40,6 @@ vim.keymap.set("n", "<leader>sc", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left
 vim.keymap.set("v", "<leader>sc", ":s///gI<Left><Left><Left><Left>", { desc = "Search and replace selection" })
 
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>X", "<cmd>!chmod -x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>so", "<cmd>so<CR>")
