@@ -8,7 +8,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   group = yank_group,
   pattern = "*",
   callback = function()
-    vim.highlight.on_yank({
+    vim.hl.on_yank({
       higroup = "IncSearch",
       timeout = 40,
     })
@@ -48,8 +48,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
     -- Diagnostics
     vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
-    vim.keymap.set("n", "<leader>vn", vim.diagnostic.goto_next, opts)
-    vim.keymap.set("n", "<leader>vp", vim.diagnostic.goto_prev, opts)
+
+    vim.keymap.set("n", "<leader>vn", function()
+      return vim.diagnostic.jump({ count = 1, float = true, buffer = e.buf })
+    end, { desc = "Next diagnostic" })
+
+    vim.keymap.set("n", "<leader>vp", function()
+      return vim.diagnostic.jump({ count = -1, float = true, buffer = e.buf })
+    end, { desc = "Previous diagnostic" })
 
     vim.diagnostic.config({
       float = {
