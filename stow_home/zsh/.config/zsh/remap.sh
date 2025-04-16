@@ -22,6 +22,9 @@ source ~/.config/fav_paths_local.sh 2> /dev/null
 alias myip='curl http://ipecho.net/plain; echo'
 alias srcconf='source ~/.zshrc'
 
+# TMUX
+alias ta='tmux a'
+
 # Open lazy
 alias lgit='lazygit'
 alias ldocker='lazydocker'
