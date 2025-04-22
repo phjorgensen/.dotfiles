@@ -56,7 +56,7 @@
     # flameshot # screenshot program for X11
     grimblast # screenshot program for Hyprland
     wl-clipboard # wayland clipboard utilities
-    copyq # clipboard history
+    # copyq # clipboard history
   ];
 
   fonts.packages = [
