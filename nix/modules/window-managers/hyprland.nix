@@ -25,9 +25,6 @@
     # hyprpaper
     swww
 
-    # Logout menu
-    wlogout
-
     # Nofification daemon
     # dunst
     swaynotificationcenter
