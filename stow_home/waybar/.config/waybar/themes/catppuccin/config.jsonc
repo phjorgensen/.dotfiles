@@ -59,6 +59,7 @@
   "clock#time": {
     "format": "{:%T}",
     "interval": 1,
+    "tooltip": false,
   },
 
   "clock#date": {
