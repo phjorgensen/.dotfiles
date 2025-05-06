@@ -7,7 +7,7 @@ return {
     -- animate = { enabled = true },
     bigfile = { enabled = true },
     bufdelete = { enabled = true },
-    dashboard = { enabled = true },
+    dashboard = { enabled = false },
     debug = { enabled = true },
     dim = { enabled = true },
     explorer = { enabled = true },
