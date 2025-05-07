@@ -4,6 +4,7 @@
     kitty
     alacritty
     ghostty
+    wezterm
 
     # Terminal utils
     fzf # fuzzy search
