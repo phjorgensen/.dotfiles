@@ -19,8 +19,6 @@
     libreoffice-qt6-fresh
     vlc # media player
     mpv # media player
-    # krita
-    gimp
     zathura # document viewer
     obs-studio
     # emacs
