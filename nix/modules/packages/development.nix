@@ -15,6 +15,7 @@
     # IDEs
     # zed-editor
     vscode
+    android-studio
 
     # Formatters
     stylua
