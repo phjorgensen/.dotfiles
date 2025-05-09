@@ -46,5 +46,7 @@
     # bruno
     mosquitto # MQTT broker and client
     # ngrok
+
+    zenity # Utility to display dialog box from the command line
   ];
 }
