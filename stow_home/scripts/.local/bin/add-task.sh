@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
-~/.local/bin/task/get-task-description.sh | echo
+taskDescription=$(~/.local/bin/task/get-task-description.sh)
+echo "[task]" >> ~/.local/bin/task/tasks.toml
+echo "description = $taskDescription" >> ~/.local/bin/task/tasks.toml
+echo "" >> ~/.local/bin/task/tasks.toml
