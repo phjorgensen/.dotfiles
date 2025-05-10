@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 
-taskDescription=$(~/.local/bin/task/get-task-description.sh)
-echo "[task]" >> ~/.local/bin/task/tasks.toml
-echo "description = $taskDescription" >> ~/.local/bin/task/tasks.toml
-echo "" >> ~/.local/bin/task/tasks.toml
+taskDescription=$(zenity --entry --title "Add new task" --width 500 --ok-label "Add" --text "Description")
+currentDate=$(date +"%Y-%m-%dT%H:%M:%S%:z")
+documentPath=~/Documents/notes/work/"$taskDescription.md"
+
+echo "---" >> "$documentPath"
+echo "createdAt: $currentDate" >> "$documentPath"
+echo "completedAt: " >> "$documentPath"
+echo "tags:" >> "$documentPath"
+echo "  - from-script" >> "$documentPath"
+echo "---" >> "$documentPath"
+echo "" >> "$documentPath"
+echo "# $taskDescription" >> "$documentPath"
