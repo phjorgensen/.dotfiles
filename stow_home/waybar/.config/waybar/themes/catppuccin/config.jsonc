@@ -14,12 +14,12 @@
 
   "modules-right": [
     "pulseaudio",
-    "cpu",
-    "memory",
+    // "cpu",
+    // "memory",
     "network",
     "battery",
-    "custom/nc",
     "tray",
+    "custom/nc",
     "clock#date",
   ],
 
