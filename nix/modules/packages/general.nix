@@ -22,6 +22,7 @@
     zathura # document viewer
     obs-studio
     # emacs
+    playerctl # CLI for controlling music
 
     cheese # webcam capture
 
