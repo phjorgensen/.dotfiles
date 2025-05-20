@@ -56,6 +56,7 @@
     grimblast # screenshot program for Hyprland
     wl-clipboard # wayland clipboard utilities
     # copyq # clipboard history
+    helix
   ];
 
   fonts.packages = [
