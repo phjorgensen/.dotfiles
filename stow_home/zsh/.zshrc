@@ -11,8 +11,8 @@ setopt HIST_FIND_NO_DUPS
 # Keybindings
 # bindkey -v
 
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=hx
+export VISUAL=hx
 
 eval "$(starship init zsh)"
 

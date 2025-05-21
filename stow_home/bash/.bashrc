@@ -16,8 +16,8 @@ fi
 
 unset rc
 
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=hx
+export VISUAL=hx
 
 eval "$(starship init bash)"
 
