@@ -5,7 +5,6 @@
     gitkraken
     thunderbird-128
     # kitemaker
-    microsoft-edge
   ];
 
   services.flatpak.enable = true;
