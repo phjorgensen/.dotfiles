@@ -1,17 +1,21 @@
 theme = "catppuccin_mocha_transparent"
 
 [editor]
+mouse = false
 line-number = "relative"
 cursorline = true
 color-modes = true
-mouse = false
 auto-format = true
 scrolloff = 10
 rulers = [80, 120]
 end-of-line-diagnostics = "hint"
+shell = ["zsh", "-c"]
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
+
+[editor.indent-guides]
+render = true
 
 [editor.whitespace.render]
 space = "none"
@@ -28,10 +32,18 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
-[editor.indent-guides]
-render = true
-
 [keys.normal]
-g = { l = ["select_mode", "goto_line_end", "normal_mode"], h = ["select_mode", "goto_line_start", "normal_mode"] }
-"C-u" = ["page_cursor_half_up", "align_view_center"]
-"C-d" = ["page_cursor_half_down", "align_view_center"]
+C-u = ["page_cursor_half_up", "align_view_center"] # Center page after half page up
+C-d = ["page_cursor_half_down", "align_view_center"] # Center page after half page down
+
+C-p = ["move_line_up", "scroll_up"] # Scroll the page up while moving up, keeping the cursor on the same place in the window
+C-n = ["move_line_down", "scroll_down"] # Scroll the page down while moving down, keeping the cursor on the same place in the window
+
+# C-p = ["move_line_up", "align_view_center"] # Center the view while moving up. This will allow me to scroll up while keeping the cursor in the center of the screen
+# C-n = ["move_line_down", "align_view_center"] # Center the view while moving down. This will allow me to scroll up while keeping the cursor in the center of the screen
+
+esc = ["collapse_selection", "keep_primary_selection"]
+
+[keys.normal.g]
+l = ["select_mode", "goto_line_end", "normal_mode"]
+h = ["select_mode", "goto_line_start", "normal_mode"]
