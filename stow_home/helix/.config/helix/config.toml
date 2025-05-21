@@ -16,3 +16,6 @@ hidden = false
 
 [editor.indent-guides]
 render = true
+
+[keys.normal]
+g = { l = ["select_mode", "goto_line_end", "normal_mode"], h = ["select_mode", "goto_line_start", "normal_mode"] }
