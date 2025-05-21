@@ -5,6 +5,16 @@ line-number = "relative"
 cursorline = true
 color-modes = true
 mouse = false
+auto-format = true
+scrolloff = 10
+rulers = [80, 120]
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.whitespace]
+render = "all"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -19,3 +29,5 @@ render = true
 
 [keys.normal]
 g = { l = ["select_mode", "goto_line_end", "normal_mode"], h = ["select_mode", "goto_line_start", "normal_mode"] }
+"C-u" = ["page_cursor_half_up", "align_view_center"]
+"C-d" = ["page_cursor_half_down", "align_view_center"]
