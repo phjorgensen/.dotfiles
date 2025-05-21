@@ -13,8 +13,12 @@ end-of-line-diagnostics = "hint"
 [editor.inline-diagnostics]
 cursor-line = "warning"
 
-[editor.whitespace]
-render = "all"
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+nbsp = "none"
+nnbsp = "none"
+newline = "all"
 
 [editor.cursor-shape]
 insert = "bar"
