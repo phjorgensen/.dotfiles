@@ -8,10 +8,15 @@ vim.keymap.set("n", "<C-j>", "<cmd>wincmd j<CR>", { silent = true })
 vim.keymap.set("n", "<C-k>", "<cmd>wincmd k<CR>", { silent = true })
 vim.keymap.set("n", "<C-l>", "<cmd>wincmd l<CR>", { silent = true })
 
+-- Helix style goto binds
+vim.keymap.set({ "n", "v" }, "gl", "$", { desc = "Go to end of line" })
+vim.keymap.set({ "n", "v" }, "gh", "0", { desc = "Go to start of line" })
+vim.keymap.set({ "n", "v" }, "gs", "^", { desc = "Go to first character of line" })
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move selection down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move selection up
 
-vim.keymap.set("n", "J", "mzJ`z") -- keep moving line below to the end of current line
+vim.keymap.set("n", "J", "mzJ`z") -- move line below to the end of current line
 vim.keymap.set("n", "<C-d>", "<C-d>zz") -- when moving half page down, keep cursor in the middle of the screen
 vim.keymap.set("n", "<C-u>", "<C-u>zz") -- when moving half page up, keep cursor in the middle of the screen
 vim.keymap.set("n", "n", "nzzzv") -- when going to next search, keep cursor in the middle of the screen
