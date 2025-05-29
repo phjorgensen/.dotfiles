@@ -22,6 +22,7 @@
     ../../modules/packages/media-editing.nix
     ../../modules/packages/security.nix
     ../../modules/packages/terminal.nix
+    ../../modules/packages/theming.nix
   ];
 
   networking.hostName = "perCode";

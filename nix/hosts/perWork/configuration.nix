@@ -22,6 +22,7 @@
     ../../modules/packages/security.nix
     ../../modules/packages/terminal.nix
     ../../modules/packages/work.nix
+    ../../modules/packages/theming.nix
   ];
 
   networking.hostName = "perWork";
