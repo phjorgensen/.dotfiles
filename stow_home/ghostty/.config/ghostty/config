@@ -1,6 +1,6 @@
 window-decoration = false
 
-theme = tokyonight
+theme = "tinted-theming"
 background-opacity = 0.9
 
 # font-family = "Berkeley Mono"
