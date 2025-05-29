@@ -13,3 +13,11 @@ themes-dir = "sh"
 # With `theme` set to "tinted-theming", this will be where Ghostty looks for the theme file:
 hook = "command cp -f %f ~/.config/fzf/themes/tinted-theming.sh"
 supported-systems = ["base16", "base24"]
+
+[[items]]
+path = "https://github.com/tinted-theming/tinted-tmux"
+name = "tinted-tmux"
+themes-dir = "colors"
+# With `theme` set to "tinted-theming", this will be where Ghostty looks for the theme file:
+hook = "command cp -f %f ~/.config/tmux/themes/tinted-theming.conf"
+supported-systems = ["base16", "base24"]
