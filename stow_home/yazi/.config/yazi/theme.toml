@@ -7,7 +7,7 @@
 # : Flavor {{{
 
 [flavor]
-use = ""
+use = "tinted-theming"
 
 # : }}}
 
