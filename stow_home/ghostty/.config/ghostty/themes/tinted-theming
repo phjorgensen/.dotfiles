@@ -1,43 +1,43 @@
 # vim: ft=ghostty
-# Gruvbox dark, hard theme for Ghostty
-# Scheme Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+# Zenburn theme for Ghostty
+# Scheme Author: elnawe
 # Scheme System: base16
 # Template Author: Tinted Terminal (https://github.com/tinted-theming/tinted-terminal)
 
 # Color palette
-palette = 0=#1d2021
-palette = 1=#fb4934
-palette = 2=#b8bb26
-palette = 3=#fabd2f
-palette = 4=#83a598
-palette = 5=#d3869b
-palette = 6=#8ec07c
-palette = 7=#d5c4a1
-palette = 8=#504945
-palette = 9=#fb4934
-palette = 10=#b8bb26
-palette = 11=#fabd2f
-palette = 12=#83a598
-palette = 13=#d3869b
-palette = 14=#8ec07c
-palette = 15=#fbf1c7
-palette = 16=#fe8019
-palette = 17=#d65d0e
-palette = 18=#3c3836
-palette = 19=#504945
-palette = 20=#bdae93
-palette = 21=#ebdbb2
+palette = 0=#383838
+palette = 1=#dca3a3
+palette = 2=#5f7f5f
+palette = 3=#e0cf9f
+palette = 4=#7cb8bb
+palette = 5=#dc8cc3
+palette = 6=#93e0e3
+palette = 7=#dcdccc
+palette = 8=#606060
+palette = 9=#dca3a3
+palette = 10=#5f7f5f
+palette = 11=#e0cf9f
+palette = 12=#7cb8bb
+palette = 13=#dc8cc3
+palette = 14=#93e0e3
+palette = 15=#ffffff
+palette = 16=#dfaf8f
+palette = 17=#000000
+palette = 18=#404040
+palette = 19=#606060
+palette = 20=#808080
+palette = 21=#c0c0c0
 
 # Foreground & background colors
-background = #1d2021
-foreground = #d5c4a1
-cursor-color = #d5c4a1
-selection-background = #504945
-selection-foreground = #d5c4a1
+background = #383838
+foreground = #dcdccc
+cursor-color = #dcdccc
+selection-background = #606060
+selection-foreground = #dcdccc
 
 # Set `macos-icon = custom-style` in your main configuration file to enable theming of the app icon.
 #
 # Set the ghost color to the lightest foreground:
-macos-icon-ghost-color = #fbf1c7
+macos-icon-ghost-color = #ffffff
 # Replace the official icon's blue background with the designated bright blue color:
-macos-icon-screen-color = #83a598
+macos-icon-screen-color = #7cb8bb

@@ -1,23 +1,23 @@
 /*
 *
-* Base16 Catppuccin Mocha
-* Author: https://github.com/catppuccin/catppuccin
+* Base16 Zenburn
+* Author: elnawe
 *
 */
 
-@define-color base00 #1e1e2e;
-@define-color base01 #181825;
-@define-color base02 #313244;
-@define-color base03 #45475a;
-@define-color base04 #585b70;
-@define-color base05 #cdd6f4;
-@define-color base06 #f5e0dc;
-@define-color base07 #b4befe;
-@define-color base08 #f38ba8;
-@define-color base09 #fab387;
-@define-color base0A #f9e2af;
-@define-color base0B #a6e3a1;
-@define-color base0C #94e2d5;
-@define-color base0D #89b4fa;
-@define-color base0E #cba6f7;
-@define-color base0F #f2cdcd;
+@define-color base00 #383838;
+@define-color base01 #404040;
+@define-color base02 #606060;
+@define-color base03 #6f6f6f;
+@define-color base04 #808080;
+@define-color base05 #dcdccc;
+@define-color base06 #c0c0c0;
+@define-color base07 #ffffff;
+@define-color base08 #dca3a3;
+@define-color base09 #dfaf8f;
+@define-color base0A #e0cf9f;
+@define-color base0B #5f7f5f;
+@define-color base0C #93e0e3;
+@define-color base0D #7cb8bb;
+@define-color base0E #dc8cc3;
+@define-color base0F #000000;

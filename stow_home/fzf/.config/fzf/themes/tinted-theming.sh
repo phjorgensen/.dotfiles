@@ -1,9 +1,9 @@
-# Scheme name: Gruvbox dark, hard
+# Scheme name: Zenburn
 # Scheme system: base16
-# Scheme author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+# Scheme author: elnawe
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#3c3836,bg:#1d2021,spinner:#8ec07c,hl:#83a598"\
-" --color=fg:#bdae93,header:#83a598,info:#fabd2f,pointer:#8ec07c"\
-" --color=marker:#8ec07c,fg+:#ebdbb2,prompt:#fabd2f,hl+:#83a598"
+" --color=bg+:#404040,bg:#383838,spinner:#93e0e3,hl:#7cb8bb"\
+" --color=fg:#808080,header:#7cb8bb,info:#e0cf9f,pointer:#93e0e3"\
+" --color=marker:#93e0e3,fg+:#c0c0c0,prompt:#e0cf9f,hl+:#7cb8bb"
