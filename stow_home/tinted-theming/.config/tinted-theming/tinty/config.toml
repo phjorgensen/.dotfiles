@@ -25,3 +25,10 @@ name = "tinted-waybar"
 themes-dir = "colors"
 hook = "command cp -f %f ~/.config/waybar/themes/tinted-theming/tinted-theming.css"
 supported-systems = ["base16"]
+
+[[items]]
+path = "https://github.com/tinted-theming/base16-rofi"
+name = "tinted-rofi"
+themes-dir = "colors"
+hook = "command cp -f %f ~/.config/rofi/themes/tinted-theming.rasi && set-waybar-theme.sh tinted-theming"
+supported-systems = ["base16"]

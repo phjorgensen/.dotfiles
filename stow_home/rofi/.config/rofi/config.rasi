@@ -3,4 +3,4 @@ configuration {
   combi-modes: [ window, drun, run ];
 }
 
-@theme "themes/catppuccin/layout-big.rasi"
+@theme "themes/layouts/big.rasi"
