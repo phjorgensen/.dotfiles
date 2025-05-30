@@ -2,7 +2,6 @@
 path = "https://github.com/tinted-theming/tinted-terminal"
 name = "tinted-terminal"
 themes-dir = "themes/ghostty"
-# With `theme` set to "tinted-theming", this will be where Ghostty looks for the theme file:
 hook = "command cp -f %f ~/.config/ghostty/themes/tinted-theming"
 supported-systems = ["base16", "base24"]
 
@@ -10,7 +9,6 @@ supported-systems = ["base16", "base24"]
 path = "https://github.com/tinted-theming/tinted-fzf"
 name = "tinted-fzf"
 themes-dir = "sh"
-# With `theme` set to "tinted-theming", this will be where Ghostty looks for the theme file:
 hook = "command cp -f %f ~/.config/fzf/themes/tinted-theming.sh"
 supported-systems = ["base16", "base24"]
 
@@ -18,6 +16,12 @@ supported-systems = ["base16", "base24"]
 path = "https://github.com/tinted-theming/tinted-tmux"
 name = "tinted-tmux"
 themes-dir = "colors"
-# With `theme` set to "tinted-theming", this will be where Ghostty looks for the theme file:
 hook = "command cp -f %f ~/.config/tmux/themes/tinted-theming.conf"
 supported-systems = ["base16", "base24"]
+
+[[items]]
+path = "https://github.com/tinted-theming/base16-waybar"
+name = "tinted-waybar"
+themes-dir = "colors"
+hook = "command cp -f %f ~/.config/waybar/themes/tinted-theming/tinted-theming.css"
+supported-systems = ["base16"]
