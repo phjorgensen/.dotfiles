@@ -13,7 +13,7 @@
 window#waybar {
   background: @base02;
   border: 1px solid @base00;
-  color: @base07;
+  color: @base05;
 }
 
 tooltip {
@@ -38,7 +38,7 @@ tooltip {
 }
 
 #workspaces button.active {
-  color: @base0C;
+  color: @base0F;
 }
 
 #workspaces button:hover {
@@ -67,7 +67,7 @@ tooltip {
 #clock {
   background-color: @base01;
   border: 1px solid @base00;
-  color: @base07;
+  color: @base05;
 }
 
 #tray {
@@ -89,14 +89,14 @@ tooltip {
 #custom-nc {
   background-color: @base00;
   /* border: 1px solid @base00; */
-  color: @base07;
+  color: @base05;
 }
 
 #cpu.critical,
 #memory.critical {
   background-color: @base00;
   /* border: 1px solid @base00; */
-  color: @base07;
+  color: @base05;
 }
 
 #battery.warning,
@@ -104,5 +104,5 @@ tooltip {
 #battery.urgent {
   background-color: @base00;
   /* border: 1px solid @base00; */
-  color: @base07;
+  color: @base05;
 }
