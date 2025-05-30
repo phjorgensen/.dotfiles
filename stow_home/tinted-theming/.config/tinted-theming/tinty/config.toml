@@ -16,7 +16,7 @@ supported-systems = ["base16", "base24"]
 path = "https://github.com/tinted-theming/tinted-tmux"
 name = "tinted-tmux"
 themes-dir = "colors"
-hook = "command cp -f %f ~/.config/tmux/themes/tinted-theming.conf"
+hook = "command cp -f %f ~/.config/tmux/themes/tinted-theming.conf && tmux run 2> /dev/null && tmux source-file ~/.config/tmux/tmux.conf"
 supported-systems = ["base16", "base24"]
 
 [[items]]
