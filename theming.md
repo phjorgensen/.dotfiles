@@ -8,6 +8,6 @@ Using [tinted-theming](https://github.com/tinted-theming) now, which seems reall
 - [x] Waybar
 - [x] Rofi
 - [x] FZF
-- [ ] Yazi, since the theme is a directory, I can't seem to make it work.
+- [x] Yazi, follows the terminal theme.
 - [x] LazyGit, follows the terminal theme.
-- [ ] Starship
+- [x] Starship, follows the terminal theme.
