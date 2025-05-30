@@ -32,13 +32,3 @@ name = "tinted-rofi"
 themes-dir = "colors"
 hook = "command cp -f %f ~/.config/rofi/themes/tinted-theming.rasi && set-waybar-theme.sh tinted-theming"
 supported-systems = ["base16"]
-
-# Will not work for some reason, error about it being a directory.
-# This works in the terminal, but not in tinty.
-# hook = 'command cp -f %f/* ~/.config/yazi/flavors/tinted-theming.yazi'
-# [[items]]
-# path = "https://github.com/tinted-theming/tinted-yazi"
-# name = "tinted-yazi"
-# themes-dir = "flavors"
-# hook = 'command cp -f %f ~/.config/yazi/flavors/tinted-theming.yazi'
-# supported-systems = ["base16"]
