@@ -1,19 +1,19 @@
 /**
- * Base16 Zenburn ROFI Color theme
+ * Base16 Rebecca ROFI Color theme
  *
  * Authors
- *  Scheme: elnawe
+ *  Scheme: Victor Borja (http://github.com/vic) based on Rebecca Theme (http://github.com/vic/rebecca-theme)
  *  Template: Tinted Theming (https://github.com/tinted-theming)
  */
 
 * {
-    red:                         rgba ( 220, 163, 163, 100 % );
-    blue:                        rgba ( 124, 184, 187, 100 % );
-    lightfg:                     rgba ( 192, 192, 192, 100 % );
-    lightbg:                     rgba ( 64, 64, 64, 100 % );
-    foreground:                  rgba ( 220, 220, 204, 100 % );
-    background:                  rgba ( 56, 56, 56, 100 % );
-    background-color:            rgba ( 56, 56, 56, 0 % );
+    red:                         rgba ( 160, 160, 197, 100 % );
+    blue:                        rgba ( 45, 224, 167, 100 % );
+    lightfg:                     rgba ( 204, 204, 255, 100 % );
+    lightbg:                     rgba ( 102, 51, 153, 100 % );
+    foreground:                  rgba ( 241, 239, 248, 100 % );
+    background:                  rgba ( 41, 42, 68, 100 % );
+    background-color:            rgba ( 41, 42, 68, 0 % );
     separatorcolor:              @foreground;
     border-color:                @foreground;
     selected-normal-foreground:  @lightbg;
