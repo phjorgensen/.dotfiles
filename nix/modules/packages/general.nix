@@ -45,6 +45,7 @@
     gparted # partition editor
     keychain
     openssl
+    openssl.dev
     gnupg
     dmidecode # BIOS info
     exiftool
