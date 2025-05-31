@@ -12,6 +12,8 @@
     sqlite
 
     pkg-config # helper tool used when compiling applications and libraries, it helps insert the correct compiler options on the command line
+    direnv
+    nix-direnv
 
     # IDEs
     # zed-editor
