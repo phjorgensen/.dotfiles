@@ -1,23 +1,23 @@
 /*
 *
-* Base16 Rebecca
-* Author: Victor Borja (http://github.com/vic) based on Rebecca Theme (http://github.com/vic/rebecca-theme)
+* Base16 Kanagawa
+* Author: Tommaso Laurenzi (https://github.com/rebelot)
 *
 */
 
-@define-color base00 #292a44;
-@define-color base01 #663399;
-@define-color base02 #383a62;
-@define-color base03 #666699;
-@define-color base04 #a0a0c5;
-@define-color base05 #f1eff8;
-@define-color base06 #ccccff;
-@define-color base07 #53495d;
-@define-color base08 #a0a0c5;
-@define-color base09 #efe4a1;
-@define-color base0A #ae81ff;
-@define-color base0B #6dfedf;
-@define-color base0C #8eaee0;
-@define-color base0D #2de0a7;
-@define-color base0E #7aa5ff;
-@define-color base0F #ff79c6;
+@define-color base00 #1f1f28;
+@define-color base01 #16161d;
+@define-color base02 #223249;
+@define-color base03 #54546d;
+@define-color base04 #727169;
+@define-color base05 #dcd7ba;
+@define-color base06 #c8c093;
+@define-color base07 #717c7c;
+@define-color base08 #c34043;
+@define-color base09 #ffa066;
+@define-color base0A #c0a36e;
+@define-color base0B #76946a;
+@define-color base0C #6a9589;
+@define-color base0D #7e9cd8;
+@define-color base0E #957fb8;
+@define-color base0F #d27e99;

@@ -32,3 +32,4 @@ Using [tinted-theming](https://github.com/tinted-theming) now, which seems reall
 - Woodland
 - Zenbones
 - Zenburn
+- Kanagawa
