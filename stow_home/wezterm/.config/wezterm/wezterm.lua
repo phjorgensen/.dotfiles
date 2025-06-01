@@ -5,9 +5,9 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.font = wezterm.font("BerkeleyMono")
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "tinted-theming"
 
-config.window_background_opacity = 0.9
+-- config.window_background_opacity = 0.9
 config.window_padding = {
 	left = 0,
 	right = 0,
