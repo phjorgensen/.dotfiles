@@ -33,3 +33,4 @@ Using [tinted-theming](https://github.com/tinted-theming) now, which seems reall
 - Zenbones
 - Zenburn
 - Kanagawa
+- Dracula
