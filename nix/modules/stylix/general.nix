@@ -1,9 +1,6 @@
 {pkgs, ...}: {
   stylix = {
     enable = true;
-
-    image = ../../../stow_home/wallpapers/Pictures/Wallpapers/landscape/mountain-lake.jpg;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
     fonts = {
