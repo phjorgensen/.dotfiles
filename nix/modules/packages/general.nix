@@ -5,7 +5,7 @@
     # Browsers
     librewolf
     firefox
-    vivaldi
+    brave
 
     # Note-taking programs
     obsidian
