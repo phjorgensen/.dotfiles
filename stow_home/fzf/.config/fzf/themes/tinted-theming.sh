@@ -1,9 +1,9 @@
-# Scheme name: Kanagawa
+# Scheme name: Rebecca
 # Scheme system: base16
-# Scheme author: Tommaso Laurenzi (https://github.com/rebelot)
+# Scheme author: Victor Borja (http://github.com/vic) based on Rebecca Theme (http://github.com/vic/rebecca-theme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#16161d,bg:#1f1f28,spinner:#6a9589,hl:#7e9cd8"\
-" --color=fg:#727169,header:#7e9cd8,info:#c0a36e,pointer:#6a9589"\
-" --color=marker:#6a9589,fg+:#c8c093,prompt:#c0a36e,hl+:#7e9cd8"
+" --color=bg+:#663399,bg:#292a44,spinner:#8eaee0,hl:#2de0a7"\
+" --color=fg:#a0a0c5,header:#2de0a7,info:#ae81ff,pointer:#8eaee0"\
+" --color=marker:#8eaee0,fg+:#ccccff,prompt:#ae81ff,hl+:#2de0a7"
