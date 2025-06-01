@@ -61,11 +61,12 @@
     helix
   ];
 
-  fonts.packages = [
-    pkgs.nerd-fonts._0xproto
-    pkgs.nerd-fonts.droid-sans-mono
-    pkgs.nerd-fonts.fira-code
-    pkgs.nerd-fonts.noto
+  fonts.packages = with pkgs; [
+    nerd-fonts._0xproto
+    nerd-fonts.droid-sans-mono
+    nerd-fonts.fira-code
+    nerd-fonts.noto
+    nerd-fonts.jetbrains-mono
   ];
 
   programs = {
