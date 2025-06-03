@@ -28,7 +28,6 @@
 
     # TUIs
     lazygit
-    lazydocker
     yazi
     btop
     w3m # terminal browser
