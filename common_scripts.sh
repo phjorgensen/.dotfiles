@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 
 echo ""
-echo "Installing Tinty items..."
-tinty install
-
-echo ""
-echo "Updating Tinty items..."
-tinty update
+echo "Syncing Tinty items..."
+tinty sync
 
 echo ""
 echo "Running stow..."
