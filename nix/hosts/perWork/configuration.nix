@@ -17,7 +17,8 @@
     ../../modules/stylix/cursor-bibata.nix
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
-    # ../../modules/packages/docker.nix
+    ../../modules/packages/docker.nix
+    ../../modules/packages/podman.nix
     ../../modules/packages/media-editing.nix
     ../../modules/packages/security.nix
     ../../modules/packages/terminal.nix
