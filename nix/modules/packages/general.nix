@@ -29,6 +29,7 @@
 
     # Messages
     telegram-desktop
+    signal-desktop
 
     # Utility
     qalculate-qt
