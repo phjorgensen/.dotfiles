@@ -4,9 +4,9 @@ theme = "tinted-theming"
 # background-opacity = 0.9
 
 # font-family = "Berkeley Mono"
-# font-family = "JetBrainsMonoNLNerdFont" # the classic
-font-family = "BlexMonoNerdFontMono" # nice and clean, but just a bit extra
-# font-family = "GohuFont11NerdFontMono" # Pokémon font
-# font-family = "TerminessNerdFontMono" # Pokémon font, but not so much
+# font-family = "JetBrainsMonoNLNerdFont"
+font-family = "BlexMonoNerdFontMono"
+# font-family = "GohuFont11NerdFontMono"
+# font-family = "TerminessNerdFontMono"
 
 font-size = 12
