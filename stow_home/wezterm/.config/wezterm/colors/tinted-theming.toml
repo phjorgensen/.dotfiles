@@ -1,33 +1,33 @@
-# Base16 Rebecca - wezterm color config
-# Scheme by Victor Borja (http://github.com/vic) based on Rebecca Theme (http://github.com/vic/rebecca-theme)
+# Base16 Everforest Dark Hard - wezterm color config
+# Scheme by Sainnhe Park (https://github.com/sainnhe)
 [colors]
-background = "#292a44"
-foreground = "#f1eff8"
+background = "#272e33"
+foreground = "#d3c6aa"
 
-cursor_bg = "#663399"
-cursor_border = "#f1eff8"
-cursor_fg = "#ccccff"
+cursor_bg = "#2e383c"
+cursor_border = "#d3c6aa"
+cursor_fg = "#edeada"
 
-selection_bg = "#f1eff8"
-selection_fg = "#292a44"
+selection_bg = "#d3c6aa"
+selection_fg = "#272e33"
 
 ansi = [
-  "#292a44",
-  "#a0a0c5",
-  "#6dfedf",
-  "#ae81ff",
-  "#2de0a7",
-  "#7aa5ff",
-  "#8eaee0",
-  "#ccccff"
+  "#272e33",
+  "#e67e80",
+  "#a7c080",
+  "#dbbc7f",
+  "#7fbbb3",
+  "#d699b6",
+  "#83c092",
+  "#edeada"
   ]
 brights = [
-  "#666699",
-  "#a0a0c5",
-  "#6dfedf",
-  "#ae81ff",
-  "#2de0a7",
-  "#7aa5ff",
-  "#8eaee0",
-  "#53495d"
+  "#859289",
+  "#e67e80",
+  "#a7c080",
+  "#dbbc7f",
+  "#7fbbb3",
+  "#d699b6",
+  "#83c092",
+  "#fffbef"
   ]
