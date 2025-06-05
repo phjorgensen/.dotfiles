@@ -68,6 +68,9 @@
     nerd-fonts.fira-code
     nerd-fonts.noto
     nerd-fonts.jetbrains-mono
+    nerd-fonts.blex-mono
+    nerd-fonts.gohufont
+    nerd-fonts.terminess-ttf
   ];
 
   programs = {
