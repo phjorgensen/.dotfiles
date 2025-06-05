@@ -62,15 +62,16 @@
     helix
   ];
 
+  # Run fc-list to list fonts, `fc-list | grep <name>` for specific font.
   fonts.packages = with pkgs; [
     nerd-fonts._0xproto
     nerd-fonts.droid-sans-mono
     nerd-fonts.fira-code
     nerd-fonts.noto
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.blex-mono
-    nerd-fonts.gohufont
-    nerd-fonts.terminess-ttf
+    nerd-fonts.jetbrains-mono # JetBrainsMonoNLNerdFont, the classic
+    nerd-fonts.blex-mono # BlexMonoNerdFontMono, nice and clean, but just a bit extra
+    nerd-fonts.gohufont # GohuFont11NerdFontMono, Pokémon font
+    nerd-fonts.terminess-ttf # TerminessNerdFontMono, Pokémon font, but not so much
   ];
 
   programs = {
