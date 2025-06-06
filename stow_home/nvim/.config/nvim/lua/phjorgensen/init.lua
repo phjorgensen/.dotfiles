@@ -46,7 +46,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 
     -- Diagnostics
-    vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
+    vim.keymap.set("n", "<leader>vd", function()
+      vim.diagnostic.open_float(opts)
+    end, { desc = "Open disgnostics float" })
 
     vim.keymap.set("n", "<leader>vn", function()
       return vim.diagnostic.jump({ count = 1, float = true, buffer = e.buf })
@@ -56,16 +58,16 @@ vim.api.nvim_create_autocmd("LspAttach", {
       return vim.diagnostic.jump({ count = -1, float = true, buffer = e.buf })
     end, { desc = "Previous diagnostic" })
 
-    vim.diagnostic.config({
-      float = {
-        -- focusable = false,
-        -- style = "minimal",
-        -- border = "rounded",
-        -- source = true,
-        -- header = "",
-        -- prefix = "",
-      },
-    })
+    -- vim.diagnostic.config({
+    --   float = {
+    --     focusable = false,
+    --     style = "minimal",
+    --     border = "rounded",
+    --     source = true,
+    --     header = "",
+    --     prefix = "",
+    --   },
+    -- })
   end,
 })
 
