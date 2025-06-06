@@ -18,6 +18,11 @@
       url = "github:anyrun-org/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # typy = {
+    #   url = "github:Pazl27/typy-cli";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = {
@@ -25,6 +30,7 @@
     alejandra,
     stylix,
     anyrun,
+    # typy,
     ...
   } @ inputs: {
     system.autoUpgrade = {
@@ -51,6 +57,7 @@
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
               anyrun.packages.${system}.anyrun
+              # typy.packages.${system}.default
             ];
           }
         ];
@@ -67,6 +74,7 @@
             environment.systemPackages = [
               alejandra.defaultPackage.${system}
               anyrun.packages.${system}.anyrun
+              # typy.packages.${system}.default
             ];
           }
         ];
