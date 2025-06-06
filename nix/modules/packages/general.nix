@@ -24,6 +24,8 @@
     obs-studio
     # emacs
     playerctl # CLI for controlling music
+    presenterm
+    tt # Terminal typing test
 
     cheese # webcam capture
 
