@@ -12,6 +12,16 @@ vim.lsp.enable({
   "sourcekit", -- Swift
 })
 
+-- Restart LSPs
+vim.keymap.set("n", "<leader>lsr", function()
+  print("Restartng LSPs...")
+
+  for _, v in pairs(vim.lsp.get_clients()) do
+    vim.lsp.enable(v.name, false)
+    vim.lsp.enable(v.name, true)
+  end
+end, { desc = "Restart LSP" })
+
 vim.lsp.config("lua_ls", {
   settings = {
     Lua = {

@@ -29,9 +29,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(e)
     local opts = { buffer = e.buf }
 
-    -- LSP Server
-    vim.keymap.set("n", "<leader>lsr", "<cmd>LspRestart<cr>", opts)
-
     -- Info
     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
     vim.keymap.set({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, opts)
