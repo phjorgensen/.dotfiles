@@ -41,8 +41,8 @@ vim.keymap.set("n", "<leader>cp", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
-vim.keymap.set("n", "<leader>sc", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "Search and replace" })
-vim.keymap.set("v", "<leader>sc", ":s///gI<Left><Left><Left><Left>", { desc = "Search and replace selection" })
+vim.keymap.set("n", "<leader>sr", ":%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "Search and replace" })
+vim.keymap.set("v", "<leader>sr", ":s///gI<Left><Left><Left><Left>", { desc = "Search and replace selection" })
 
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>X", "<cmd>!chmod -x %<CR>", { silent = true })
