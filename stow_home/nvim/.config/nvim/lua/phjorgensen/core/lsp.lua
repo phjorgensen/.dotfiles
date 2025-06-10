@@ -14,8 +14,6 @@ vim.lsp.enable({
 
 -- Restart LSPs
 vim.keymap.set("n", "<leader>lsr", function()
-  print("Restartng LSPs...")
-
   for _, v in pairs(vim.lsp.get_clients()) do
     vim.lsp.enable(v.name, false)
     vim.lsp.enable(v.name, true)
@@ -52,8 +50,8 @@ vim.lsp.config("nil_ls", {
 })
 
 vim.diagnostic.config({
-  virtual_lines = true,
-  --virtual_text = true,
+  -- virtual_lines = true,
+  virtual_text = true,
   underline = true,
   update_in_insert = false,
   severity_sort = true,
