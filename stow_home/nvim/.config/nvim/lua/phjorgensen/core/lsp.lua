@@ -13,12 +13,7 @@ vim.lsp.enable({
 })
 
 -- Restart LSPs
-vim.keymap.set("n", "<leader>lsr", function()
-  for _, v in pairs(vim.lsp.get_clients()) do
-    vim.lsp.enable(v.name, false)
-    vim.lsp.enable(v.name, true)
-  end
-end, { desc = "Restart LSP" })
+vim.keymap.set("n", "<leader>lsr", "<CMD>LspRestart<CR>", { desc = "Restart LSP" })
 
 vim.lsp.config("lua_ls", {
   settings = {
