@@ -34,6 +34,60 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   command = [[%s/\s\+$//e]],
 })
 
+-- close some filetypes with <q>
+vim.api.nvim_create_autocmd("FileType", {
+  group = augroup("close_with_q"),
+  pattern = {
+    "PlenaryTestPopup",
+    "checkhealth",
+    "dbout",
+    "gitsigns-blame",
+    "grug-far",
+    "help",
+    "lspinfo",
+    "neotest-output",
+    "neotest-output-panel",
+    "neotest-summary",
+    "notify",
+    "qf",
+    "spectre_panel",
+    "startuptime",
+    "tsplayground",
+  },
+  callback = function(event)
+    vim.bo[event.buf].buflisted = false
+    vim.schedule(function()
+      vim.keymap.set("n", "q", function()
+        vim.cmd("close")
+        pcall(vim.api.nvim_buf_delete, event.buf, { force = true })
+      end, {
+        buffer = event.buf,
+        silent = true,
+        desc = "Quit buffer",
+      })
+    end)
+  end,
+})
+
+-- wrap and check for spell in text filetypes
+vim.api.nvim_create_autocmd("FileType", {
+  group = augroup("wrap_spell"),
+  pattern = { "text", "plaintex", "typst", "gitcommit", "markdown" },
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.spell = true
+  end,
+})
+
+-- Fix conceallevel for json files
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  group = augroup("json_conceal"),
+  pattern = { "json", "jsonc", "json5" },
+  callback = function()
+    vim.opt_local.conceallevel = 0
+  end,
+})
+
 vim.api.nvim_create_autocmd("LspAttach", {
   group = augroup("lsp"),
   callback = function(e)
@@ -53,8 +107,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)
 
     -- Actions
-    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
-    vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+    vim.keymap.set("n", "<leader>a", vim.lsp.buf.code_action, opts)
+    vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
 
     -- Diagnostics
     vim.keymap.set("n", "<leader>vd", function()
@@ -68,16 +122,5 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set("n", "<leader>vp", function()
       return vim.diagnostic.jump({ count = -1, float = true, buffer = e.buf })
     end, { desc = "Previous diagnostic" })
-
-    -- vim.diagnostic.config({
-    --   float = {
-    --     focusable = false,
-    --     style = "minimal",
-    --     border = "rounded",
-    --     source = true,
-    --     header = "",
-    --     prefix = "",
-    --   },
-    -- })
   end,
 })
