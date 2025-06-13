@@ -2,7 +2,9 @@ vim.lsp.enable({
   "lua_ls",
   "nil_ls", -- Nix
   "rust_analyzer",
-  "ts_ls",
+  "eslint",
+  -- "ts_ls", -- TypeScript, wrapping tsserver
+  "vtsls", -- TypeScript, wrapping VSCode TypeScript extension
   "svelte",
   "tailwindcss",
   "intelephense", -- PHP

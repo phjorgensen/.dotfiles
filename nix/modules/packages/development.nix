@@ -34,7 +34,8 @@
     gopls # Go
     rust-analyzer
     tailwindcss-language-server
-    nodePackages.typescript-language-server
+    typescript-language-server
+    vtsls # LSP wrapper for VSCode TypeScript extension
     svelte-language-server
     nodePackages.intelephense # PHP
     hyprls # Hyprland
