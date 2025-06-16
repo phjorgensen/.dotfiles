@@ -1,4 +1,4 @@
-require("phjorgensen.config.autocommands")
+require("phjorgensen.config.autocmds")
 require("phjorgensen.config.remap")
 require("phjorgensen.config.set")
 require("phjorgensen.core.lsp")
