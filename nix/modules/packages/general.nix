@@ -28,6 +28,7 @@
     tt # Terminal typing test
 
     cheese # webcam capture
+    tidal-hifi # Tidal music streaming
 
     # Messages
     telegram-desktop
