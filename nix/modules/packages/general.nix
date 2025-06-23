@@ -6,6 +6,7 @@
     librewolf
     firefox
     brave
+    nyxt
 
     # Note-taking programs
     obsidian
