@@ -6,7 +6,7 @@
     gcc
     rustup
     go
-    nodejs
+    nodejs_22
     typescript
     nim
     sqlite
