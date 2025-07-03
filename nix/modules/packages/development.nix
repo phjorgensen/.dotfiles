@@ -33,7 +33,7 @@
     nil # Nix
     gopls # Go
     rust-analyzer
-    tailwindcss-language-server
+    # tailwindcss-language-server
     typescript-language-server
     # vtsls # LSP wrapper for VSCode TypeScript extension
     svelte-language-server
