@@ -14,10 +14,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    anyrun = {
-      url = "github:anyrun-org/anyrun";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # anyrun = {
+    #   url = "github:anyrun-org/anyrun";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # typy = {
     #   url = "github:Pazl27/typy-cli";
@@ -25,14 +25,7 @@
     # };
   };
 
-  outputs = {
-    nixpkgs,
-    alejandra,
-    stylix,
-    anyrun,
-    # typy,
-    ...
-  } @ inputs: {
+  outputs = {nixpkgs, ...} @ inputs: {
     system.autoUpgrade = {
       enable = true;
       flake = inputs.self.outPath;
@@ -47,37 +40,17 @@
 
     nixosConfigurations = {
       perCode = nixpkgs.lib.nixosSystem rec {
-        specialArgs = {inherit inputs;};
+        specialArgs = {inherit inputs system;};
         system = "x86_64-linux";
 
-        modules = [
-          ./hosts/perCode/configuration.nix
-          stylix.nixosModules.stylix
-          {
-            environment.systemPackages = [
-              alejandra.defaultPackage.${system}
-              anyrun.packages.${system}.anyrun
-              # typy.packages.${system}.default
-            ];
-          }
-        ];
+        modules = [./hosts/perCode/configuration.nix];
       };
 
       perWork = nixpkgs.lib.nixosSystem rec {
-        specialArgs = {inherit inputs;};
+        specialArgs = {inherit inputs system;};
         system = "x86_64-linux";
 
-        modules = [
-          ./hosts/perWork/configuration.nix
-          stylix.nixosModules.stylix
-          {
-            environment.systemPackages = [
-              alejandra.defaultPackage.${system}
-              anyrun.packages.${system}.anyrun
-              # typy.packages.${system}.default
-            ];
-          }
-        ];
+        modules = [./hosts/perWork/configuration.nix];
       };
     };
   };

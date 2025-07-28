@@ -23,6 +23,10 @@
     ../../modules/packages/security.nix
     ../../modules/packages/terminal.nix
     ../../modules/packages/theming.nix
+    ../../modules/dev-tools/nix/alejandra.nix
+    ../../modules/theming-tools/stylix/stylix.nix
+    # ../../modules/flakes/anyrun.nix
+    # ../../modules/flakes/typy.nix
   ];
 
   networking.hostName = "perCode";
