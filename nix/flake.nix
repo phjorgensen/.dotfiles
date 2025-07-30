@@ -14,6 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    bootdev = {
+      url = "./flakes/bootdev";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # anyrun = {
     #   url = "github:anyrun-org/anyrun";
     #   inputs.nixpkgs.follows = "nixpkgs";
