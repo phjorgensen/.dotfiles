@@ -4,6 +4,6 @@
   ...
 }: {
   environment.systemPackages = [
-    inputs.anyrun.packages.${system}.anyrun
+    inputs.anyrun.packages.${system}.default
   ];
 }
