@@ -22,7 +22,7 @@
     packages = forAllSystems (system: let
       pkgs = nixpkgsFor.${system};
     in {
-      bootdev = pkgs.buildGoModule rec {
+      default = pkgs.buildGoModule rec {
         pname = "bootdev";
         version = "1.19.2";
 
@@ -58,10 +58,5 @@
         buildInputs = with pkgs; [go gopls gotools go-tools];
       };
     });
-
-    # The default package for 'nix build'. This makes sense if the
-    # flake provides only one package or there is a clear "main"
-    # package.
-    defaultPackage = forAllSystems (system: self.packages.${system}.bootdev);
   };
 }
