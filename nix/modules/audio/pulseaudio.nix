@@ -1,8 +1,13 @@
-{...}: {
+{pkgs, ...}: {
   services.pipewire.enable = false;
 
-  hardware.pulseaudio = {
+  services.pulseaudio = {
     enable = true;
     support32Bit = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    pavucontrol
+    pasystray
+  ];
 }

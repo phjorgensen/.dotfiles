@@ -43,8 +43,6 @@
 
     # System
     # nitrogen
-    pavucontrol
-    pasystray
     networkmanagerapplet
     arandr
     mission-center # hardware monitoring
