@@ -23,7 +23,15 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 vim.opt.termguicolors = true
-vim.opt.winborder = "rounded"
+vim.opt.winborder = "double"
+
+-- Alternative winborder:
+--	* "none": No border.
+-- 	* "single": A single line box.
+-- 	* "double": A double line box.
+-- 	* "rounded": Like "single", but with rounded corners ("╭" etc.).
+-- 	* "solid": Adds padding by a single whitespace cell.
+-- 	* "shadow": A drop shadow effect by blending with the background.
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
