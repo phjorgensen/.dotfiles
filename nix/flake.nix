@@ -14,6 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Temprary fix, since Wireplumber is broken
+    # Temp fix and issue discussion: https://github.com/NixOS/nixpkgs/issues/225743#issuecomment-3131013052
+    # Fix: https://github.com/NixOS/nixpkgs/pull/427606
+    older-pipewire.url = "github:NixOS/nixpkgs/2631b0b7abcea6e640ce31cd78ea58910d31e650";
+
     bootdev = {
       url = "./flakes/bootdev";
       inputs.nixpkgs.follows = "nixpkgs";
