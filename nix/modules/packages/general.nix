@@ -11,23 +11,18 @@
 
     # Note-taking programs
     obsidian
-    # qownnotes
-    # joplin
-    # joplin-desktop
 
     # File handlers
     xfce.thunar
-    # kdePackages.dolphin
-    nomacs
-    libreoffice-qt6-fresh
+    nomacs # image viewer
+    libreoffice-qt6-fresh # office solution
     vlc # media player
     mpv # media player
     zathura # document viewer
-    obs-studio
-    # emacs
+    obs-studio # screen and camera recorder
     playerctl # CLI for controlling music
-    presenterm
-    tt # Terminal typing test
+    presenterm # terminal presentation tool
+    tt # terminal typing test
 
     cheese # webcam capture
     tidal-hifi # Tidal music streaming
