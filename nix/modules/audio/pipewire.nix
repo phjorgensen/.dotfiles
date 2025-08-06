@@ -26,5 +26,6 @@
   environment.systemPackages = with pkgs; [
     pavucontrol
     pasystray
+    alsa-utils
   ];
 }
