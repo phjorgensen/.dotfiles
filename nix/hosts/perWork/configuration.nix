@@ -10,7 +10,7 @@
     ../../modules/enable-flakes.nix
     ../../modules/window-managers/hyprland.nix
     ../../modules/display-managers/sddm.nix
-    ../../modules/audio/pulseaudio.nix
+    ../../modules/audio/pipewire.nix
     ../../modules/zsh.nix
     ../../modules/main-user.nix
     ../../modules/stylix/general.nix

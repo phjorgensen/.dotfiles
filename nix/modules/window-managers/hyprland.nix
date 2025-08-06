@@ -1,4 +1,9 @@
 {pkgs, ...}: {
+  # Hyprland requires pipewire
+  imports = [
+    ../../modules/audio/pipewire.nix
+  ];
+
   programs.hyprland = {
     enable = true;
     withUWSM = true;
