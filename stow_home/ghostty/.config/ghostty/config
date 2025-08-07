@@ -3,9 +3,9 @@ window-decoration = false
 theme = "tinted-theming"
 # background-opacity = 0.9
 
-# font-family = "Berkeley Mono"
+font-family = "Berkeley Mono"
 # font-family = "JetBrainsMonoNLNerdFont"
-font-family = "BlexMonoNerdFontMono"
+# font-family = "BlexMonoNerdFontMono"
 # font-family = "GohuFont11NerdFontMono"
 # font-family = "TerminessNerdFontMono"
 
