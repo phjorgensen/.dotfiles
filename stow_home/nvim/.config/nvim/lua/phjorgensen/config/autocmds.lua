@@ -93,18 +93,59 @@ vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(e)
     local opts = { buffer = e.buf }
 
+    local function get_opts(desc)
+      return {
+        buffer = e.buf,
+        desc = desc,
+      }
+    end
+
     -- Info
     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
     -- Never used and collided with split navigation, but should find a new bind and start using.
     -- vim.keymap.set({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, opts)
 
     -- Go to
-    vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    vim.keymap.set("n", "gd", function()
+      vim.lsp.buf.definition()
+
+      vim.defer_fn(function()
+        vim.cmd("normal! zt")
+      end, 150)
+    end, opts)
+
     -- Use Snacks picker instead.
-    -- vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-    vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)
+    -- vim.keymap.set("n", "gr", function()
+    --   vim.lsp.buf.references()
+
+    --   vim.defer_fn(function()
+    --     vim.cmd("normal! zt")
+    --   end, 150)
+    -- end, opts)
+
+    vim.keymap.set("n", "gD", function()
+      vim.lsp.buf.declaration()
+
+      vim.defer_fn(function()
+        vim.cmd("normal! zt")
+      end, 150)
+    end, opts)
+
+    vim.keymap.set("n", "gi", function()
+      vim.lsp.buf.implementation()
+
+      vim.defer_fn(function()
+        vim.cmd("normal! zt")
+      end, 150)
+    end, get_opts("Go to implementation"))
+
+    vim.keymap.set("n", "gt", function()
+      vim.lsp.buf.type_definition()
+
+      vim.defer_fn(function()
+        vim.cmd("normal! zt")
+      end, 150)
+    end, opts)
 
     -- Actions
     vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
@@ -113,14 +154,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
     -- Diagnostics
     vim.keymap.set("n", "<leader>vd", function()
       vim.diagnostic.open_float(opts)
-    end, { desc = "Open disgnostics float" })
+    end, get_opts("Open disgnostics float"))
 
     vim.keymap.set("n", "<leader>vn", function()
       return vim.diagnostic.jump({ count = 1, float = true, buffer = e.buf })
-    end, { desc = "Next diagnostic" })
+    end, get_opts("Next diagnostic"))
 
     vim.keymap.set("n", "<leader>vp", function()
       return vim.diagnostic.jump({ count = -1, float = true, buffer = e.buf })
-    end, { desc = "Previous diagnostic" })
+    end, get_opts("Previous diagnostic"))
   end,
 })
