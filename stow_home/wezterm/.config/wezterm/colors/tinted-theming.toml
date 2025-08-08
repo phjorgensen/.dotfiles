@@ -1,43 +1,43 @@
-# base16 Everforest Dark Hard
-# Scheme author: Sainnhe Park (https://github.com/sainnhe)
+# base16 Rebecca
+# Scheme author: Victor Borja (http://github.com/vic) based on Rebecca Theme (http://github.com/vic/rebecca-theme)
 # Template author: Tinted Theming (https://github.com/tinted-theming/tinted-termihal)
 
 [colors]
-background = "#272e33"
-foreground = "#d3c6aa"
+background = "#292a44"
+foreground = "#f1eff8"
 
-cursor_bg = "#d3c6aa"
-cursor_border = "#d3c6aa"
-cursor_fg = "#272e33"
+cursor_bg = "#f1eff8"
+cursor_border = "#f1eff8"
+cursor_fg = "#292a44"
 
-selection_bg = "#d3c6aa"
-selection_fg = "#414b50"
+selection_bg = "#f1eff8"
+selection_fg = "#383a62"
 
 ansi = [
-  "#272e33",
-  "#e67e80",
-  "#a7c080",
-  "#dbbc7f",
-  "#7fbbb3",
-  "#d699b6",
-  "#83c092",
-  "#edeada"
+  "#292a44",
+  "#a0a0c5",
+  "#6dfedf",
+  "#ae81ff",
+  "#2de0a7",
+  "#7aa5ff",
+  "#8eaee0",
+  "#ccccff"
 ]
 brights = [
-  "#414b50",
-  "#e67e80",
-  "#a7c080",
-  "#dbbc7f",
-  "#7fbbb3",
-  "#d699b6",
-  "#83c092",
-  "#fffbef"
+  "#383a62",
+  "#a0a0c5",
+  "#6dfedf",
+  "#ae81ff",
+  "#2de0a7",
+  "#7aa5ff",
+  "#8eaee0",
+  "#53495d"
 ]
 
 [colors.indexed]
-16 = "#e69875"
-17 = "#9da9a0"
-18 = "#2e383c"
-19 = "#414b50"
-20 = "#9da9a0"
-21 = "#d3c6aa"
+16 = "#efe4a1"
+17 = "#ff79c6"
+18 = "#663399"
+19 = "#383a62"
+20 = "#a0a0c5"
+21 = "#f1eff8"
