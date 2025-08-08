@@ -106,46 +106,13 @@ vim.api.nvim_create_autocmd("LspAttach", {
     -- vim.keymap.set({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, opts)
 
     -- Go to
-    vim.keymap.set("n", "gd", function()
-      vim.lsp.buf.definition()
-
-      vim.defer_fn(function()
-        vim.cmd("normal! zt")
-      end, 150)
-    end, opts)
+    vim.keymap.set("n", "gd", vim.lsp.buf.definition, get_opts("Go to definition"))
+    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, get_opts("Go to declaration"))
+    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, get_opts("Go to implementation"))
+    vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, get_opts("Go ty type definition"))
 
     -- Use Snacks picker instead.
-    -- vim.keymap.set("n", "gr", function()
-    --   vim.lsp.buf.references()
-
-    --   vim.defer_fn(function()
-    --     vim.cmd("normal! zt")
-    --   end, 150)
-    -- end, opts)
-
-    vim.keymap.set("n", "gD", function()
-      vim.lsp.buf.declaration()
-
-      vim.defer_fn(function()
-        vim.cmd("normal! zt")
-      end, 150)
-    end, opts)
-
-    vim.keymap.set("n", "gi", function()
-      vim.lsp.buf.implementation()
-
-      vim.defer_fn(function()
-        vim.cmd("normal! zt")
-      end, 150)
-    end, get_opts("Go to implementation"))
-
-    vim.keymap.set("n", "gt", function()
-      vim.lsp.buf.type_definition()
-
-      vim.defer_fn(function()
-        vim.cmd("normal! zt")
-      end, 150)
-    end, opts)
+    -- vim.keymap.set("n", "gr", vim.lsp.buf.references, get_opts("List references"))
 
     -- Actions
     vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
