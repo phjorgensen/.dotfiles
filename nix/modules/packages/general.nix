@@ -32,7 +32,6 @@
     signal-desktop
 
     # Utility
-    qalculate-qt
     libqalculate
     lxappearance
 
