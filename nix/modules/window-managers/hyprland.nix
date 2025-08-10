@@ -13,7 +13,7 @@
   programs.hyprlock.enable = true;
   programs.waybar.enable = true;
 
-  services.hypridle.enable = true;
+  # services.hypridle.enable = true;
 
   environment.systemPackages = with pkgs; [
     # Authentication agent
