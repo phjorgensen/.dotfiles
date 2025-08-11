@@ -13,12 +13,9 @@ alias fuck='sudo $(fc -ln -1)'
 
 alias ll='ls -l'
 alias la='ls -a'
-alias switch='sudo nixos-rebuild switch --flake ~/Projects/.dotfiles/nix/#default'
-alias configure='nvim ~/Projects/.dotfiles/nix'
+alias configure='nvim ~/.dotfiles/nix/'
 
 # Util
-source ~/.config/fav_paths_shared.sh 2> /dev/null
-source ~/.config/fav_paths_local.sh 2> /dev/null
 alias myip='curl http://ipecho.net/plain; echo'
 alias srcconf='source ~/.zshrc'
 

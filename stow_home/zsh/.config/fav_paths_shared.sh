@@ -1,7 +1,0 @@
-alias conf="cd ~/.config"
-alias proj="cd ~/Projects"
-alias dots="cd ~/.dotfiles"
-alias note="cd ~/Projects/notes"
-alias down="cd ~/Downloads"
-alias pic="cd ~/Pictures"
-alias wall="cd ~/Pictures/Wallpapers"

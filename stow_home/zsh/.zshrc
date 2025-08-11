@@ -18,13 +18,6 @@ eval "$(starship init zsh)"
 
 # Config
 source $ZSH/remap.sh
-# Disabled since it does not work properly in nix (it can't find the init.zsh since it's in a store)
-# Also, it really slows down the start time of the shell.
-#source $ZSH/zplug.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export DOTFILES=$HOME/.dotfiles
 
@@ -37,9 +30,5 @@ export PATH="$HOME/go/bin:$PATH"
 { alias air="$(go env GOPATH)/bin/air"; } 2>/dev/null
 
 bindkey -s ^f "go-tmux-sessionizer search\n"
-
-export JAVA_HOME=/usr/local/android-studio/jbr 2> /dev/null
-export ANDROID_HOME="$HOME/Android/Sdk" 2> /dev/null
-export NDK_HOME="$ANDROID_HOME/ndk/26.2.11394342" 2> /dev/null
 
 [ -f ~/.config/fzf/config.sh ] && source ~/.config/fzf/config.sh
