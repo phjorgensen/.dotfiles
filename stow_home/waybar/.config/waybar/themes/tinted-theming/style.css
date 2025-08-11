@@ -109,13 +109,24 @@ tooltip {
   color: @base05;
 }
 
+#custom-bs.very-high {
+  background-color: @base08;
+  color: @base01;
+}
 #custom-bs.high {
-  background-color: @base0B;
-  /* border: 1px solid @base00; */
+  /* background-color: @base0F; */
+  background-color: @base0A;
   color: @base01;
 }
 #custom-bs.low {
-  background-color: @base0B;
-  /* border: 1px solid @base00; */
+  background-color: @base0A;
+  color: @base01;
+}
+#custom-bs.very-low {
+  background-color: @base08;
+  color: @base01;
+}
+#custom-bs.stale {
+  background-color: @base0F;
   color: @base01;
 }
