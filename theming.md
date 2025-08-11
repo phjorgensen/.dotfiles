@@ -34,3 +34,4 @@ Using [tinted-theming](https://github.com/tinted-theming) now, which seems reall
 - Zenburn
 - Kanagawa
 - Dracula
+- Darkmoss (base16-darkmoss)
