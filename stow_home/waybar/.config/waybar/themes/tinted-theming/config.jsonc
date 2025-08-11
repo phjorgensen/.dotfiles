@@ -8,12 +8,11 @@
   "margin-bottom": 0,
   "margin-left": 8,
 
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["clock#date", "clock#time", "custom/bs"],
 
-  "modules-center": ["clock#time"],
+  "modules-center": ["hyprland/workspaces"],
 
   "modules-right": [
-    "custom/bs",
     "pulseaudio",
     // "cpu",
     // "memory",
@@ -21,7 +20,6 @@
     "battery",
     "tray",
     "custom/nc",
-    "clock#date",
   ],
 
   "hyprland/workspaces": {
