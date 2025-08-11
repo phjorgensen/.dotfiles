@@ -11,8 +11,7 @@
 }
 
 window#waybar {
-  background: @base02;
-  border: 1px solid @base00;
+  background: transparent;
   color: @base05;
 }
 
@@ -23,27 +22,28 @@ tooltip {
 
 #workspaces {
   border-radius: 1rem;
-  background-color: @base02;
-  margin: 5px;
-  /* margin-left: 0.6rem; */
-  padding: 4px;
-  /* border: 1px solid @base00; */
+  margin: 3px;
+  background-color: @base00;
 }
 
 #workspaces button {
+  min-width: 1.4rem;
+  min-height: 1.4rem;
   padding: 0.3rem;
+  margin: 2px;
   border-radius: 1rem;
-  /* box-shadow: inset 0 -3px transparent; */
-  background-color: @base02;
-  color: @base03;
+  background-color: @base03;
+  color: @base00;
 }
 
 #workspaces button.active {
-  color: @base0E;
+  color: @base00;
+  background-color: @base0D;
 }
 
 #workspaces button:hover {
   color: @base0D;
+  background-color: @base0C;
 }
 
 #workspaces button.urgent {
