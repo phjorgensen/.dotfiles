@@ -148,4 +148,17 @@
     "escape": true,
     "tooltip": false,
   },
+
+  "custom/bs": {
+    "return-type": "json",
+    // "exec-if": "which ~/Projects/komlesukker/target/release/komlesukker",
+    // "exec": "~/Projects/komlesukker/target/release/komlesukker",
+    // "on-click": "~/Projects/komlesukker/target/release/komlesukker",
+    "exec-if": "which ~/.config/waybar/scripts/komlesukker",
+    "exec": "~/.config/waybar/scripts/komlesukker",
+    "on-click": "~/.config/waybar/scripts/komlesukker",
+    "escape": false,
+    "tooltip": true,
+    "interval": 60,
+  },
 }
