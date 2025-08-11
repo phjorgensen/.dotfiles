@@ -34,6 +34,7 @@ tooltip {
   padding: 0.3rem;
   border-radius: 1rem;
   /* box-shadow: inset 0 -3px transparent; */
+  background-color: @base02;
   color: @base03;
 }
 
@@ -114,8 +115,11 @@ tooltip {
   color: @base01;
 }
 #custom-bs.high {
-  /* background-color: @base0F; */
   background-color: @base0A;
+  color: @base01;
+}
+#custom-bs.normal {
+  background-color: @base0C;
   color: @base01;
 }
 #custom-bs.low {
