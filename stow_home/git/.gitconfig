@@ -2,6 +2,3 @@
 	defaultBranch = main
 [pull]
 	rebase = true
-[user]
-	name = phjorgensen
-	email = phjorgensenn@gmail.com
