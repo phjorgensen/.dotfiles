@@ -39,7 +39,7 @@ tooltip {
 
 #workspaces button.active {
   color: @base00;
-  background-color: @base0B;
+  background-color: @base0C;
 }
 
 #workspaces button:hover {
