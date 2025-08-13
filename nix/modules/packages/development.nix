@@ -32,7 +32,7 @@
     marksman # Markdown
     nil # Nix
     gopls # Go
-    rust-analyzer
+    # rust-analyzer
     tailwindcss-language-server
     typescript-language-server
     svelte-language-server
