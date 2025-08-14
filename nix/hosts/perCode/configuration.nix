@@ -28,6 +28,7 @@
     # ../../modules/flakes/anyrun.nix
     # ../../modules/flakes/typy.nix
     ../../modules/flakes/bootdev.nix
+    ../../modules/flakes/komlesukker.nix
   ];
 
   networking.hostName = "perCode";
