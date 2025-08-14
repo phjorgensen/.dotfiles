@@ -69,7 +69,9 @@
     },
     "bootdev": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "path": "./flakes/bootdev",
@@ -99,7 +101,10 @@
     },
     "flake-parts": {
       "inputs": {
-        "nixpkgs-lib": ["stylix", "nixpkgs"]
+        "nixpkgs-lib": [
+          "stylix",
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1751413152,
@@ -150,14 +155,16 @@
     },
     "komlesukker": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
-        "lastModified": 1755172323,
-        "narHash": "sha256-Xca/1KI/VHy4lAkkRNeWwmhM1c0VWlS476HARM9z+Qk=",
+        "lastModified": 1755192653,
+        "narHash": "sha256-1fuAX0q773MBjKv9sG/NzFfzkPRqdqJdi8Mem78OAjE=",
         "owner": "phjorgensen",
         "repo": "komlesukker",
-        "rev": "9bcce2b9a909c19f4c2bec87e3a1350dc561ec28",
+        "rev": "a2cc6bc39919d6aa726ee423a5407cc66096d613",
         "type": "github"
       },
       "original": {
@@ -184,8 +191,14 @@
     },
     "nur": {
       "inputs": {
-        "flake-parts": ["stylix", "flake-parts"],
-        "nixpkgs": ["stylix", "nixpkgs"]
+        "flake-parts": [
+          "stylix",
+          "flake-parts"
+        ],
+        "nixpkgs": [
+          "stylix",
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1751906969,
@@ -235,7 +248,9 @@
         "firefox-gnome-theme": "firefox-gnome-theme",
         "flake-parts": "flake-parts",
         "gnome-shell": "gnome-shell",
-        "nixpkgs": ["nixpkgs"],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "nur": "nur",
         "systems": "systems",
         "tinted-foot": "tinted-foot",
