@@ -214,6 +214,26 @@
         "type": "github"
       }
     },
+    "komlesukker": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1755172323,
+        "narHash": "sha256-Xca/1KI/VHy4lAkkRNeWwmhM1c0VWlS476HARM9z+Qk=",
+        "owner": "phjorgensen",
+        "repo": "komlesukker",
+        "rev": "9bcce2b9a909c19f4c2bec87e3a1350dc561ec28",
+        "type": "github"
+      },
+      "original": {
+        "owner": "phjorgensen",
+        "repo": "komlesukker",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1755027561,
@@ -275,6 +295,7 @@
       "inputs": {
         "alejandra": "alejandra",
         "bootdev": "bootdev",
+        "komlesukker": "komlesukker",
         "nixpkgs": "nixpkgs",
         "older-pipewire": "older-pipewire",
         "stylix": "stylix"
@@ -320,13 +341,13 @@
       "locked": {
         "lastModified": 1755027820,
         "narHash": "sha256-hBSU7BEhd05y/pC9tliYjkFp8AblkbNEkPei229+0Pg=",
-        "owner": "danth",
+        "owner": "nix-community",
         "repo": "stylix",
         "rev": "c592717e9f713bbae5f718c784013d541346363d",
         "type": "github"
       },
       "original": {
-        "owner": "danth",
+        "owner": "nix-community",
         "repo": "stylix",
         "type": "github"
       }
