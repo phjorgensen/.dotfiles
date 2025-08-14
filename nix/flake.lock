@@ -160,11 +160,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1755192653,
-        "narHash": "sha256-1fuAX0q773MBjKv9sG/NzFfzkPRqdqJdi8Mem78OAjE=",
+        "lastModified": 1755196772,
+        "narHash": "sha256-XfPfPUWFnyz0it4q9XjjtMNK2SIfne6y1I5xR5JJov0=",
         "owner": "phjorgensen",
         "repo": "komlesukker",
-        "rev": "a2cc6bc39919d6aa726ee423a5407cc66096d613",
+        "rev": "4f672a257fcc95d45459b152f80ee27379d32924",
         "type": "github"
       },
       "original": {
