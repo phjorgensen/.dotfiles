@@ -1,6 +1,6 @@
 vim.lsp.enable({
   "lua_ls",
-  "nil_ls", -- Nix
+  "nixd", -- Nix
   "rust_analyzer",
   "eslint",
   "ts_ls", -- TypeScript, wrapping tsserver
@@ -34,12 +34,12 @@ vim.lsp.config("lua_ls", {
   },
 })
 
-vim.lsp.config("nil_ls", {
+vim.lsp.config("nixd", {
   autostart = true,
   settings = {
-    ["nil"] = {
+    nixd = {
       formatting = {
-        command = { "nixpkgs-fmt" },
+        command = { "nixfmt" },
       },
     },
   },

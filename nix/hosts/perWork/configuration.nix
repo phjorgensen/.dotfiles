@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
   imports = [
     ./hardware-configuration.nix
     ../../modules/system.nix
@@ -24,7 +25,6 @@
     ../../modules/packages/terminal.nix
     ../../modules/packages/work.nix
     ../../modules/packages/theming.nix
-    ../../modules/dev-tools/nix/alejandra.nix
     ../../modules/theming-tools/stylix/stylix.nix
   ];
 

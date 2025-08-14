@@ -21,6 +21,7 @@
     android-studio
 
     # Formatters
+    nixfmt-rfc-style
     stylua
     prettierd
 
@@ -30,7 +31,7 @@
     # LSPs
     lua-language-server
     marksman # Markdown
-    nil # Nix
+    nixd # Nix
     gopls # Go
     # rust-analyzer
     tailwindcss-language-server
