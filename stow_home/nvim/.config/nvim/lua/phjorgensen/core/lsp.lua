@@ -8,9 +8,9 @@ vim.lsp.enable({
   "tailwindcss",
   "intelephense", -- PHP
   "gopls",
-  "marksman", -- Markdown
-  "hyprls", -- Hyprland
-  "sourcekit", -- Swift
+  "marksman",     -- Markdown
+  "hyprls",       -- Hyprland
+  "sourcekit",    -- Swift
 })
 
 -- Restart LSPs
@@ -29,17 +29,6 @@ vim.lsp.config("lua_ls", {
         library = {
           vim.env.VIMRUNTIME,
         },
-      },
-    },
-  },
-})
-
-vim.lsp.config("nixd", {
-  autostart = true,
-  settings = {
-    nixd = {
-      formatting = {
-        command = { "nixfmt" },
       },
     },
   },
