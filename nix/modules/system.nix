@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
   nix = {
     optimise = {
       automatic = true;
@@ -14,9 +15,9 @@
     enableDefaultPackages = true;
 
     fontconfig.defaultFonts = {
-      serif = ["Liberation Serif"];
-      sansSerif = ["Liberation Sans"];
-      monospace = ["BerkeleyMono"];
+      serif = [ "Liberation Serif" ];
+      sansSerif = [ "Liberation Sans" ];
+      monospace = [ "BerkeleyMono" ];
     };
   };
 

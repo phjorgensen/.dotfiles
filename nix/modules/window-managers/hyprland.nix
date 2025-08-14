@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   # Hyprland requires pipewire
   imports = [
     ../../modules/audio/pipewire.nix

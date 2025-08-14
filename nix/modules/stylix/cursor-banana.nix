@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   stylix.cursor = {
     package = pkgs.banana-cursor;
     name = "Banana";

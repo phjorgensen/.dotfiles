@@ -1,1 +1,1 @@
-{inputs, ...}: inputs.stylix.nixosModules.stylix
+{ inputs, ... }: inputs.stylix.nixosModules.stylix

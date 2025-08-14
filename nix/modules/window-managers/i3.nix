@@ -1,5 +1,6 @@
-{pkgs, ...}: {
-  environment.pathsToLink = ["/libexec"];
+{ pkgs, ... }:
+{
+  environment.pathsToLink = [ "/libexec" ];
 
   services.displayManager.defaultSession = "none+i3";
 

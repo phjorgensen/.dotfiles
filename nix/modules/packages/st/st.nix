@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   environment.systemPackages = with pkgs; [
     (st.overrideAttrs (oldAttrs: rec {
       configFile = writeText "config.def.h" (builtins.readFile ./config.def.h);

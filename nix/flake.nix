@@ -4,11 +4,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    alejandra = {
-      url = "github:kamadorueda/alejandra/3.0.0";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     stylix = {
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -40,33 +35,33 @@
     # };
   };
 
-  outputs = {nixpkgs, ...} @ inputs: {
-    system.autoUpgrade = {
-      enable = true;
-      flake = inputs.self.outPath;
-      flags = [
-        "--update-inputs"
-        "nixpkgs"
-        "-L"
-      ];
-      dates = "daily";
-      randomizedDelaySec = "45min";
-    };
-
-    nixosConfigurations = {
-      perCode = nixpkgs.lib.nixosSystem rec {
-        specialArgs = {inherit inputs system;};
-        system = "x86_64-linux";
-
-        modules = [./hosts/perCode/configuration.nix];
+  outputs =
+    { nixpkgs, ... }@inputs:
+    {
+      system.autoUpgrade = {
+        enable = true;
+        flake = inputs.self.outPath;
+        flags = [
+          "--update-inputs"
+          "nixpkgs"
+          "-L"
+        ];
+        dates = "daily";
+        randomizedDelaySec = "45min";
       };
 
-      perWork = nixpkgs.lib.nixosSystem rec {
-        specialArgs = {inherit inputs system;};
-        system = "x86_64-linux";
+      nixosConfigurations = {
+        perCode = nixpkgs.lib.nixosSystem rec {
+          specialArgs = { inherit inputs system; };
+          system = "x86_64-linux";
+          modules = [ ./hosts/perCode/configuration.nix ];
+        };
 
-        modules = [./hosts/perWork/configuration.nix];
+        perWork = nixpkgs.lib.nixosSystem rec {
+          specialArgs = { inherit inputs system; };
+          system = "x86_64-linux";
+          modules = [ ./hosts/perWork/configuration.nix ];
+        };
       };
     };
-  };
 }
