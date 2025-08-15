@@ -27,15 +27,6 @@ vim.api.nvim_create_autocmd("BufReadPost", {
   end,
 })
 
--- autoformat on save
-vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-  group = augroup("format_on_save"),
-  pattern = "*",
-  callback = function()
-    vim.lsp.buf.format({ async = false })
-  end,
-})
-
 -- close some filetypes with <q>
 vim.api.nvim_create_autocmd("FileType", {
   group = augroup("close_with_q"),

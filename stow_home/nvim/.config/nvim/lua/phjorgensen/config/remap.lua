@@ -2,10 +2,6 @@ vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>pv", "<cmd>Ex<CR>")
 
-vim.keymap.set({ "n", "x" }, "<leader>cf", function()
-  vim.lsp.buf.format({ async = false })
-end)
-
 -- Move between splits
 vim.keymap.set("n", "<C-h>", "<cmd>wincmd h<CR>", { silent = true })
 vim.keymap.set("n", "<C-j>", "<cmd>wincmd j<CR>", { silent = true })
