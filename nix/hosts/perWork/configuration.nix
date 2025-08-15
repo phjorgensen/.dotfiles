@@ -26,6 +26,7 @@
     ../../modules/packages/work.nix
     ../../modules/packages/theming.nix
     ../../modules/theming-tools/stylix/stylix.nix
+    ../../modules/flakes/komlesukker.nix
   ];
 
   networking.hostName = "perWork";
