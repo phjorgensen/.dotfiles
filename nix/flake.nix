@@ -1,5 +1,5 @@
 {
-  description = "The most awesomest NixOS configuration flake there is";
+  description = "The most awesomest NixOS configuration flake there ever was";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
