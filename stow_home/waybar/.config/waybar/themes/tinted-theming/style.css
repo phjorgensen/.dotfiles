@@ -110,3 +110,7 @@ tooltip {
   background-color: @base0F;
   color: @base01;
 }
+#custom-bs.privacy {
+  background-color: @base03;
+  color: @base00;
+}

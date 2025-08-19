@@ -124,9 +124,6 @@
     "tooltip": false,
   },
 
-  // For some reason, this is still not displayed when signing in...
-  // Seems to be some race condition between starting the daemon before
-  // trying to subscribe to the client.
   "custom/nc": {
     "format": "{icon} {}",
     "format-icons": {
@@ -150,12 +147,10 @@
 
   "custom/bs": {
     "return-type": "json",
-    // "exec-if": "which ~/Projects/komlesukker/target/release/komlesukker",
-    // "exec": "~/Projects/komlesukker/target/release/komlesukker",
-    // "on-click": "~/Projects/komlesukker/target/release/komlesukker",
     "exec-if": "which komlesukker",
     "exec": "komlesukker",
-    "on-click": "komlesukker",
+    "on-click": "komlesukker -p",
+    "on-click-right": "komlesukker -o",
     "escape": false,
     "tooltip": true,
     "interval": 60,
