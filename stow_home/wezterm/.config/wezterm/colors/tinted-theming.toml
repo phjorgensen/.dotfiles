@@ -1,43 +1,43 @@
-# base16 Kanagawa
-# Scheme author: Tommaso Laurenzi (https://github.com/rebelot)
+# base16 Tomorrow Night
+# Scheme author: Chris Kempson (http://chriskempson.com)
 # Template author: Tinted Theming (https://github.com/tinted-theming/tinted-termihal)
 
 [colors]
-background = "#1f1f28"
-foreground = "#dcd7ba"
+background = "#1d1f21"
+foreground = "#c5c8c6"
 
-cursor_bg = "#dcd7ba"
-cursor_border = "#dcd7ba"
-cursor_fg = "#1f1f28"
+cursor_bg = "#c5c8c6"
+cursor_border = "#c5c8c6"
+cursor_fg = "#1d1f21"
 
-selection_bg = "#dcd7ba"
-selection_fg = "#223249"
+selection_bg = "#c5c8c6"
+selection_fg = "#373b41"
 
 ansi = [
-  "#1f1f28",
-  "#c34043",
-  "#76946a",
-  "#c0a36e",
-  "#7e9cd8",
-  "#957fb8",
-  "#6a9589",
-  "#c8c093"
+  "#1d1f21",
+  "#cc6666",
+  "#b5bd68",
+  "#f0c674",
+  "#81a2be",
+  "#b294bb",
+  "#8abeb7",
+  "#e0e0e0"
 ]
 brights = [
-  "#223249",
-  "#c34043",
-  "#76946a",
-  "#c0a36e",
-  "#7e9cd8",
-  "#957fb8",
-  "#6a9589",
-  "#717c7c"
+  "#373b41",
+  "#cc6666",
+  "#b5bd68",
+  "#f0c674",
+  "#81a2be",
+  "#b294bb",
+  "#8abeb7",
+  "#ffffff"
 ]
 
 [colors.indexed]
-16 = "#ffa066"
-17 = "#d27e99"
-18 = "#16161d"
-19 = "#223249"
-20 = "#727169"
-21 = "#dcd7ba"
+16 = "#de935f"
+17 = "#a3685a"
+18 = "#282a2e"
+19 = "#373b41"
+20 = "#b4b7b4"
+21 = "#c5c8c6"

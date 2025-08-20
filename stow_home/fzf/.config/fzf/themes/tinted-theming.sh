@@ -1,9 +1,9 @@
-# Scheme name: Kanagawa
+# Scheme name: Tomorrow Night
 # Scheme system: base16
-# Scheme author: Tommaso Laurenzi (https://github.com/rebelot)
+# Scheme author: Chris Kempson (http://chriskempson.com)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#16161d,bg:#1f1f28,spinner:#6a9589,hl:#7e9cd8"\
-" --color=fg:#727169,header:#7e9cd8,info:#c0a36e,pointer:#6a9589"\
-" --color=marker:#6a9589,fg+:#c8c093,prompt:#c0a36e,hl+:#7e9cd8"
+" --color=bg+:#282a2e,bg:#1d1f21,spinner:#8abeb7,hl:#81a2be"\
+" --color=fg:#b4b7b4,header:#81a2be,info:#f0c674,pointer:#8abeb7"\
+" --color=marker:#8abeb7,fg+:#e0e0e0,prompt:#f0c674,hl+:#81a2be"
