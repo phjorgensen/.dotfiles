@@ -53,8 +53,15 @@
     font-awesome
     # line-awesome
     pywal
-    # flameshot # screenshot program for X11
+
+    grim # Screenshot program
+    slurp # Select region
+    satty # Screenshot annotaions
+    imagemagick # Edit image
+
     grimblast # screenshot program for Hyprland
+    # flameshot # screenshot program for X11
+
     wl-clipboard # wayland clipboard utilities
     # copyq # clipboard history
     helix
