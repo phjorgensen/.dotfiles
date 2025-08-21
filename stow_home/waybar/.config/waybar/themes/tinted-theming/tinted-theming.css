@@ -1,23 +1,23 @@
 /*
 *
-* Base16 Tomorrow Night
-* Author: Chris Kempson (http://chriskempson.com)
+* Base16 darkmoss
+* Author: Gabriel Avanzi (https://github.com/avanzzzi)
 *
 */
 
-@define-color base00 #1d1f21;
-@define-color base01 #282a2e;
-@define-color base02 #373b41;
-@define-color base03 #969896;
-@define-color base04 #b4b7b4;
-@define-color base05 #c5c8c6;
-@define-color base06 #e0e0e0;
-@define-color base07 #ffffff;
-@define-color base08 #cc6666;
-@define-color base09 #de935f;
-@define-color base0A #f0c674;
-@define-color base0B #b5bd68;
-@define-color base0C #8abeb7;
-@define-color base0D #81a2be;
-@define-color base0E #b294bb;
-@define-color base0F #a3685a;
+@define-color base00 #171e1f;
+@define-color base01 #252c2d;
+@define-color base02 #373c3d;
+@define-color base03 #555e5f;
+@define-color base04 #818f80;
+@define-color base05 #c7c7a5;
+@define-color base06 #e3e3c8;
+@define-color base07 #e1eaef;
+@define-color base08 #ff4658;
+@define-color base09 #e6db74;
+@define-color base0A #fdb11f;
+@define-color base0B #499180;
+@define-color base0C #66d9ef;
+@define-color base0D #498091;
+@define-color base0E #9bc0c8;
+@define-color base0F #d27b53;
