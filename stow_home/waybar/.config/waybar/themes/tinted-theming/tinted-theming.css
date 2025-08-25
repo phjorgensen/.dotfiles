@@ -1,23 +1,23 @@
 /*
 *
-* Base16 Kanagawa
-* Author: Tommaso Laurenzi (https://github.com/rebelot)
+* Base16 darkmoss
+* Author: Gabriel Avanzi (https://github.com/avanzzzi)
 *
 */
 
-@define-color base00 #1f1f28;
-@define-color base01 #16161d;
-@define-color base02 #223249;
-@define-color base03 #54546d;
-@define-color base04 #727169;
-@define-color base05 #dcd7ba;
-@define-color base06 #c8c093;
-@define-color base07 #717c7c;
-@define-color base08 #c34043;
-@define-color base09 #ffa066;
-@define-color base0A #c0a36e;
-@define-color base0B #76946a;
-@define-color base0C #6a9589;
-@define-color base0D #7e9cd8;
-@define-color base0E #957fb8;
-@define-color base0F #d27e99;
+@define-color base00 #171e1f;
+@define-color base01 #252c2d;
+@define-color base02 #373c3d;
+@define-color base03 #555e5f;
+@define-color base04 #818f80;
+@define-color base05 #c7c7a5;
+@define-color base06 #e3e3c8;
+@define-color base07 #e1eaef;
+@define-color base08 #ff4658;
+@define-color base09 #e6db74;
+@define-color base0A #fdb11f;
+@define-color base0B #499180;
+@define-color base0C #66d9ef;
+@define-color base0D #498091;
+@define-color base0E #9bc0c8;
+@define-color base0F #d27b53;

@@ -1,43 +1,43 @@
-# base16 Kanagawa
-# Scheme author: Tommaso Laurenzi (https://github.com/rebelot)
+# base16 darkmoss
+# Scheme author: Gabriel Avanzi (https://github.com/avanzzzi)
 # Template author: Tinted Theming (https://github.com/tinted-theming/tinted-termihal)
 
 [colors]
-background = "#1f1f28"
-foreground = "#dcd7ba"
+background = "#171e1f"
+foreground = "#c7c7a5"
 
-cursor_bg = "#dcd7ba"
-cursor_border = "#dcd7ba"
-cursor_fg = "#1f1f28"
+cursor_bg = "#c7c7a5"
+cursor_border = "#c7c7a5"
+cursor_fg = "#171e1f"
 
-selection_bg = "#dcd7ba"
-selection_fg = "#223249"
+selection_bg = "#c7c7a5"
+selection_fg = "#373c3d"
 
 ansi = [
-  "#1f1f28",
-  "#c34043",
-  "#76946a",
-  "#c0a36e",
-  "#7e9cd8",
-  "#957fb8",
-  "#6a9589",
-  "#c8c093"
+  "#171e1f",
+  "#ff4658",
+  "#499180",
+  "#fdb11f",
+  "#498091",
+  "#9bc0c8",
+  "#66d9ef",
+  "#e3e3c8"
 ]
 brights = [
-  "#223249",
-  "#c34043",
-  "#76946a",
-  "#c0a36e",
-  "#7e9cd8",
-  "#957fb8",
-  "#6a9589",
-  "#717c7c"
+  "#373c3d",
+  "#ff4658",
+  "#499180",
+  "#fdb11f",
+  "#498091",
+  "#9bc0c8",
+  "#66d9ef",
+  "#e1eaef"
 ]
 
 [colors.indexed]
-16 = "#ffa066"
-17 = "#d27e99"
-18 = "#16161d"
-19 = "#223249"
-20 = "#727169"
-21 = "#dcd7ba"
+16 = "#e6db74"
+17 = "#d27b53"
+18 = "#252c2d"
+19 = "#373c3d"
+20 = "#818f80"
+21 = "#c7c7a5"
