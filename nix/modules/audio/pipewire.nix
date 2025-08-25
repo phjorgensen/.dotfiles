@@ -28,8 +28,8 @@
       };
     };
 
-    package = inputs.older-pipewire.legacyPackages.${pkgs.system}.pipewire;
-    wireplumber.package = inputs.older-pipewire.legacyPackages.${pkgs.system}.wireplumber;
+    package = inputs.stable-nixpkgs.legacyPackages.${pkgs.system}.pipewire;
+    wireplumber.package = inputs.stable-nixpkgs.legacyPackages.${pkgs.system}.wireplumber;
   };
 
   environment.systemPackages = with pkgs; [

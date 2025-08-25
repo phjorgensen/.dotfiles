@@ -3,16 +3,20 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+
+    # Use stable-nixpkgs for pipewire, since Wireplumber is broken in unstable
+    # Temp fix and issue discussion: https://github.com/NixOS/nixpkgs/issues/225743#issuecomment-3131013052
+    # Fix: https://github.com/NixOS/nixpkgs/pull/427606
+
+    # Use stable-nixpgks for teams-for-linux
+    # Issue: https://github.com/IsmaelMartinez/teams-for-linux/issues/1800
+    # Introduced: https://github.com/NixOS/nixpkgs/commit/4f8978dc07418b89e80edbd7388e4e6578cb240d
 
     stylix = {
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    # Temprary fix, since Wireplumber is broken
-    # Temp fix and issue discussion: https://github.com/NixOS/nixpkgs/issues/225743#issuecomment-3131013052
-    # Fix: https://github.com/NixOS/nixpkgs/pull/427606
-    older-pipewire.url = "github:NixOS/nixpkgs/2631b0b7abcea6e640ce31cd78ea58910d31e650";
 
     bootdev = {
       url = "./flakes/bootdev";
