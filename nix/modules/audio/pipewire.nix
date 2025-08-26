@@ -1,8 +1,4 @@
-{
-  inputs,
-  pkgs,
-  ...
-}:
+{ pkgs, ... }:
 {
   security.rtkit.enable = true;
 
@@ -27,9 +23,6 @@
         ];
       };
     };
-
-    package = inputs.stable-nixpkgs.legacyPackages.${pkgs.system}.pipewire;
-    wireplumber.package = inputs.stable-nixpkgs.legacyPackages.${pkgs.system}.wireplumber;
   };
 
   environment.systemPackages = with pkgs; [
