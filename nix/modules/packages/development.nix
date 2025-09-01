@@ -11,6 +11,7 @@
     typescript
     nim
     sqlite
+    luajitPackages.luarocks_bootstrap # Lua package manager
 
     pkg-config # helper tool used when compiling applications and libraries, it helps insert the correct compiler options on the command line
     direnv
