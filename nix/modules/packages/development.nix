@@ -47,6 +47,7 @@
     lldb
 
     devcontainer
+    devenv
     tree-sitter # For generating definitions for some languages (i.e. Swift)
 
     # postman
