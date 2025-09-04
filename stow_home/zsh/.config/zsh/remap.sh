@@ -24,7 +24,7 @@ alias ta='tmux a'
 
 # Open lazy
 alias lgit='lazygit'
-alias ldocker='lazydocker'
+alias ldoc='lazydocker'
 
 # Node
 alias ni='npm install --save '
