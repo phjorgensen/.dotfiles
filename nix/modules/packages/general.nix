@@ -53,7 +53,6 @@
     font-awesome
     # line-awesome
     pywal
-    gnome-keyring
 
     grim # Screenshot program
     slurp # Select region
