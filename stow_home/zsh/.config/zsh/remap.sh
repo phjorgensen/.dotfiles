@@ -49,3 +49,8 @@ nud() {
 mkcd() {
   mkdir -p $1 && cd $1
 }
+
+# Docker
+alias dui='lazydocker'
+alias dcu='docker compose up'
+alias dcd='docker compose down'
