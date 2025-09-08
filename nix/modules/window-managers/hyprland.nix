@@ -42,8 +42,8 @@
     # PulseAudio manager
     kdePackages.plasma-pa
 
-    # file picker may not work, this should fix it
-    # xdg-desktop-portal-gtk
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
   ];
 
   qt.enable = true;
