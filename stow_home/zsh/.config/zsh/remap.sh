@@ -7,6 +7,7 @@ alias snvim='sudo nvim'
 
 # Cat
 alias cat=bat
+alias top=btop
 
 # Has to be single quotes.
 alias fuck='sudo $(fc -ln -1)'
