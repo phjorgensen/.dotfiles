@@ -8,7 +8,9 @@
     firefox
     firefox-devedition
     brave
-    nyxt
+    # nyxt
+    lynx
+    qutebrowser
 
     # Note-taking programs
     obsidian
