@@ -42,8 +42,11 @@
     # PulseAudio manager
     kdePackages.plasma-pa
 
+    xdg-desktop-portal
+    xdg-desktop-portal-wlr
     xdg-desktop-portal-gtk
     xdg-desktop-portal-gnome
+    xdg-desktop-portal-hyprland
   ];
 
   qt.enable = true;

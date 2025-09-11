@@ -62,11 +62,11 @@
     imagemagick # Edit image
 
     grimblast # screenshot program for Hyprland
-    # flameshot # screenshot program for X11
+    flameshot # screenshot program for X11
 
     wl-clipboard # wayland clipboard utilities
     # copyq # clipboard history
-    helix
+    # helix
   ];
 
   # Run fc-list to list fonts, `fc-list | grep <name>` for specific font.
