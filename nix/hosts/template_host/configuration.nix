@@ -1,28 +1,10 @@
 { ... }:
 {
   imports = [
-    ./hardware-configuration.nix
-    ../../modules/system.nix
-    # Use one of these, the one used in the /etc/nixos/configuration.nix
-    #../../modules/bootloader/grub.nix
-    #../../modules/bootloader/systemd-boot.nix
-    ../../modules/network.nix
-    ../../modules/bluetooth.nix
-    ../../modules/time-and-lang.nix
-    ../../modules/enable-flakes.nix
-    ../../modules/window-managers/i3.nix
-    ../../modules/audio/pulseaudio.nix
-    ../../modules/zsh.nix
-    ../../modules/main-user.nix
-    ../../modules/stylix/general.nix
-    ../../modules/stylix/cursor-nordzy.nix
-    ../../modules/packages/general.nix
-    ../../modules/packages/development.nix
-    # ../../modules/packages/docker.nix
-    ../../modules/packages/terminal.nix
+    # Copy start point from the most similar existing host
   ];
 
-  networking.hostName = "perVm1"; # Define your hostname.
+  networking.hostName = "<HOST_NAME_HERE>"; # Define your hostname.
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
