@@ -22,7 +22,7 @@
     swaynotificationcenter
 
     # App launcher
-    rofi-wayland
+    rofi
     fuzzel
   ];
 

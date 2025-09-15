@@ -32,7 +32,7 @@
     swaynotificationcenter
 
     # App launcher
-    rofi-wayland
+    rofi
     # wofi
     bemenu
     tofi
