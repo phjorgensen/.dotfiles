@@ -62,7 +62,7 @@
     imagemagick # Edit image
 
     grimblast # screenshot program for Hyprland
-    flameshot # screenshot program for X11
+    # flameshot # screenshot program for X11
 
     wl-clipboard # wayland clipboard utilities
     # copyq # clipboard history
