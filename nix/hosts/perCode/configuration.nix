@@ -21,6 +21,7 @@
     ../../modules/packages/deployment.nix
     # ../../modules/packages/docker.nix
     ../../modules/packages/podman.nix
+    ../../modules/packages/games.nix
     ../../modules/packages/media-editing.nix
     ../../modules/packages/security.nix
     ../../modules/packages/terminal.nix
