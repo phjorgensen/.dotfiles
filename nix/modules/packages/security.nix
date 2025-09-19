@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     # vulnix
-    yubikey-manager
-    # yubikey-touch-detector
+    yubikey-manager # CLI to manage YubiKeys, "ykman".
+    yubioath-flutter # Official Yubico UI for managing YubiKeys
   ];
 }
