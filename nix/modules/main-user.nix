@@ -9,6 +9,8 @@
       "networkmanager"
       "wheel"
       "audio"
+      "docker"
+      "podman"
     ];
   };
 }
