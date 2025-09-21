@@ -29,9 +29,10 @@
     cheese # webcam capture
     tidal-hifi # Tidal music streaming
 
-    # Messages
+    # Communication
     telegram-desktop
     signal-desktop
+    teamspeak6-client
 
     # Utility
     libqalculate
