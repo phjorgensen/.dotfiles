@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
 
-    # Use stable-nixpgks for teams-for-linux
+    # Use specific commit for teams-for-linux
     # Issue: https://github.com/IsmaelMartinez/teams-for-linux/issues/1800
     # Introduced: https://github.com/NixOS/nixpkgs/commit/4f8978dc07418b89e80edbd7388e4e6578cb240d
 
