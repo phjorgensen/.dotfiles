@@ -55,6 +55,7 @@
     font-awesome
     # line-awesome
     pywal
+    wlr-randr
 
     grim # Screenshot program
     slurp # Select region
