@@ -3,7 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    # Unused at the moment
+    # stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
 
     # Use specific commit for teams-for-linux
     # Issue: https://github.com/IsmaelMartinez/teams-for-linux/issues/1800
