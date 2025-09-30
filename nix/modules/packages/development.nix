@@ -21,6 +21,7 @@
     # zed-editor
     vscode
     android-studio
+    emacs
 
     # Formatters
     nixfmt-rfc-style
