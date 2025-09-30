@@ -10,7 +10,7 @@ return {
     dashboard = { enabled = false },
     debug = { enabled = true },
     dim = { enabled = true },
-    explorer = { enabled = true },
+    explorer = { enabled = false },
     git = { enabled = true },
     gitbrowse = { enabled = true },
     image = { enabled = true },
@@ -234,13 +234,13 @@ return {
       end,
       desc = "Notification History",
     },
-    {
-      "<leader>e",
-      function()
-        Snacks.explorer()
-      end,
-      desc = "File Explorer",
-    },
+    -- {
+    --   "<leader>e",
+    --   function()
+    --     Snacks.explorer()
+    --   end,
+    --   desc = "File Explorer",
+    -- },
 
     -- find
     -- {
@@ -318,26 +318,11 @@ return {
       desc = "Buffer Lines",
     },
     {
-      "<leader>sB",
-      function()
-        Snacks.picker.grep_buffers()
-      end,
-      desc = "Grep Open Buffers",
-    },
-    {
       "<leader>sg",
       function()
         Snacks.picker.grep()
       end,
       desc = "Grep",
-    },
-    {
-      "<leader>sw",
-      function()
-        Snacks.picker.grep_word()
-      end,
-      desc = "Visual selection or word",
-      mode = { "n", "x" },
     },
     -- search
     {
@@ -360,13 +345,6 @@ return {
         Snacks.picker.autocmds()
       end,
       desc = "Autocmds",
-    },
-    {
-      "<leader>sb",
-      function()
-        Snacks.picker.lines()
-      end,
-      desc = "Buffer Lines",
     },
     {
       "<leader>sc",
