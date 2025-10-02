@@ -15,15 +15,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    bootdev = {
-      url = "./flakes/bootdev";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     komlesukker = {
       url = "github:phjorgensen/komlesukker";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # bootdev = {
+    #   url = "./flakes/bootdev";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # anyrun = {
     #   url = "github:anyrun-org/anyrun";

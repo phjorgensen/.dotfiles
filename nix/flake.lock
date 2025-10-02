@@ -67,22 +67,6 @@
         "type": "github"
       }
     },
-    "bootdev": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "path": "./flakes/bootdev",
-        "type": "path"
-      },
-      "original": {
-        "path": "./flakes/bootdev",
-        "type": "path"
-      },
-      "parent": []
-    },
     "firefox-gnome-theme": {
       "flake": false,
       "locked": {
@@ -216,7 +200,6 @@
     },
     "root": {
       "inputs": {
-        "bootdev": "bootdev",
         "komlesukker": "komlesukker",
         "nixpkgs": "nixpkgs",
         "stylix": "stylix"

@@ -30,7 +30,6 @@
     ../../modules/theming-tools/stylix/stylix.nix
     # ../../modules/flakes/anyrun.nix
     # ../../modules/flakes/typy.nix
-    ../../modules/flakes/bootdev.nix
     ../../modules/flakes/komlesukker.nix
   ];
 
