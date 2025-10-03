@@ -1,9 +1,9 @@
-# Scheme name: darkmoss
+# Scheme name: Catppuccin Mocha
 # Scheme system: base16
-# Scheme author: Gabriel Avanzi (https://github.com/avanzzzi)
+# Scheme author: https://github.com/catppuccin/catppuccin
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#252c2d,bg:#171e1f,spinner:#66d9ef,hl:#498091"\
-" --color=fg:#818f80,header:#498091,info:#fdb11f,pointer:#66d9ef"\
-" --color=marker:#66d9ef,fg+:#e3e3c8,prompt:#fdb11f,hl+:#498091"
+" --color=bg+:#181825,bg:#1e1e2e,spinner:#94e2d5,hl:#89b4fa"\
+" --color=fg:#585b70,header:#89b4fa,info:#f9e2af,pointer:#94e2d5"\
+" --color=marker:#94e2d5,fg+:#f5e0dc,prompt:#f9e2af,hl+:#89b4fa"
