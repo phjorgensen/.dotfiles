@@ -45,4 +45,7 @@ in
   ];
 
   services.flatpak.enable = true;
+
+  services.orca.enable = true; # Screen reader
+  services.speechd.enable = true;
 }
