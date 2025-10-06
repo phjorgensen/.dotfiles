@@ -1,9 +1,9 @@
-# Scheme name: Catppuccin Mocha
+# Scheme name: Ayu Dark
 # Scheme system: base16
-# Scheme author: https://github.com/catppuccin/catppuccin
+# Scheme author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#181825,bg:#1e1e2e,spinner:#94e2d5,hl:#89b4fa"\
-" --color=fg:#585b70,header:#89b4fa,info:#f9e2af,pointer:#94e2d5"\
-" --color=marker:#94e2d5,fg+:#f5e0dc,prompt:#f9e2af,hl+:#89b4fa"
+" --color=bg+:#131721,bg:#0b0e14,spinner:#95e6cb,hl:#59c2ff"\
+" --color=fg:#bfbdb6,header:#59c2ff,info:#ffb454,pointer:#95e6cb"\
+" --color=marker:#95e6cb,fg+:#ece8db,prompt:#ffb454,hl+:#59c2ff"
