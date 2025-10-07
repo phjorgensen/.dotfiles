@@ -42,7 +42,7 @@
     svelte-language-server
     nodePackages.intelephense # PHP
     hyprls # Hyprland
-    sourcekit-lsp # Swift
+    # sourcekit-lsp # Swift
 
     # Debuggers
     lldb
