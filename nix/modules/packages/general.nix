@@ -22,9 +22,11 @@
     mpv # media player
     zathura # document viewer
     obs-studio # screen and camera recorder
+    audacity
     playerctl # CLI for controlling music
     presenterm # terminal presentation tool
     tt # terminal typing test
+    cava # terminal music visualizer
 
     cheese # webcam capture
     tidal-hifi # Tidal music streaming
