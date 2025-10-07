@@ -19,6 +19,7 @@ window#waybar {
 tooltip {
   background-color: @base02;
   border: 1px solid @base00;
+  border-radius: 6px;
 }
 
 #workspaces {
