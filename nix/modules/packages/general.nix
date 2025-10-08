@@ -58,6 +58,7 @@
     # line-awesome
     pywal
     wlr-randr
+    xorg.xrdb # To reload the .Xresources after theme change
 
     grim # Screenshot program
     slurp # Select region
