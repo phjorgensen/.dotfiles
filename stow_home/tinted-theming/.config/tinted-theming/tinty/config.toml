@@ -39,3 +39,10 @@ name = "tinted-rofi"
 themes-dir = "colors"
 hook = "command cp -f %f ~/.config/rofi/themes/tinted-theming.rasi && set-waybar-theme.sh tinted-theming"
 supported-systems = ["base16"]
+
+[[items]]
+path = "https://github.com/tinted-theming/tinted-xresources"
+name = "tinted-xresources"
+themes-dir = "xresources"
+hook = "cp -f %f ~/.config/xresources/theme && xrdb -load ~/.Xresources"
+supported-systems = ["base16", "base24"]
