@@ -29,5 +29,6 @@
     pavucontrol
     pasystray
     alsa-utils
+    pulseaudio # Still need this for pactl to control the audio from CLI
   ];
 }
