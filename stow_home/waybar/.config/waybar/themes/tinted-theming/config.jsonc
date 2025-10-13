@@ -127,7 +127,7 @@
   },
 
   "custom/nc": {
-    "format": "{icon} {}",
+    "format": "{} {icon}",
     "format-icons": {
       "none": "nots",
       "notification": "<span foreground='#f38ba8'>nots</span>",
