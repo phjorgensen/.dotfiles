@@ -26,10 +26,9 @@ return {
     picker = {
       enabled = true,
       sources = {
-        explorer = {
-          -- focus = "input",
-          auto_close = true,
-          include = { "*" },
+        files = {
+          hidden = true,
+          ignored = true,
         },
       },
     },
@@ -68,11 +67,66 @@ return {
     --   desc = "Select Scratch Buffer",
     -- },
     {
+      "<leader>f",
+      function()
+        -- builtin.git_files,
+        -- Snacks.picker.smart()
+        Snacks.picker.files()
+      end,
+      desc = "Smart Find Files",
+    },
+    {
+      "<leader>F",
+      function()
+        -- builtin.find_files,
+        Snacks.picker.git_files()
+      end,
+      desc = "Search all files",
+    },
+    {
+      "<leader>/",
+      function()
+        -- builtin.live_grep,
+        Snacks.picker.grep()
+      end,
+      desc = "Search in files (grep)",
+    },
+    {
+      "<leader>sw",
+      function()
+        Snacks.picker.grep_word()
+      end,
+      desc = "Visual selection or word",
+      mode = { "n", "x" },
+    },
+    {
+      "<leader>'",
+      function()
+        Snacks.picker.resume()
+        -- builtin.resume,
+      end,
+      desc = "Reusme previous search",
+    },
+    {
       "<leader>n",
       function()
         Snacks.notifier.show_history()
       end,
       desc = "Notification History",
+    },
+    {
+      "<leader>:",
+      function()
+        Snacks.picker.command_history()
+      end,
+      desc = "Command History",
+    },
+    {
+      "<leader>sm",
+      function()
+        Snacks.picker.marks()
+      end,
+      desc = "Marks",
     },
     -- {
     --   "<leader>dme",
@@ -234,14 +288,6 @@ return {
       end,
       desc = "Notification History",
     },
-    -- {
-    --   "<leader>e",
-    --   function()
-    --     Snacks.explorer()
-    --   end,
-    --   desc = "File Explorer",
-    -- },
-
     -- find
     -- {
     --   "<leader>fc",
