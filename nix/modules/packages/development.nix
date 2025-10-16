@@ -50,6 +50,8 @@
     devcontainer
     devenv
     tree-sitter # For generating definitions for some languages (i.e. Swift)
+    mermaid-cli # For generating diagrams from a mermaid definition
+    structurizr-cli # For generating diagrams from Structurizr DSL
 
     # postman
     # bruno
