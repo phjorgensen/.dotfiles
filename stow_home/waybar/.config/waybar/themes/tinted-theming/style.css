@@ -70,6 +70,10 @@ tooltip {
   padding: 0.1rem 0.8rem;
 }
 
+#custom-nc {
+  color: @base08;
+}
+
 #cpu.critical,
 #memory.critical {
   background-color: @base08;
