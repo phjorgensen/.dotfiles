@@ -12,9 +12,11 @@ vim.keymap.set("n", "<C-k>", "<cmd>wincmd k<CR>", { silent = true })
 vim.keymap.set("n", "<C-l>", "<cmd>wincmd l<CR>", { silent = true })
 
 -- Helix style goto binds
-vim.keymap.set({ "n", "v" }, "gl", "$", { desc = "Go to end of line" })
-vim.keymap.set({ "n", "v" }, "gh", "0", { desc = "Go to start of line" })
-vim.keymap.set({ "n", "v" }, "gs", "^", { desc = "Go to first character of line" })
+vim.keymap.set({ "n", "v" }, "gh", "0", { desc = "Go to start of the line" })
+vim.keymap.set({ "n", "v" }, "gj", "G", { desc = "Go to end of the file" })
+vim.keymap.set({ "n", "v" }, "gk", "gg", { desc = "Go to start of the file" })
+vim.keymap.set({ "n", "v" }, "gl", "$", { desc = "Go to end of the line" })
+vim.keymap.set({ "n", "v" }, "gs", "^", { desc = "Go to first character of the line" })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move selection down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move selection up
