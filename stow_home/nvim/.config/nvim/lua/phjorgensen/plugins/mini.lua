@@ -34,7 +34,7 @@ return {
     -- require("mini.hipatterns").setup({})
     -- require("mini.icons").setup({})
     -- require("mini.notify").setup({})
-    require("mini.pairs").setup({})
+    -- require("mini.pairs").setup({})
     require("mini.statusline").setup({})
     -- require("mini.tabline").setup({})
     require("mini.surround").setup({})
