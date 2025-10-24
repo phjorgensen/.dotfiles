@@ -9,8 +9,8 @@ vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
 
 -- Set transparent background
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 -- Set up snipe as vim.ui.select
 -- local snipe = require("snipe")
