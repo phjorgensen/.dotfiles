@@ -27,6 +27,7 @@
     ../../modules/packages/theming.nix
     ../../modules/theming-tools/stylix/stylix.nix
     ../../modules/flakes/komlesukker.nix
+    # ../../modules/flakes/otel-tui.nix
   ];
 
   networking.hostName = "perWork";
