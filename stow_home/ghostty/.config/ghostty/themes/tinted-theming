@@ -1,43 +1,43 @@
 # vim: ft=ghostty
-# Ayu Dark theme for Ghostty
-# Scheme Author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
+# Gruvbox dark, hard theme for Ghostty
+# Scheme Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 # Scheme System: base16
 # Template Author: Tinted Terminal (https://github.com/tinted-theming/tinted-terminal)
 
 # Color palette
-palette = 0=#0b0e14
-palette = 1=#f07178
-palette = 2=#aad94c
-palette = 3=#ffb454
-palette = 4=#59c2ff
-palette = 5=#d2a6ff
-palette = 6=#95e6cb
-palette = 7=#e6e1cf
-palette = 8=#202229
-palette = 9=#f07178
-palette = 10=#aad94c
-palette = 11=#ffb454
-palette = 12=#59c2ff
-palette = 13=#d2a6ff
-palette = 14=#95e6cb
-palette = 15=#f2f0e7
-palette = 16=#ff8f40
-palette = 17=#e6b450
-palette = 18=#131721
-palette = 19=#202229
-palette = 20=#bfbdb6
-palette = 21=#ece8db
+palette = 0=#1d2021
+palette = 1=#fb4934
+palette = 2=#b8bb26
+palette = 3=#fabd2f
+palette = 4=#83a598
+palette = 5=#d3869b
+palette = 6=#8ec07c
+palette = 7=#d5c4a1
+palette = 8=#504945
+palette = 9=#fb4934
+palette = 10=#b8bb26
+palette = 11=#fabd2f
+palette = 12=#83a598
+palette = 13=#d3869b
+palette = 14=#8ec07c
+palette = 15=#fbf1c7
+palette = 16=#fe8019
+palette = 17=#d65d0e
+palette = 18=#3c3836
+palette = 19=#504945
+palette = 20=#bdae93
+palette = 21=#ebdbb2
 
 # Foreground & background colors
-background = #0b0e14
-foreground = #e6e1cf
-cursor-color = #e6e1cf
-selection-background = #202229
-selection-foreground = #e6e1cf
+background = #1d2021
+foreground = #d5c4a1
+cursor-color = #d5c4a1
+selection-background = #504945
+selection-foreground = #d5c4a1
 
 # Set `macos-icon = custom-style` in your main configuration file to enable theming of the app icon.
 #
 # Set the ghost color to the lightest foreground:
-macos-icon-ghost-color = #f2f0e7
+macos-icon-ghost-color = #fbf1c7
 # Replace the official icon's blue background with the designated bright blue color:
-macos-icon-screen-color = #59c2ff
+macos-icon-screen-color = #83a598

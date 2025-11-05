@@ -1,43 +1,43 @@
-# base16 Ayu Dark
-# Scheme author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
+# base16 Gruvbox dark, hard
+# Scheme author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 # Template author: Tinted Theming (https://github.com/tinted-theming/tinted-termihal)
 
 [colors]
-background = "#0b0e14"
-foreground = "#e6e1cf"
+background = "#1d2021"
+foreground = "#d5c4a1"
 
-cursor_bg = "#e6e1cf"
-cursor_border = "#e6e1cf"
-cursor_fg = "#0b0e14"
+cursor_bg = "#d5c4a1"
+cursor_border = "#d5c4a1"
+cursor_fg = "#1d2021"
 
-selection_bg = "#e6e1cf"
-selection_fg = "#202229"
+selection_bg = "#d5c4a1"
+selection_fg = "#504945"
 
 ansi = [
-  "#0b0e14",
-  "#f07178",
-  "#aad94c",
-  "#ffb454",
-  "#59c2ff",
-  "#d2a6ff",
-  "#95e6cb",
-  "#ece8db"
+  "#1d2021",
+  "#fb4934",
+  "#b8bb26",
+  "#fabd2f",
+  "#83a598",
+  "#d3869b",
+  "#8ec07c",
+  "#ebdbb2"
 ]
 brights = [
-  "#202229",
-  "#f07178",
-  "#aad94c",
-  "#ffb454",
-  "#59c2ff",
-  "#d2a6ff",
-  "#95e6cb",
-  "#f2f0e7"
+  "#504945",
+  "#fb4934",
+  "#b8bb26",
+  "#fabd2f",
+  "#83a598",
+  "#d3869b",
+  "#8ec07c",
+  "#fbf1c7"
 ]
 
 [colors.indexed]
-16 = "#ff8f40"
-17 = "#e6b450"
-18 = "#131721"
-19 = "#202229"
-20 = "#bfbdb6"
-21 = "#e6e1cf"
+16 = "#fe8019"
+17 = "#d65d0e"
+18 = "#3c3836"
+19 = "#504945"
+20 = "#bdae93"
+21 = "#d5c4a1"

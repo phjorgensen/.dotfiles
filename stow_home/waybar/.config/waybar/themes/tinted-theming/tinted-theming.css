@@ -1,23 +1,23 @@
 /*
 *
-* Base16 Ayu Dark
-* Author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
+* Base16 Gruvbox dark, hard
+* Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 *
 */
 
-@define-color base00 #0b0e14;
-@define-color base01 #131721;
-@define-color base02 #202229;
-@define-color base03 #3e4b59;
-@define-color base04 #bfbdb6;
-@define-color base05 #e6e1cf;
-@define-color base06 #ece8db;
-@define-color base07 #f2f0e7;
-@define-color base08 #f07178;
-@define-color base09 #ff8f40;
-@define-color base0A #ffb454;
-@define-color base0B #aad94c;
-@define-color base0C #95e6cb;
-@define-color base0D #59c2ff;
-@define-color base0E #d2a6ff;
-@define-color base0F #e6b450;
+@define-color base00 #1d2021;
+@define-color base01 #3c3836;
+@define-color base02 #504945;
+@define-color base03 #665c54;
+@define-color base04 #bdae93;
+@define-color base05 #d5c4a1;
+@define-color base06 #ebdbb2;
+@define-color base07 #fbf1c7;
+@define-color base08 #fb4934;
+@define-color base09 #fe8019;
+@define-color base0A #fabd2f;
+@define-color base0B #b8bb26;
+@define-color base0C #8ec07c;
+@define-color base0D #83a598;
+@define-color base0E #d3869b;
+@define-color base0F #d65d0e;
