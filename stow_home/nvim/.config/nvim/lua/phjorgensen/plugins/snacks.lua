@@ -26,11 +26,11 @@ return {
     picker = {
       enabled = true,
       sources = {
-        files = {
-          hidden = true,
-          ignored = true,
-        },
+        files = { hidden = true },
+        grep = { hidden = true },
       },
+      matcher = { frecency = true },
+      reverse = true,
     },
     profiler = { enabled = true },
     quickfile = { enabled = true },
