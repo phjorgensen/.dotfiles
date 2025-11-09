@@ -34,8 +34,8 @@
     # App launcher
     rofi
     # wofi
-    bemenu
-    tofi
+    # bemenu
+    # tofi
     walker
     # ulauncher
 
