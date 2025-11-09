@@ -20,15 +20,11 @@
     # IDEs
     # zed-editor
     vscode
-    android-studio
 
     # Formatters
     nixfmt-rfc-style
     stylua
     prettierd
-
-    # SDKs
-    dotnetCorePackages.dotnet_9.sdk
 
     # LSPs
     lua-language-server
