@@ -71,6 +71,9 @@
     wl-clipboard # wayland clipboard utilities
     # copyq # clipboard history
     # helix
+
+    gtk3
+    gtk3-x11
   ];
 
   # Run fc-list to list fonts, `fc-list | grep <name>` for specific font.
