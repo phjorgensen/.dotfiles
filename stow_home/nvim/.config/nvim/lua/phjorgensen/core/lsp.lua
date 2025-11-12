@@ -8,9 +8,9 @@ vim.lsp.enable({
   "tailwindcss",
   "intelephense", -- PHP
   "gopls",
-  "marksman",     -- Markdown
-  "hyprls",       -- Hyprland
-  "sourcekit",    -- Swift
+  "marksman", -- Markdown
+  "hyprls", -- Hyprland
+  "sourcekit", -- Swift
 })
 
 -- Restart LSPs
@@ -35,8 +35,8 @@ vim.lsp.config("lua_ls", {
 })
 
 vim.diagnostic.config({
-  -- virtual_lines = true,
-  virtual_text = true,
+  virtual_lines = true,
+  -- virtual_text = true,
   underline = true,
   update_in_insert = false,
   severity_sort = true,
