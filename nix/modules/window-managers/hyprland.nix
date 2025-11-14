@@ -36,7 +36,7 @@
     # wofi
     # bemenu
     # tofi
-    walker
+    # walker
     # ulauncher
 
     # PulseAudio manager
