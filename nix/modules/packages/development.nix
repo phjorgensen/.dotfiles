@@ -48,6 +48,7 @@
     mermaid-cli # For generating diagrams from a mermaid definition
     structurizr-cli # For generating diagrams from Structurizr DSL
     plantuml-c4 # PlantUML with c4 plugins
+    swagger-codegen3 # To generate different output from a swagger spec, needs to be 3 to support OpenAPI 3
 
     # postman
     # bruno
