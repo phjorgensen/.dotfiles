@@ -4,7 +4,7 @@
 
   environment.systemPackages = with pkgs; [
     # Browsers
-    librewolf
+    # librewolf
     firefox
     brave
     # nyxt
