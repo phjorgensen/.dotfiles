@@ -16,10 +16,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # otel-tui = {
-    #   url = "github:ymtdzzz/otel-tui";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    otel-tui = {
+      url = "github:ymtdzzz/otel-tui";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # bootdev = {
     #   url = "./flakes/bootdev";

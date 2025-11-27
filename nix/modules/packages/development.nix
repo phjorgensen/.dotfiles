@@ -50,6 +50,9 @@
     plantuml-c4 # PlantUML with c4 plugins
     swagger-codegen3 # To generate different output from a swagger spec, needs to be 3 to support OpenAPI 3
 
+    otel-desktop-viewer
+    otel-cli
+
     # postman
     # bruno
     mosquitto # MQTT broker and client
