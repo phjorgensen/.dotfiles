@@ -6,6 +6,7 @@
     # Browsers
     # librewolf
     firefox
+    firefox-devedition
     brave
     # nyxt
     lynx
