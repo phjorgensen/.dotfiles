@@ -75,6 +75,8 @@
 
     gtk3
     gtk3-x11
+
+    tlrc # TLDR client, alternative to man pages
   ];
 
   # Run fc-list to list fonts, `fc-list | grep <name>` for specific font.
