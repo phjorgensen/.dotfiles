@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     git
+    gh
 
     # Languages
     gcc
@@ -12,6 +13,7 @@
     nim
     sqlite
     luajitPackages.luarocks_bootstrap # Lua package manager
+    powershell
 
     pkg-config # helper tool used when compiling applications and libraries, it helps insert the correct compiler options on the command line
     direnv
