@@ -1,9 +1,9 @@
-# Scheme name: Gruvbox dark, hard
+# Scheme name: Nord
 # Scheme system: base16
-# Scheme author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+# Scheme author: arcticicestudio
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#3c3836,bg:#1d2021,spinner:#8ec07c,hl:#83a598"\
-" --color=fg:#bdae93,header:#83a598,info:#fabd2f,pointer:#8ec07c"\
-" --color=marker:#8ec07c,fg+:#ebdbb2,prompt:#fabd2f,hl+:#83a598"
+" --color=bg+:#3b4252,bg:#2e3440,spinner:#88c0d0,hl:#81a1c1"\
+" --color=fg:#d8dee9,header:#81a1c1,info:#ebcb8b,pointer:#88c0d0"\
+" --color=marker:#88c0d0,fg+:#eceff4,prompt:#ebcb8b,hl+:#81a1c1"
