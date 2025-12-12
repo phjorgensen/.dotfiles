@@ -22,6 +22,7 @@
     vlc # media player
     mpv # media player
     zathura # document viewer
+    pdf4qt # pdf editor
     obs-studio # screen and camera recorder
     audacity
     playerctl # CLI for controlling music
