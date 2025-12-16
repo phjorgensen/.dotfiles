@@ -78,6 +78,12 @@
     gtk3-x11
 
     tlrc # TLDR client, alternative to man pages
+
+    cups # Printer drivers
+    cups-printers # Interact with CUPS server
+    cups-brother-dcpl3550cdw # Work printer
+    gutenprint # Additional driveres
+    gutenprint-bin # Additional driveres
   ];
 
   # Run fc-list to list fonts, `fc-list | grep <name>` for specific font.
