@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   security.rtkit.enable = true;
 
@@ -27,7 +27,8 @@
 
   environment.systemPackages = with pkgs; [
     pavucontrol
-    pasystray
+    # pasystray
+    inputs.stable-nixpkgs.legacyPackages.${pkgs.system}.pasystray
     alsa-utils
     pulseaudio # Still need this for pactl to control the audio from CLI
   ];

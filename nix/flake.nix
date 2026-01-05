@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     # Unused at the moment
-    # stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    stable-nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
 
     stylix = {
       url = "github:nix-community/stylix";
