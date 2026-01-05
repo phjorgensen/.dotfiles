@@ -16,7 +16,7 @@
     obsidian
 
     # File handlers
-    xfce.thunar
+    thunar
     nomacs # image viewer
     libreoffice-qt6-fresh # office solution
     vlc # media player
