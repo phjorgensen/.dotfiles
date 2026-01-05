@@ -11,6 +11,8 @@ vim.lsp.enable({
   "marksman", -- Markdown
   "hyprls", -- Hyprland
   "sourcekit", -- Swift
+  -- "java_language_server", -- Java
+  "jdtls", -- Eclipse version of Java
 })
 
 -- Restart LSPs

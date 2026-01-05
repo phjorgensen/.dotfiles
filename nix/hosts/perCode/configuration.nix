@@ -19,6 +19,7 @@
     ../../modules/stylix/cursor-bibata.nix
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
+    ../../modules/packages/development-java.nix
     ../../modules/packages/deployment.nix
     ../../modules/packages/docker.nix
     # ../../modules/packages/podman.nix
