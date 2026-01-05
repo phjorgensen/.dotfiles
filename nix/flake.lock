@@ -180,11 +180,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1765779637,
-        "narHash": "sha256-KJ2wa/BLSrTqDjbfyNx70ov/HdgNBCBBSQP3BIzKnv4=",
+        "lastModified": 1767379071,
+        "narHash": "sha256-EgE0pxsrW9jp9YFMkHL9JMXxcqi/OoumPJYwf+Okucw=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "1306659b587dc277866c7b69eb97e5f07864d8c4",
+        "rev": "fb7944c166a3b630f177938e478f0378e64ce108",
         "type": "github"
       },
       "original": {
@@ -227,11 +227,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765761021,
-        "narHash": "sha256-ZWhCdi8t8gTxl3WsE9lH9J4LdM0VSpx0sv6klp9okh0=",
+        "lastModified": 1767591388,
+        "narHash": "sha256-Zby54bpXFwv51g/UdO4u/GZwcXINCBcqKp9PjgGTWco=",
         "owner": "ymtdzzz",
         "repo": "otel-tui",
-        "rev": "51c50ea431d90ca12431ae95438f131a2e70e9b2",
+        "rev": "3124f3c664e0c788b29c3a0e3ac7e1f2ae168db9",
         "type": "github"
       },
       "original": {
@@ -245,7 +245,24 @@
         "komlesukker": "komlesukker",
         "nixpkgs": "nixpkgs",
         "otel-tui": "otel-tui",
+        "stable-nixpkgs": "stable-nixpkgs",
         "stylix": "stylix"
+      }
+    },
+    "stable-nixpkgs": {
+      "locked": {
+        "lastModified": 1767051569,
+        "narHash": "sha256-0MnuWoN+n1UYaGBIpqpPs9I9ZHW4kynits4mrnh1Pk4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "40ee5e1944bebdd128f9fbada44faefddfde29bd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-25.05",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     },
     "stylix": {
@@ -269,11 +286,11 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1765897595,
-        "narHash": "sha256-NgTRxiEC5y96zrhdBygnY+mSzk5FWMML39PcRGVJmxg=",
+        "lastModified": 1767559556,
+        "narHash": "sha256-Pf1d9Hh9UUQ/oS+evq6dU0MiaDczXXNztTlQekaMbW0=",
         "owner": "nix-community",
         "repo": "stylix",
-        "rev": "e6829552d4bb659ebab00f08c61d8c62754763f3",
+        "rev": "b135edbdd403896d1ef507934c045f716deb5609",
         "type": "github"
       },
       "original": {
