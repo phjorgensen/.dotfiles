@@ -1,10 +1,10 @@
 {
+  pkgs,
   inputs,
-  system,
   ...
 }:
 {
   environment.systemPackages = [
-    inputs.otel-tui.packages.${system}.otel-tui
+    inputs.otel-tui.packages.${pkgs.system}.otel-tui
   ];
 }

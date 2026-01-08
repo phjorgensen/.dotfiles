@@ -1,10 +1,10 @@
 {
+  pkgs,
   inputs,
-  system,
   ...
 }:
 {
   environment.systemPackages = [
-    inputs.anyrun.packages.${system}.default
+    inputs.anyrun.packages.${pkgs.system}.default
   ];
 }

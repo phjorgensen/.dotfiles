@@ -1,10 +1,10 @@
 {
+  pkgs,
   inputs,
-  system,
   ...
 }:
 {
   environment.systemPackages = [
-    inputs.bootdev.packages.${system}.default
+    inputs.bootdev.packages.${pkgs.system}.default
   ];
 }

@@ -1,10 +1,10 @@
 {
+  pkgs,
   inputs,
-  system,
   ...
 }:
 {
   environment.systemPackages = [
-    inputs.komlesukker.packages.${system}.default
+    inputs.komlesukker.packages.${pkgs.system}.default
   ];
 }

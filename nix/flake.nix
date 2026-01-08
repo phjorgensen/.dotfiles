@@ -53,21 +53,29 @@
       };
 
       nixosConfigurations = {
-        perCode = nixpkgs.lib.nixosSystem rec {
-          system = "x86_64-linux";
-          specialArgs = { inherit inputs system; };
+        perCode = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
           modules = [
             ./hosts/perCode/hardware-configuration.nix
             ./hosts/perCode/configuration.nix
+            {
+              nixpkgs.hostPlatform = {
+                system = "x86_64-linux";
+              };
+            }
           ];
         };
 
-        perWork = nixpkgs.lib.nixosSystem rec {
-          system = "x86_64-linux";
-          specialArgs = { inherit inputs system; };
+        perWork = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
           modules = [
             ./hosts/perWork/hardware-configuration.nix
             ./hosts/perWork/configuration.nix
+            {
+              nixpkgs.hostPlatform = {
+                system = "x86_64-linux";
+              };
+            }
           ];
         };
       };

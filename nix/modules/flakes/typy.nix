@@ -1,10 +1,10 @@
 {
+  pkgs,
   inputs,
-  system,
   ...
 }:
 {
   environment.systemPackages = [
-    inputs.typy.packages.${system}.default
+    inputs.typy.packages.${pkgs.system}.default
   ];
 }
