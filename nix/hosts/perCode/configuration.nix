@@ -1,7 +1,6 @@
 { ... }:
 {
   imports = [
-    ./hardware-configuration.nix
     ../../modules/system.nix
     ../../modules/bootloader/systemd-boot.nix
     ../../modules/network.nix

@@ -56,13 +56,19 @@
         perCode = nixpkgs.lib.nixosSystem rec {
           system = "x86_64-linux";
           specialArgs = { inherit inputs system; };
-          modules = [ ./hosts/perCode/configuration.nix ];
+          modules = [
+            ./hosts/perCode/hardware-configuration.nix
+            ./hosts/perCode/configuration.nix
+          ];
         };
 
         perWork = nixpkgs.lib.nixosSystem rec {
           system = "x86_64-linux";
           specialArgs = { inherit inputs system; };
-          modules = [ ./hosts/perWork/configuration.nix ];
+          modules = [
+            ./hosts/perWork/hardware-configuration.nix
+            ./hosts/perWork/configuration.nix
+          ];
         };
       };
     };
