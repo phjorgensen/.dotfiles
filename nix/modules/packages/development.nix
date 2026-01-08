@@ -24,7 +24,7 @@
     vscode
 
     # Formatters
-    nixfmt-rfc-style
+    nixfmt
     stylua
     prettierd
 
