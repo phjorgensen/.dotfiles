@@ -21,6 +21,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    oq = {
+      url = "./flakes/oq";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # bootdev = {
     #   url = "./flakes/bootdev";
     #   inputs.nixpkgs.follows = "nixpkgs";
