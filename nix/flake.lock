@@ -219,6 +219,22 @@
         "type": "github"
       }
     },
+    "oq": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "path": "./flakes/oq",
+        "type": "path"
+      },
+      "original": {
+        "path": "./flakes/oq",
+        "type": "path"
+      },
+      "parent": []
+    },
     "otel-tui": {
       "inputs": {
         "flake-utils": "flake-utils",
@@ -244,6 +260,7 @@
       "inputs": {
         "komlesukker": "komlesukker",
         "nixpkgs": "nixpkgs",
+        "oq": "oq",
         "otel-tui": "otel-tui",
         "stable-nixpkgs": "stable-nixpkgs",
         "stylix": "stylix"
