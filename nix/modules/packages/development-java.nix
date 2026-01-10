@@ -2,7 +2,10 @@
 {
   environment.systemPackages = with pkgs; [
     jdk25_headless
-    gradle_9
+
+    maven # Java build tool
+    # gradle_9 Java build tool
+
     # java-language-server
     jdt-language-server # Eclipse version of the LSP
   ];
