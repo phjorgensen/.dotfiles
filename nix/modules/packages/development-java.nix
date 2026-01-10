@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    jdk25_headless
+    jdk21_headless
 
     maven # Java build tool
     # gradle_9 Java build tool
