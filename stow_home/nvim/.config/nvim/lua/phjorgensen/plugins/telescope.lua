@@ -5,8 +5,7 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   config = function()
-    local telescope = require("telescope")
-    telescope.setup({
+    require("telescope").setup({
       defaults = {
         path_display = {
           filename_first = {
@@ -24,12 +23,12 @@ return {
           "--hidden",
         },
       },
-      -- pickers = {
-      --   find_files = { theme = "ivy" },
-      --   git_files = { theme = "ivy" },
-      --   live_grep = { theme = "ivy" },
-      --   resume = { theme = "ivy" },
-      -- },
+      pickers = {
+        find_files = { theme = "ivy" },
+        git_files = { theme = "ivy" },
+        live_grep = { theme = "ivy" },
+        resume = { theme = "ivy" },
+      },
     })
 
     local builtin = require("telescope.builtin")

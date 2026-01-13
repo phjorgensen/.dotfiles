@@ -24,7 +24,7 @@ return {
     },
     notify = { enabled = true },
     picker = {
-      enabled = true,
+      enabled = false,
       sources = {
         files = { hidden = true },
         grep = { hidden = true },
