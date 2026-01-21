@@ -24,7 +24,7 @@ return {
     },
     notify = { enabled = true },
     picker = {
-      enabled = false,
+      enabled = true,
       sources = {
         files = { hidden = true },
         grep = { hidden = true },
@@ -66,47 +66,47 @@ return {
     --   end,
     --   desc = "Select Scratch Buffer",
     -- },
-    {
-      "<leader>f",
-      function()
-        -- builtin.git_files,
-        -- Snacks.picker.smart()
-        Snacks.picker.files()
-      end,
-      desc = "Smart Find Files",
-    },
-    {
-      "<leader>F",
-      function()
-        -- builtin.find_files,
-        Snacks.picker.git_files()
-      end,
-      desc = "Search all files",
-    },
-    {
-      "<leader>/",
-      function()
-        -- builtin.live_grep,
-        Snacks.picker.grep()
-      end,
-      desc = "Search in files (grep)",
-    },
-    {
-      "<leader>sw",
-      function()
-        Snacks.picker.grep_word()
-      end,
-      desc = "Visual selection or word",
-      mode = { "n", "x" },
-    },
-    {
-      "<leader>'",
-      function()
-        Snacks.picker.resume()
-        -- builtin.resume,
-      end,
-      desc = "Reusme previous search",
-    },
+    -- {
+    --   "<leader>f",
+    --   function()
+    --     -- builtin.git_files,
+    --     -- Snacks.picker.smart()
+    --     Snacks.picker.files()
+    --   end,
+    --   desc = "Smart Find Files",
+    -- },
+    -- {
+    --   "<leader>F",
+    --   function()
+    --     -- builtin.find_files,
+    --     Snacks.picker.git_files()
+    --   end,
+    --   desc = "Search all files",
+    -- },
+    -- {
+    --   "<leader>/",
+    --   function()
+    --     -- builtin.live_grep,
+    --     Snacks.picker.grep()
+    --   end,
+    --   desc = "Search in files (grep)",
+    -- },
+    -- {
+    --   "<leader>sw",
+    --   function()
+    --     Snacks.picker.grep_word()
+    --   end,
+    --   desc = "Visual selection or word",
+    --   mode = { "n", "x" },
+    -- },
+    -- {
+    --   "<leader>'",
+    --   function()
+    --     Snacks.picker.resume()
+    --     -- builtin.resume,
+    --   end,
+    --   desc = "Reusme previous search",
+    -- },
     {
       "<leader>n",
       function()
