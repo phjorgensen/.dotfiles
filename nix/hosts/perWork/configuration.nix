@@ -19,7 +19,7 @@
     ../../modules/packages/development.nix
     ../../modules/packages/docker.nix
     # ../../modules/packages/podman.nix
-    ../../modules/packages/media-editing.nix
+    # ../../modules/packages/media-editing.nix
     ../../modules/packages/security.nix
     ../../modules/packages/terminal.nix
     ../../modules/packages/work.nix
