@@ -14,6 +14,8 @@ setopt HIST_FIND_NO_DUPS
 export EDITOR=nvim
 export VISUAL=nvim
 
+
+eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
 
 # Config
