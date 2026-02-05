@@ -44,6 +44,7 @@
 
     # Debuggers
     lldb
+    gdb
 
     devcontainer
     devenv
