@@ -96,6 +96,7 @@
     nerd-fonts.blex-mono # BlexMonoNerdFontMono, nice and clean, but just a bit extra
     nerd-fonts.gohufont # GohuFont11NerdFontMono, Pokémon font
     nerd-fonts.terminess-ttf # TerminessNerdFontMono, Pokémon font, but not so much
+    nerd-fonts.caskaydia-cove
   ];
 
   programs = {
