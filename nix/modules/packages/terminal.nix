@@ -22,7 +22,7 @@
     wget
     stow
     unixtools.xxd
-    xorg.xev # keyboard and mouse events
+    xev # keyboard and mouse events
     glow
     nb # notes cli application
     pandoc # document converter
