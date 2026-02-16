@@ -14,8 +14,9 @@ return {
       -- Apply a scheme automatically during startup.
       apply_scheme_on_startup = true, -- default `true`
 
-      -- Compile the scheme for faster startup.
-      compile = true, -- default `false`
+      -- Compile the scheme for faster startup,
+      -- but it won't apply changes made to config before recompile.
+      compile = false, -- default `false`
 
       capabilities = {
         -- Enable truecolor support (sets `termguicolors`).
@@ -40,13 +41,13 @@ return {
 
       -- Change text attributes for certain highlight groups.
       -- Supported attributes: italic, bold, underline, undercurl, strikethrough.
-      styles = {
-        comments = { italic = true }, -- default `{ italic = true }`
-        keywords = { bold = true }, -- default `{}`
-        -- functions = { underline = true }, -- default `{}`
-        variables = { italic = true }, -- default `{}`
-        types = { bold = true }, -- default `{}`
-      },
+      -- styles = {
+      --   comments = { italic = true }, -- default `{ italic = true }`
+      --   keywords = { bold = true }, -- default `{}`
+      --   functions = { underline = true }, -- default `{}`
+      --   variables = { italic = true }, -- default `{}`
+      --   types = { bold = true }, -- default `{}`
+      -- },
 
       highlights = {
         -- This plugin bundles highlight definitions for popular Neovim plugins.
