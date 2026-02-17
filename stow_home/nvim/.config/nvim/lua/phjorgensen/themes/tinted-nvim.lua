@@ -39,6 +39,8 @@ return {
           Comment = { fg = "bright_red" },
           OilDirHidden = { fg = "grey" },
           OilFileHidden = { fg = "grey" },
+          OilLinkHidden = { fg = "grey" },
+          OilLinkTargetHidden = { fg = "grey" },
         }
       end,
     },
