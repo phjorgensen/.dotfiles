@@ -37,8 +37,6 @@ return {
       overrides = function()
         return {
           Comment = { fg = "bright_red" },
-          -- Does not work, for some reason
-          HarpoonWindow = { bg = "bright_red" },
           OilDirHidden = { fg = "grey" },
           OilFileHidden = { fg = "grey" },
         }
