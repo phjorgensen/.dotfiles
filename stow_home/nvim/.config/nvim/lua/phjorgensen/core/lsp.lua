@@ -13,6 +13,9 @@ vim.lsp.enable({
   "sourcekit", -- Swift
   -- "java_language_server", -- Java
   "jdtls", -- Eclipse version of Java
+
+  "kotlin_language_server", -- Kotlin (unofficial and deprecated, but official is not in nixpkgs and is pre-alpha)
+  -- "kotlin_lsp", -- official, but in pre-alpha
 })
 
 -- Restart LSPs
