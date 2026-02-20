@@ -4,28 +4,29 @@
     ../../modules/audio/pipewire.nix
   ];
 
-  programs.niri = {
-    enable = true;
-  };
+  programs.niri.enable = true;
 
   security.polkit.enable = true;
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.swaylock = { };
+
   programs.waybar.enable = true;
 
   # services.hypridle.enable = true;
 
   environment.systemPackages = with pkgs; [
-    ghostty
-    # rofi
+    # defaults for Niri
+    alacritty
     fuzzel
-
     swaylock
     swayidle
+    mako
+
+    ghostty
+    rofi
 
     # Nofification daemon
-    # swaynotificationcenter
-    mako
+    swaynotificationcenter
 
     # Wallpaper manager
     swww
