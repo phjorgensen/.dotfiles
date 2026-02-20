@@ -79,6 +79,7 @@ input {
 output "eDP-1" {
   scale 2
 }
+
 /-output "eDP-1" {
     // Uncomment this line to disable this output.
     // off
@@ -133,16 +134,22 @@ layout {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
+        proportion 1.0
 
         // Fixed sets the width in logical pixels exactly.
         // fixed 1920
     }
 
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
-    // preset-window-heights { }
+    preset-window-heights {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 1.0; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -331,6 +338,36 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id="firefox"
+    open-on-workspace "browser"
+}
+
+window-rule {
+    match app-id="teams"
+    open-on-workspace "teams"
+}
+
+window-rule {
+    match app-id="obsidian"
+    open-on-workspace "notes"
+}
+
+window-rule {
+    match app-id="GitKraken"
+    open-on-workspace "git"
+}
+
+window-rule {
+    match app-id="telegram"
+    open-on-workspace "chat"
+}
+
+window-rule {
+    match app-id="signal"
+    open-on-workspace "chat"
+}
+
 environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
@@ -353,6 +390,17 @@ environment {
     geometry-corner-radius 12
     clip-to-geometry true
 }
+
+workspace "filler1"
+workspace "browser"
+workspace "code"
+workspace "teams"
+workspace "filler2"
+workspace "email"
+workspace "notes"
+workspace "git"
+workspace "filler3"
+workspace "chat"
 
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
@@ -514,26 +562,50 @@ binds {
     //
     // For example, with 2 workspaces + 1 empty, indices 3, 4, 5 and so on
     // will all refer to the 3rd workspace.
-    Mod+1 { focus-workspace 1; }
-    Mod+2 { focus-workspace 2; }
+    // Mod+1 { focus-workspace 1; }
+    // Mod+2 { focus-workspace 2; }
+    // Mod+3 { focus-workspace 3; }
+    // Mod+4 { focus-workspace 4; }
+    // Mod+5 { focus-workspace 5; }
+    // Mod+6 { focus-workspace 6; }
+    // Mod+7 { focus-workspace 7; }
+    // Mod+8 { focus-workspace 8; }
+    // Mod+9 { focus-workspace 9; }
+    // Mod+0 { focus-workspace 10; }
+
+    // Mod+Ctrl+1 { move-column-to-workspace 1; }
+    // Mod+Ctrl+2 { move-column-to-workspace 2; }
+    // Mod+Ctrl+3 { move-column-to-workspace 3; }
+    // Mod+Ctrl+4 { move-column-to-workspace 4; }
+    // Mod+Ctrl+5 { move-column-to-workspace 5; }
+    // Mod+Ctrl+6 { move-column-to-workspace 6; }
+    // Mod+Ctrl+7 { move-column-to-workspace 7; }
+    // Mod+Ctrl+8 { move-column-to-workspace 8; }
+    // Mod+Ctrl+9 { move-column-to-workspace 9; }
+    // Mod+Ctrl+0 { move-column-to-workspace 10; }
+
+
+    Mod+1 { focus-workspace "filler1"; }
+    Mod+2 { focus-workspace "browser"; }
     Mod+3 { focus-workspace "code"; }
-    Mod+4 { focus-workspace 4; }
-    Mod+5 { focus-workspace 5; }
-    Mod+6 { focus-workspace 6; }
-    Mod+7 { focus-workspace 7; }
-    Mod+8 { focus-workspace 8; }
-    Mod+9 { focus-workspace 9; }
-    Mod+0 { focus-workspace 10; }
-    Mod+Ctrl+1 { move-column-to-workspace 1; }
-    Mod+Ctrl+2 { move-column-to-workspace 2; }
-    Mod+Ctrl+3 { move-column-to-workspace 3; }
-    Mod+Ctrl+4 { move-column-to-workspace 4; }
-    Mod+Ctrl+5 { move-column-to-workspace 5; }
-    Mod+Ctrl+6 { move-column-to-workspace 6; }
-    Mod+Ctrl+7 { move-column-to-workspace 7; }
-    Mod+Ctrl+8 { move-column-to-workspace 8; }
-    Mod+Ctrl+9 { move-column-to-workspace 9; }
-    Mod+Ctrl+0 { move-column-to-workspace 10; }
+    Mod+4 { focus-workspace "teams"; }
+    Mod+5 { focus-workspace "filler2"; }
+    Mod+6 { focus-workspace "email"; }
+    Mod+7 { focus-workspace "notes"; }
+    Mod+8 { focus-workspace "git"; }
+    Mod+9 { focus-workspace "filler3"; }
+    Mod+0 { focus-workspace "chat"; }
+
+    Mod+Ctrl+1 { move-column-to-workspace "filler1"; }
+    Mod+Ctrl+2 { move-column-to-workspace "browser"; }
+    Mod+Ctrl+3 { move-column-to-workspace "code"; }
+    Mod+Ctrl+4 { move-column-to-workspace "teams"; }
+    Mod+Ctrl+5 { move-column-to-workspace "filler2"; }
+    Mod+Ctrl+6 { move-column-to-workspace "email"; }
+    Mod+Ctrl+7 { move-column-to-workspace "notes"; }
+    Mod+Ctrl+8 { move-column-to-workspace "git"; }
+    Mod+Ctrl+9 { move-column-to-workspace "filler3"; }
+    Mod+Ctrl+0 { move-column-to-workspace "chat"; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
