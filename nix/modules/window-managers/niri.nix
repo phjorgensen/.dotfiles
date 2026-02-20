@@ -15,6 +15,9 @@
   # services.hypridle.enable = true;
 
   environment.systemPackages = with pkgs; [
+    #requirements for Niri
+    xwayland-satellite
+
     # defaults for Niri
     alacritty
     fuzzel
