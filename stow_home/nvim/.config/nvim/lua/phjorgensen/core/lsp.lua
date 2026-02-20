@@ -39,6 +39,10 @@ vim.lsp.config("lua_ls", {
   },
 })
 
+vim.lsp.config("kotlin_language_server", {
+  filetypes = { "kotlin", "kt", "kts" },
+})
+
 vim.diagnostic.config({
   virtual_lines = true,
   -- virtual_text = true,
