@@ -10,6 +10,7 @@
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.swaylock = { };
 
+  programs.hyprlock.enable = true;
   programs.waybar.enable = true;
 
   # services.hypridle.enable = true;
@@ -21,7 +22,7 @@
     # defaults for Niri
     alacritty
     fuzzel
-    swaylock
+    # swaylock
     swayidle
     mako
 
