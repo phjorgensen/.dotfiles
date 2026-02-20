@@ -18,6 +18,7 @@
     ../../modules/packages/general.nix
     ../../modules/packages/development.nix
     ../../modules/packages/development-kotlin.nix
+    ../../modules/packages/development-android.nix
     ../../modules/packages/development-vpn.nix
     ../../modules/packages/development-slop.nix
     ../../modules/packages/docker.nix
