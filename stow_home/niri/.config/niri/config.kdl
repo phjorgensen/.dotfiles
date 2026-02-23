@@ -80,6 +80,18 @@ output "eDP-1" {
   scale 2
 }
 
+output "Sharp Corporation 0x1551" {
+  position x=3440 y=0
+// monitor= desc: , preferred, auto
+}
+
+output "Philips Consumer Electronics Company PHL346E2LA UK02303024944" {
+  position x=0 y=0
+// monitor= desc:, preferred, auto
+}
+
+// monitor= , preferred, auto, 1
+
 /-output "eDP-1" {
     // Uncomment this line to disable this output.
     // off
@@ -391,7 +403,10 @@ environment {
     clip-to-geometry true
 }
 
-workspace "filler1"
+workspace "filler1" {
+  open-on-output "Philips Consumer Electronics Company PHL346E2LA UK02303024944"
+}
+
 workspace "browser"
 workspace "code"
 workspace "teams"
@@ -503,6 +518,7 @@ binds {
     // And you can also move a whole workspace to another monitor:
     // Mod+Shift+Ctrl+Left  { move-workspace-to-monitor-left; }
     // ...
+    Mod+M { move-workspace-to-monitor-next; }
 
     // Mod+Page_Down      { focus-workspace-down; }
     // Mod+Page_Up        { focus-workspace-up; }
