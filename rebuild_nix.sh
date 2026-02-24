@@ -1,17 +1,35 @@
 #!/usr/bin/env bash
 
-cd nix
+SKIP_UPDATE_FLAG="--skip-update"
+SKIP_STOW_FLAG="--skip-stow"
+BOOT_FLAG="--with-boot"
 
-skip_update_flag="--skip-update"
-skip_stow_flag="--skip-stow"
+args="$@"
+echo "Args: $args"
 
-if [[ $2 != $skip_update_flag ]]; then
-  nix flake update
+if [[ ! " ${args[*]} " =~ [[:space:]]${SKIP_STOW_FLAG}[[:space:]] ]];
+then
+  echo "Running stow"
+  ./run_stow_home.sh
+else
+  echo "Skipping stow"
 fi
 
-# Not ready yet, need some check if args includes $skip_stow_flag or $skip_update_flag
-# if [[ $3 != $skip_stow_flag ]]; then
-#   ./run_stow_home.sh
-# fi
+cd nix
 
-sudo nixos-rebuild switch --flake ~/.dotfiles/nix#$1
+if [[ ! " ${args[*]} " =~ [[:space:]]${SKIP_UPDATE_FLAG}[[:space:]] ]];
+then
+  echo "Updating flake"
+  nix flake update
+else
+  echo "Skipping flake update"
+fi
+
+if [[ " ${args[*]} " =~ [[:space:]]${BOOT_FLAG}[[:space:]] ]];
+then
+  echo "Running nixos-rebuild boot"
+  sudo nixos-rebuild boot --flake ~/.dotfiles/nix#perWork
+else
+  echo "Running nixos-rebuild switch"
+  sudo nixos-rebuild switch --flake ~/.dotfiles/nix#$1
+fi
