@@ -10,7 +10,7 @@
 
   "modules-left": ["clock#date", "clock#time", "custom/bs"],
 
-  "modules-center": ["niri/workspaces"],
+  "modules-center": ["hyprland/workspaces"],
 
   "modules-right": [
     "pulseaudio",
@@ -22,7 +22,7 @@
     "custom/nc",
   ],
 
-  "niri/workspaces": {
+  "hyprland/workspaces": {
     "disable-scroll": true,
     "tooltip": false,
     "format": "{icon}",

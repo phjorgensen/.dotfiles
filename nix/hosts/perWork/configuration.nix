@@ -8,7 +8,9 @@
     ../../modules/time-and-lang.nix
     ../../modules/security.nix
     ../../modules/enable-flakes.nix
-    ../../modules/window-managers/niri.nix
+    # When switcing to another WM,
+    # also update restart-waybar.sh and Waybar config
+    ../../modules/window-managers/hyprland.nix
     ../../modules/display-managers/sddm.nix
     ../../modules/audio/pipewire.nix
     ../../modules/zsh.nix

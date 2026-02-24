@@ -7,5 +7,5 @@ pkill waybar > /dev/null
 while pgrep -x waybar >/dev/null; do sleep 1; done
 
 # Launch main
-# hyprctl dispatch exec waybar > /dev/null
-niri msg action spawn-sh -- waybar
+hyprctl dispatch exec waybar > /dev/null
+# niri msg action spawn-sh -- waybar
