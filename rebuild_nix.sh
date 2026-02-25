@@ -29,7 +29,7 @@ fi
 if [[ " ${args[*]} " =~ [[:space:]]${BOOT_FLAG}[[:space:]] ]];
 then
   echo "Running nixos-rebuild boot..."
-  sudo nixos-rebuild boot --flake ~/.dotfiles/nix#perWork
+  sudo nixos-rebuild boot --flake ~/.dotfiles/nix#$1
   echo "Done!"
 else
   echo "Running nixos-rebuild switch..."
