@@ -180,11 +180,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1772624091,
-        "narHash": "sha256-QKyJ0QGWBn6r0invrMAK8dmJoBYWoOWy7lN+UHzW1jc=",
+        "lastModified": 1772773019,
+        "narHash": "sha256-E1bxHxNKfDoQUuvriG71+f+s/NT0qWkImXsYZNFFfCs=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
+        "rev": "aca4d95fce4914b3892661bcb80b8087293536c6",
         "type": "github"
       },
       "original": {
@@ -243,11 +243,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1772630958,
-        "narHash": "sha256-oMFAEGUIIZlpSbSbtqijp+jdYgDrltLzJR8tgJbM6nY=",
+        "lastModified": 1773034977,
+        "narHash": "sha256-vqPKPd9aJ5i9iP1wy2jnseur2rFyoWmoLsarqVZnAPw=",
         "owner": "ymtdzzz",
         "repo": "otel-tui",
-        "rev": "6fa51f2eb42de5724e07c101a5c1bf5f24db20b1",
+        "rev": "89b8a3469b736d94536041945ba158b1a1bf9f12",
         "type": "github"
       },
       "original": {
