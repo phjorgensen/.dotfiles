@@ -1,3 +1,4 @@
+-- Gitsigns docs https://github.com/lewis6991/gitsigns.nvim/blob/main/doc/gitsigns.txt
 return {
   "lewis6991/gitsigns.nvim",
   config = function()
