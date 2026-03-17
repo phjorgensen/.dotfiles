@@ -1,43 +1,43 @@
-# base16 Ayu Dark
-# Scheme author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
+# base16 Monokai
+# Scheme author: Wimer Hazenberg (http://www.monokai.nl)
 # Template author: Tinted Theming (https://github.com/tinted-theming/tinted-termihal)
 
 [colors]
-background = "#0b0e14"
-foreground = "#e6e1cf"
+background = "#272822"
+foreground = "#f8f8f2"
 
-cursor_bg = "#e6e1cf"
-cursor_border = "#e6e1cf"
-cursor_fg = "#0b0e14"
+cursor_bg = "#f8f8f2"
+cursor_border = "#f8f8f2"
+cursor_fg = "#272822"
 
-selection_bg = "#e6e1cf"
-selection_fg = "#202229"
+selection_bg = "#f8f8f2"
+selection_fg = "#49483e"
 
 ansi = [
-  "#0b0e14",
-  "#f07178",
-  "#aad94c",
-  "#ffb454",
-  "#59c2ff",
-  "#d2a6ff",
-  "#95e6cb",
-  "#e6e1cf"
+  "#272822",
+  "#f92672",
+  "#a6e22e",
+  "#f4bf75",
+  "#66d9ef",
+  "#ae81ff",
+  "#a1efe4",
+  "#f8f8f2"
 ]
 brights = [
-  "#3e4b59",
-  "#f07178",
-  "#aad94c",
-  "#ffb454",
-  "#59c2ff",
-  "#d2a6ff",
-  "#95e6cb",
-  "#f2f0e7"
+  "#75715e",
+  "#f92672",
+  "#a6e22e",
+  "#f4bf75",
+  "#66d9ef",
+  "#ae81ff",
+  "#a1efe4",
+  "#f9f8f5"
 ]
 
 [colors.indexed]
-16 = "#ff8f40"
-17 = "#e6b450"
-18 = "#131721"
-19 = "#202229"
-20 = "#bfbdb6"
-21 = "#ece8db"
+16 = "#fd971f"
+17 = "#cc6633"
+18 = "#383830"
+19 = "#49483e"
+20 = "#a59f85"
+21 = "#f5f4f1"

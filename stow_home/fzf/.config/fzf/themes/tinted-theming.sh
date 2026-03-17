@@ -1,9 +1,9 @@
-# Scheme name: Ayu Dark
+# Scheme name: Monokai
 # Scheme system: base16
-# Scheme author: Tinted Theming (https://github.com/tinted-theming), Ayu Theme (https://github.com/ayu-theme)
+# Scheme author: Wimer Hazenberg (http://www.monokai.nl)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#131721,bg:#0b0e14,spinner:#95e6cb,hl:#59c2ff"\
-" --color=fg:#bfbdb6,header:#59c2ff,info:#ffb454,pointer:#95e6cb"\
-" --color=marker:#95e6cb,fg+:#ece8db,prompt:#ffb454,hl+:#59c2ff"
+" --color=bg+:#383830,bg:#272822,spinner:#a1efe4,hl:#66d9ef"\
+" --color=fg:#a59f85,header:#66d9ef,info:#f4bf75,pointer:#a1efe4"\
+" --color=marker:#a1efe4,fg+:#f5f4f1,prompt:#f4bf75,hl+:#66d9ef"
