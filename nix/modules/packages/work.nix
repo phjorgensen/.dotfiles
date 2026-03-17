@@ -1,10 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
     slack
     gitkraken
     thunderbird
-    teams-for-linux
+    # teams-for-linux # Beaks the build, use stable for now
+    inputs.stable-nixpkgs.legacyPackages.${pkgs.system}.teams-for-linux
   ];
 
   services.flatpak.enable = true;
