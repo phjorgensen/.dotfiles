@@ -5,6 +5,6 @@
 }:
 {
   environment.systemPackages = [
-    inputs.komlesukker.packages.${pkgs.system}.default
+    inputs.komlesukker.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

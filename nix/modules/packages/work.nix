@@ -5,7 +5,7 @@
     gitkraken
     thunderbird
     # teams-for-linux # Beaks the build, use stable for now
-    inputs.stable-nixpkgs.legacyPackages.${pkgs.system}.teams-for-linux
+    inputs.stable-nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.teams-for-linux
   ];
 
   services.flatpak.enable = true;

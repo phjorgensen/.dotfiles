@@ -5,6 +5,6 @@
 }:
 {
   environment.systemPackages = [
-    inputs.anyrun.packages.${pkgs.system}.default
+    inputs.anyrun.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

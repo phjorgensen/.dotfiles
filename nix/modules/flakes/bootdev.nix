@@ -5,6 +5,6 @@
 }:
 {
   environment.systemPackages = [
-    inputs.bootdev.packages.${pkgs.system}.default
+    inputs.bootdev.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

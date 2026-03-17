@@ -28,7 +28,7 @@
   environment.systemPackages = with pkgs; [
     pavucontrol
     # pasystray
-    inputs.stable-nixpkgs.legacyPackages.${pkgs.system}.pasystray
+    inputs.stable-nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.pasystray
     alsa-utils
     pulseaudio # Still need this for pactl to control the audio from CLI
   ];

@@ -5,6 +5,6 @@
 }:
 {
   environment.systemPackages = [
-    inputs.oq.packages.${pkgs.system}.default
+    inputs.oq.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
