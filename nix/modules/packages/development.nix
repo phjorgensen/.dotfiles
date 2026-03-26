@@ -64,5 +64,8 @@
 
     zenity # Utility to display dialog box from the command line.
     # kdePackages.kdialog # KDE utility to display dialog box from the command line.
+
+    ffmpeg
+    # ffmpeg-full # not sure what the difference with "-full"
   ];
 }
