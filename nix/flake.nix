@@ -21,6 +21,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Does not work for some reason
+    # openapi-tui = {
+    #   url = "github:zaghaghi/openapi-tui";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
     oq = {
       url = "./flakes/oq";
       inputs.nixpkgs.follows = "nixpkgs";
