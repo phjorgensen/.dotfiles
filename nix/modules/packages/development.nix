@@ -38,7 +38,7 @@
     tailwindcss-language-server
     typescript-language-server
     svelte-language-server
-    nodePackages.intelephense # PHP
+    intelephense # PHP
     hyprls # Hyprland
     # sourcekit-lsp # Swift
 
