@@ -25,7 +25,7 @@
 
     # Wallpaper manager
     # hyprpaper
-    swww
+    awww
 
     # Nofification daemon
     # dunst

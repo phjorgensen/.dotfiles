@@ -33,7 +33,7 @@
     swaynotificationcenter
 
     # Wallpaper manager
-    swww
+    awww
 
     xdg-desktop-portal
     xdg-desktop-portal-wlr

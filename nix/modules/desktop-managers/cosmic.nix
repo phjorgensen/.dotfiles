@@ -11,7 +11,7 @@
 
   environment.systemPackages = with pkgs; [
     ghostty
-    swww
+    awww
     rofi
     swaynotificationcenter
     xdg-desktop-portal
