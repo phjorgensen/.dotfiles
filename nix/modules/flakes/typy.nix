@@ -5,6 +5,6 @@
 }:
 {
   environment.systemPackages = [
-    inputs.typy.packages.${pkgs.hostPlatform.system}.default
+    inputs.typy.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
