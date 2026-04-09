@@ -41,7 +41,7 @@ return {
           OilFileHidden = { fg = "grey" },
           OilLinkHidden = { fg = "grey" },
           OilLinkTargetHidden = { fg = "grey" },
-          GitSignsCurrentLineBlame = { fg = "bright_red" },
+          GitSignsCurrentLineBlame = { fg = "grey" },
         }
       end,
     },
