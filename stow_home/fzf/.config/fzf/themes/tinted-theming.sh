@@ -1,9 +1,9 @@
-# Scheme name: Catppuccin Mocha
+# Scheme name: Gruvbox dark, hard
 # Scheme system: base16
-# Scheme author: https://github.com/catppuccin/catppuccin
+# Scheme author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
-" --color=bg+:#181825,bg:#1e1e2e,spinner:#94e2d5,hl:#89b4fa"\
-" --color=fg:#585b70,header:#89b4fa,info:#f9e2af,pointer:#94e2d5"\
-" --color=marker:#94e2d5,fg+:#f5e0dc,prompt:#f9e2af,hl+:#89b4fa"
+" --color=bg+:#3c3836,bg:#1d2021,spinner:#8ec07c,hl:#83a598"\
+" --color=fg:#bdae93,header:#83a598,info:#fabd2f,pointer:#8ec07c"\
+" --color=marker:#8ec07c,fg+:#ebdbb2,prompt:#fabd2f,hl+:#83a598"
