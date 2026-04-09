@@ -69,11 +69,6 @@
           modules = [
             ./hosts/perCode/hardware-configuration.nix
             ./hosts/perCode/configuration.nix
-            {
-              nixpkgs.hostPlatform = {
-                system = "x86_64-linux";
-              };
-            }
           ];
         };
 
@@ -82,11 +77,6 @@
           modules = [
             ./hosts/perWork/hardware-configuration.nix
             ./hosts/perWork/configuration.nix
-            {
-              nixpkgs.hostPlatform = {
-                system = "x86_64-linux";
-              };
-            }
           ];
         };
       };
