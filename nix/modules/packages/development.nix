@@ -29,6 +29,9 @@
     stylua
     prettierd
 
+    # Linters
+    eslint_d
+
     # LSPs
     lua-language-server
     marksman # Markdown
@@ -38,6 +41,7 @@
     tailwindcss-language-server
     typescript-language-server
     svelte-language-server
+    vscode-langservers-extracted
     intelephense # PHP
     hyprls # Hyprland
     # sourcekit-lsp # Swift

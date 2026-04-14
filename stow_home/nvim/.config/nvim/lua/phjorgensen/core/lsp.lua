@@ -2,6 +2,9 @@ vim.lsp.enable({
   "lua_ls",
   "nixd", -- Nix
   "rust_analyzer",
+  "html",
+  "cssls",
+  "jsonls",
   "eslint",
   "ts_ls", -- TypeScript, wrapping tsserver
   "svelte",
