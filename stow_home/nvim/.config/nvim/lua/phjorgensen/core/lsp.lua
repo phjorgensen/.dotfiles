@@ -25,6 +25,9 @@ vim.lsp.enable({
 vim.keymap.set("n", "<leader>lsr", "<CMD>LspRestart<CR>", { desc = "Restart LSP" })
 
 vim.lsp.config("lua_ls", {
+  cmd = { "lua-language-server" },
+  filetypes = { "lua" },
+  root_markers = { ".luarc.json", ".git" },
   settings = {
     Lua = {
       runtime = {
