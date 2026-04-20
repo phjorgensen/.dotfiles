@@ -241,11 +241,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1776124886,
-        "narHash": "sha256-Tv9f4QjeePejOZFZ6AMJ7bgkMsL8MBlrW36MFbv76Zk=",
+        "lastModified": 1776655648,
+        "narHash": "sha256-17Zq9zFernSFCt5Jy0BSW6R6KauXL9e4+cAG61geLfs=",
         "owner": "ymtdzzz",
         "repo": "otel-tui",
-        "rev": "bc724657e03609867443536848191765cb182958",
+        "rev": "4a09691a6ffd3b005065d6d4ece01fb4a2a807d1",
         "type": "github"
       },
       "original": {
