@@ -29,6 +29,7 @@
     presenterm # terminal presentation tool
     tt # terminal typing test
     cava # terminal music visualizer
+    emacs
 
     cheese # webcam capture
     tidal-hifi # Tidal music streaming
