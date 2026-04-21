@@ -16,6 +16,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    tree-sitter = {
+      url = "github:tree-sitter/tree-sitter/release-0.26";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     otel-tui = {
       url = "github:ymtdzzz/otel-tui";
       inputs.nixpkgs.follows = "nixpkgs";

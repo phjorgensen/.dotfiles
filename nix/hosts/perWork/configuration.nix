@@ -34,6 +34,7 @@
     ../../modules/flakes/komlesukker.nix
     ../../modules/flakes/otel-tui.nix
     ../../modules/flakes/oq.nix
+    ../../modules/flakes/tree-sitter.nix
   ];
 
   networking.hostName = "perWork";

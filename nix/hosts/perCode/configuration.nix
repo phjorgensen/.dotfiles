@@ -33,6 +33,7 @@
     # ../../modules/flakes/typy.nix
     ../../modules/flakes/komlesukker.nix
     ../../modules/flakes/oq.nix
+    ../../modules/flakes/tree-sitter.nix
   ];
 
   networking.hostName = "perCode";

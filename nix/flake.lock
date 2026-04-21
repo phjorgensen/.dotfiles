@@ -261,7 +261,8 @@
         "oq": "oq",
         "otel-tui": "otel-tui",
         "stable-nixpkgs": "stable-nixpkgs",
-        "stylix": "stylix"
+        "stylix": "stylix",
+        "tree-sitter": "tree-sitter"
       }
     },
     "stable-nixpkgs": {
@@ -404,6 +405,27 @@
       "original": {
         "owner": "tinted-theming",
         "repo": "base16-zed",
+        "type": "github"
+      }
+    },
+    "tree-sitter": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1775807203,
+        "narHash": "sha256-ZMgPGdZh47gES05+EOqxp3XMn8PWc0h74t6F+h33nUA=",
+        "owner": "tree-sitter",
+        "repo": "tree-sitter",
+        "rev": "a4bdd941d52bf6fbd712ecb3f051480e72529f35",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tree-sitter",
+        "ref": "release-0.26",
+        "repo": "tree-sitter",
         "type": "github"
       }
     }
