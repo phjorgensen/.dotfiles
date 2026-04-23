@@ -30,6 +30,7 @@
     tt # terminal typing test
     cava # terminal music visualizer
     emacs
+    helix
 
     cheese # webcam capture
     tidal-hifi # Tidal music streaming
