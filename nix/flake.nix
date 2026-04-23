@@ -17,7 +17,7 @@
     };
 
     tree-sitter = {
-      url = "github:tree-sitter/tree-sitter/release-0.26";
+      url = "github:tree-sitter/tree-sitter/v0.26.8";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
