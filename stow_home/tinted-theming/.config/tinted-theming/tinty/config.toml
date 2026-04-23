@@ -46,3 +46,10 @@ name = "tinted-xresources"
 themes-dir = "xresources"
 hook = "cp -f %f ~/.config/xresources/theme && xrdb -load ~/.Xresources"
 supported-systems = ["base16", "base24"]
+
+[[items]]
+name = "tinted-helix"
+path = "https://github.com/tinted-theming/tinted-helix"
+themes-dir = "themes"
+hook = "cp -f \"%f\" ~/.config/helix/themes/ && helix --health > /dev/null 2>&1"
+supported-systems = ["base16", "base24"]
