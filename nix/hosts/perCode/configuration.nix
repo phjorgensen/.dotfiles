@@ -31,6 +31,7 @@
     ../../modules/theming-tools/stylix/stylix.nix
     # ../../modules/flakes/anyrun.nix
     # ../../modules/flakes/typy.nix
+    ../../modules/flakes/eylab-quicktask.nix
     ../../modules/flakes/komlesukker.nix
     ../../modules/flakes/oq.nix
     ../../modules/flakes/tree-sitter.nix

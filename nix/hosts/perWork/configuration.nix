@@ -31,6 +31,7 @@
     ../../modules/packages/work.nix
     ../../modules/packages/theming.nix
     ../../modules/theming-tools/stylix/stylix.nix
+    ../../modules/flakes/eylab-quicktask.nix
     ../../modules/flakes/komlesukker.nix
     ../../modules/flakes/otel-tui.nix
     ../../modules/flakes/oq.nix

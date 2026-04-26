@@ -11,6 +11,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    eylab-quicktask = {
+      url = "git+ssh://git@git.perprogramming.me:222/phjorgensen/eylab-quicktask.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     komlesukker = {
       url = "github:phjorgensen/komlesukker";
       inputs.nixpkgs.follows = "nixpkgs";
