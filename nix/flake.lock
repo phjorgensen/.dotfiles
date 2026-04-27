@@ -75,11 +75,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777230525,
-        "narHash": "sha256-Ybi2dbgZ2G9n0RG8cvThRaApC3TI4uq7aWgjQSWSjI0=",
+        "lastModified": 1777273980,
+        "narHash": "sha256-hv2q7nfABWTXVwvWhRcKRp+AutfSTjtlaJ9YUmEZ+lk=",
         "ref": "refs/heads/main",
-        "rev": "3ffca18fbd6d829d1a9b017388443031f67fa6b5",
-        "revCount": 39,
+        "rev": "5478dc69d2c179edee0c2056f0fbfb5f04f0def1",
+        "revCount": 40,
         "type": "git",
         "url": "ssh://git@git.perprogramming.me:222/phjorgensen/eylab-quicktask.git"
       },
